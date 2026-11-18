@@ -425,7 +425,6 @@ function plantPage(p, i, n, c) {
     <section class="about"><h3>About your ${esc(p.short || p.name)}</h3><p>${p.about ? esc(p.about) : pend}</p></section>
     ${p.watch ? `<section class="watch">${ICON.lens}<span><span class="label" style="color:var(--accent-strong)">Watch for</span>${esc(p.watch)}</span></section>` : ''}
     ${p.next ? `<section class="next"><span><span class="label">Coming up</span>${esc(p.next)}</span><span class="nudge" style="flex:none;width:44px;height:44px;border-radius:50%;background:${tint};color:#2F4A3A;display:grid;place-items:center">${ICON.arrow}</span></section>` : ''}
-    <button type="button" class="remove" data-remove="${esc(p.id)}">Remove ${esc(p.name)}</button>
   </article>`;
 }
 
@@ -444,9 +443,8 @@ function openPicker(k) {
 function catView(k) {
   const c = cat(k), ps = plantsIn(k), n = ps.length;
   const i = Math.min(S.idx[k] || 0, Math.max(0, n - 1));
-  const head = topBar(`<button type="button" class="titlebtn" data-picker="${k}" aria-label="Show all ${esc(c.name)} plants"><h1${c.name.length > 8 ? ' class="long"' : ''}>My <em>${esc(c.name)}</em><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></h1></button><p class="pos" id="pos">${n ? `${i + 1} of ${n}` : ''}</p>`,
-    `<button type="button" class="pillbtn" data-add="${k}">${ICON.plus}Add</button>`);
-  if (!n) return head + `<div class="wk"><div class="card empty">${svgArt(c.art, 'art')}<p class="serif" style="font-size:22px">No ${esc(c.name.toLowerCase())} yet</p><button type="button" class="bigbtn" data-add="${k}">Add one</button></div></div>`;
+  const head = topBar(`<button type="button" class="titlebtn" data-picker="${k}" aria-label="Show all ${esc(c.name)} plants"><h1${c.name.length > 8 ? ' class="long"' : ''}>My <em>${esc(c.name)}</em><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></h1></button><p class="pos" id="pos">${n ? `${i + 1} of ${n}` : ''}</p>`, '');
+  if (!n) return head + `<div class="wk"><div class="card empty">${svgArt(c.art, 'art')}<p class="serif" style="font-size:22px">No ${esc(c.name.toLowerCase())} yet</p></div></div>`;
   return head + `<div class="rail" id="rail" aria-label="${esc(c.name)}: swipe sideways for the next plant">${ps.map((p, j) => plantPage(p, j, n, c)).join('')}</div>
     <div class="dots" id="dots">${ps.map((p, j) => `<button type="button" data-go="${j}" aria-label="Go to ${esc(p.name)}" aria-current="${j === i}"><i></i></button>`).join('')}</div>`;
 }

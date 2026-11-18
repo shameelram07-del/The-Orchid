@@ -11,12 +11,10 @@ A phone-first garden-care site for our Auckland garden: fruit, flowers, palms, f
 | `index.html` | The whole site, one file, no build step. |
 | `data.json` | All plants and the current week: `{ plants: [...], week: {...} }`. |
 | `history/` | Past weeks, one file per week (`YYYY-MM-DD.json`). |
-| `.github/ISSUE_TEMPLATE/` | The **Add a plant** and **Remove a plant** forms. |
-| `.github/workflows/garden-form.yml` | Applies those forms to `data.json` (owner's issues only). |
 
 ### How it updates
 
-- **Add / remove a plant:** tap **+ Add** or **Remove** on the site. It opens a GitHub form; submit it and the workflow edits `data.json`, publishes, and closes the issue. Issues from anyone other than the repo owner are ignored.
+- **Add / remove a plant:** only through the owner's Claude chat, which edits `data.json` and pushes. The site itself has no add or remove buttons.
 - **Every Saturday 7:40am (Auckland):** a scheduled Claude session checks the forecast, fills in care details and pet safety for new plants, writes the new Garden watch and weekly jobs into `data.json`, archives last week into `history/`, and pushes. A phone notification summarises it.
 - **Publishing:** GitHub Pages serves the `gh-pages` branch, which mirrors `main`. Every update pushes to both.
 
