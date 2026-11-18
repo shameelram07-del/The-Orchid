@@ -66,7 +66,7 @@ h1.long{font-size:clamp(32px,10vw,42px)}
 .meta{margin:0 4px;display:flex;justify-content:space-between;font-family:var(--grot);font-weight:800;font-size:14px;letter-spacing:.06em}
 .plate{position:relative;border-radius:190px 190px 32px 32px;padding:26px 18px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden}
 .plate .art{width:220px;height:220px;position:relative;z-index:0;overflow:visible;filter:drop-shadow(0 16px 14px rgba(47,74,58,.18))}
-.giant{margin:-50px 0 0;position:relative;z-index:1;font-family:var(--grot);font-weight:800;line-height:.84;letter-spacing:-.05em;text-transform:uppercase;overflow-wrap:anywhere}
+.giant{margin:-50px 0 0;position:relative;z-index:1;text-shadow:3px 0 0 var(--halo),-3px 0 0 var(--halo),0 3px 0 var(--halo),0 -3px 0 var(--halo),2px 2px 0 var(--halo),-2px 2px 0 var(--halo),2px -2px 0 var(--halo),-2px -2px 0 var(--halo),0 0 10px var(--halo),0 0 18px var(--halo);font-family:var(--grot);font-weight:800;line-height:.84;letter-spacing:-.05em;text-transform:uppercase;overflow-wrap:anywhere}
 .latin{margin:12px 0 0;font-family:var(--serif);font-style:italic;font-size:18px}
 .spot{margin:8px 0 0;display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#4E3B45;background:rgba(255,255,255,.72);border-radius:999px;padding:4px 12px}
 .card{background:var(--surface);border-radius:24px;box-shadow:0 8px 22px -16px var(--shadow)}
@@ -397,15 +397,24 @@ function petStrip(p) {
   return `<section class="card pets"><span class="label" style="color:var(--muted)">Pet safety</span><div class="petrow">${chip('cat', ICON.cat, 'Cats')}${chip('dog', ICON.dog, 'Dog')}${chip('bird', ICON.bird, 'Birds')}</div>${p.petNote ? `<p class="petnote">${esc(p.petNote)}</p>` : ''}</section>`;
 }
 
+const lum = h => { const n = parseInt(h.slice(1), 16), c = [n >> 16, (n >> 8) & 255, n & 255].map(v => { v /= 255; return v <= .03928 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4; }); return .2126 * c[0] + .7152 * c[1] + .0722 * c[2]; };
+const contrast = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + .05) / (Math.min(x, y) + .05); };
+// Darken a title colour until it reads clearly on its plate (at least 6:1).
+function readable(deep, tint) {
+  let c = deep;
+  for (let k = 0; k < 30 && contrast(c, tint) < 6; k++) { const n = parseInt(c.slice(1), 16); c = '#' + [n >> 16, (n >> 8) & 255, n & 255].map(v => Math.round(v * .9).toString(16).padStart(2, '0')).join(''); }
+  return c;
+}
+
 function plantPage(p, i, n, c) {
-  const tint = HEX.test(p.tint || '') ? p.tint : c.tint, deep = HEX.test(p.deep || '') ? p.deep : c.deep;
+  const tint = HEX.test(p.tint || '') ? p.tint : c.tint, deep = readable(HEX.test(p.deep || '') ? p.deep : c.deep, tint);
   const jobs = jobsFor(p.id);
   const months = Array.isArray(p.months) ? p.months : [];
   const pend = '<span class="pending">Filled in on Saturday</span>';
   const v = x => x ? esc(x) : pend;
   return `<article class="page" aria-label="${esc(p.name)}, ${i + 1} of ${n}">
     <p class="meta" style="color:${deep}"><span>${pad2(i + 1)} / ${pad2(n)}</span><span style="text-transform:uppercase">${esc(subName(c, p.sub) || c.name)}</span></p>
-    <section class="plate" style="background:${tint}">
+    <section class="plate" style="background:${tint};--halo:${tint}">
       ${svgArt(p.art)}
       <h2 class="giant" style="color:${deep};font-size:${giantSize(p.name)}">${esc(p.name)}</h2>
       ${p.latin ? `<p class="latin" style="color:${deep}">${esc(p.latin)}</p>` : ''}
