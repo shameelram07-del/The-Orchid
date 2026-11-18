@@ -1820,15 +1820,15 @@
   },
   {
    "id": "rubber-plant",
-   "name": "Rubber plant",
-   "short": "rubber plant",
+   "name": "Rubber plants",
+   "short": "rubber plants",
    "latin": "Ficus elastica ‘Burgundy’",
    "section": "foliage",
    "sub": "bigleaf",
    "art": "rubberplant",
    "tint": "#EEDDE4",
    "deep": "#5A1E36",
-   "spot": "Shade house",
+   "spot": "Back fence bed (big one, trimmed) and the shade house (burgundy)",
    "sun": "Bright, indirect light",
    "water": "When top 3 cm is dry",
    "feed": "Monthly in summer",
@@ -1843,9 +1843,9 @@
     1,
     2
    ],
-   "about": "Glossy burgundy leaves with a red sheath on each new leaf.",
-   "watch": "Dusty leaves (wipe them) and leaf drop when moved.",
-   "next": "Wipe the leaves clean.",
+   "about": "Tropical figs with glossy leaves. The big one at the back fence was trimmed before the cold months and is now recovering.",
+   "watch": "Bronze and yellow leaves on the back-fence plant: cold stress after the trim. Scratch-test stems before cutting anything.",
+   "next": "No more pruning this year; weed the base and feed lightly as it warms.",
    "pets": {
     "cat": "toxic",
     "dog": "toxic",
@@ -2471,7 +2471,8 @@
   "next": [
    "Peach: bird netting up before the fruit colours.",
    "Citrus: summer feed coming early December.",
-   "Strawberries: peak picking begins."
+   "Strawberries: peak picking begins.",
+   "Winter: lift the peach seedling into a big pot to sell."
   ],
   "nextTitle": "Late November",
   "tasks": [
@@ -2822,6 +2823,22 @@
     "title": "Weed vine climbing the taro fence",
     "text": "A twining weed (likely bindweed) is climbing the chain-link above the taro and will smother it if left.",
     "action": "Pull it out, following the stem down to get the roots. Bin it rather than composting, as bits regrow."
+   },
+   {
+    "id": "a21",
+    "level": "issue",
+    "plantId": "rubber-plant",
+    "title": "Rubber plant stressed after its trim",
+    "text": "The back-fence rubber plant has bronze and yellow leaves from cold stress after being cut back.",
+    "action": "Scratch-test stems (green underneath means alive), weed the base, water only when dry and feed lightly. No more pruning."
+   },
+   {
+    "id": "a22",
+    "level": "risk",
+    "plantId": "peach",
+    "title": "Peach seedling to pot up and sell",
+    "text": "The young peach in the fern-corner box will transplant best when leafless.",
+    "action": "Plan to dig it up in June–July. For the box, consider a Brazilian cherry or dwarf nectarine; most sweet cherries need colder winters than Auckland."
    }
   ]
  }
