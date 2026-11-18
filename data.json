@@ -239,7 +239,7 @@
    "seasonText": "March to May",
    "section": "fruit",
    "short": "feijoa",
-   "spot": "Bed by the pond",
+   "spot": "Front waterfall, left of the red cherry guava",
    "sun": "Full sun to light shade",
    "tint": "#E6EFD9",
    "watch": "Guava moth grubs inside the fruit.",
@@ -2422,11 +2422,48 @@
    "art": "cherryguavared",
    "tint": "#FADADD",
    "deep": "#9E2230",
-   "spot": "Front waterfall, between the lime and feijoa",
+   "spot": "Front waterfall, between the citrus and the feijoa",
    "about": "The classic red cherry guava: glossy leaves, smooth peeling bark and tangy-sweet red fruit, lovely fresh or in jam.",
    "watch": "Guava moth grubs in the fruit, and birds once it ripens. Pull up any seedlings, as it self-seeds easily.",
    "next": "Flowering soon; fruit sets over summer.",
    "addedAt": "2026-11-18T10:02:30Z"
+  },
+  {
+   "id": "waterfall-lime",
+   "name": "Waterfall lime",
+   "short": "lime",
+   "latin": "Citrus (lime or lemon, to confirm)",
+   "section": "fruit",
+   "sub": "citrus",
+   "art": "lime",
+   "tint": "#E6F2D2",
+   "deep": "#3E6A1A",
+   "spot": "Front waterfall, the big tree on the right",
+   "sun": "Full sun",
+   "water": "Deep, 1–2 times a week",
+   "feed": "Citrus food Sep, Dec and Mar",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "Most of the year",
+   "months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "about": "A big, established citrus by the waterfall, covered in white blossom in spring. Limes stay green and are smaller and rounder; lemons turn yellow with a pointed end.",
+   "watch": "Yellowing leaves (hungry), scale and leaf miner. Keep mulch off the trunk.",
+   "next": "Spring feed now with citrus food, watered in well.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "safe"
+   },
+   "petNote": "Leaves and peel can upset cats and the dog.",
+   "addedAt": "2026-11-18T10:01:30Z"
   }
  ],
  "week": {
