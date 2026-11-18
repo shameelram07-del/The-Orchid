@@ -1531,7 +1531,7 @@
   },
   {
    "id": "gardenias",
-   "name": "Gardenias",
+   "name": "Gardenias (Cape jasmine)",
    "short": "gardenias",
    "latin": "Gardenia jasminoides",
    "section": "flowers",
@@ -1539,7 +1539,7 @@
    "art": "gardenia",
    "tint": "#F4F2E2",
    "deep": "#5A6A3A",
-   "spot": "Back corner",
+   "spot": "Back corner, by the cat statue and posts",
    "sun": "Morning sun",
    "water": "Keep moist",
    "feed": "Acid (azalea) food monthly",
