@@ -2814,6 +2814,14 @@
     "title": "Weeds racing the veggies",
     "text": "Lots of weed seedlings are coming up between the tomatoes, peppers and around the pomegranate.",
     "action": "A quick hoe while they’re tiny saves a lot of work later."
+   },
+   {
+    "id": "a20",
+    "level": "issue",
+    "plantId": "taro",
+    "title": "Weed vine climbing the taro fence",
+    "text": "A twining weed (likely bindweed) is climbing the chain-link above the taro and will smother it if left.",
+    "action": "Pull it out, following the stem down to get the roots. Bin it rather than composting, as bits regrow."
    }
   ]
  }
