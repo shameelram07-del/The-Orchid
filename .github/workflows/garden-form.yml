@@ -1,0 +1,44 @@
+name: Garden form
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: garden-data
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    # Only the repo owner's forms change the site; anyone else's issue is ignored.
+    if: >-
+      github.event.issue.user.login == github.repository_owner &&
+      (startsWith(github.event.issue.title, 'Add plant') || startsWith(github.event.issue.title, 'Remove plant'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - id: apply
+        run: python3 .github/scripts/garden_form.py
+      - name: Commit and publish
+        if: steps.apply.outputs.changed == 'true'
+        env:
+          MSG: ${{ steps.apply.outputs.message }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "$MSG"
+          git push origin HEAD:main
+          git push --force origin HEAD:gh-pages
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MSG: ${{ steps.apply.outputs.message }}
+          NUM: ${{ github.event.issue.number }}
+        run: gh issue close "$NUM" --repo "$GITHUB_REPOSITORY" --comment "$MSG"

@@ -1,27 +1,30 @@
 # The Orchid
 
-A phone-first garden-care site for our Auckland garden: fruit trees, roses, flowers, palms, foliage and succulents, with a weekly job list.
+A phone-first garden-care site for our Auckland garden: fruit, flowers, palms, foliage, succulents, and herbs & veg. The front page ("Garden watch") shows critical items, current issues and risks; each plant has its own swipeable page with this week's jobs, care details and pet safety (3 cats, a Pomeranian, cockatiels).
 
-## Two versions
+**Live site:** https://shameelram07-del.github.io/The-Orchid/
 
-| | Where | What it does |
-|---|---|---|
-| **Main app** | Private claude.ai artifact | Add and remove plants, ticks shared across devices, new weekly list every Saturday 7:40am (Auckland) with a phone notification. |
-| **Family view** | This repo, via GitHub Pages | Read-only snapshot of the plants and this week's list. Ticks are saved on each phone only. |
+## This repo is the source of truth
 
-## Files
+| File | What it is |
+|---|---|
+| `index.html` | The whole site, one file, no build step. |
+| `data.json` | All plants and the current week: `{ plants: [...], week: {...} }`. |
+| `history/` | Past weeks, one file per week (`YYYY-MM-DD.json`). |
+| `.github/ISSUE_TEMPLATE/` | The **Add a plant** and **Remove a plant** forms. |
+| `.github/workflows/garden-form.yml` | Applies those forms to `data.json` (owner's issues only). |
 
-- `index.html`: the whole site in one file (no build step). Inside claude.ai it reads the artifact database. Anywhere else it loads `data.json` and switches to read-only mode.
-- `data.json`: snapshot of the plants and the latest weekly list (`{ plants: [...], week: {...} }`).
+### How it updates
 
-## Updating the family view
+- **Add / remove a plant:** tap **+ Add** or **Remove** on the site. It opens a GitHub form; submit it and the workflow edits `data.json`, publishes, and closes the issue. Issues from anyone other than the repo owner are ignored.
+- **Every Saturday 7:40am (Auckland):** a scheduled Claude session checks the forecast, fills in care details and pet safety for new plants, writes the new Garden watch and weekly jobs into `data.json`, archives last week into `history/`, and pushes. A phone notification summarises it.
+- **Publishing:** GitHub Pages serves the `gh-pages` branch, which mirrors `main`. Every update pushes to both.
 
-Replace `data.json` with a fresh export of the `plants` collection and the latest `weeks` document from the claude.ai artifact, then commit.
+### Data shape
 
-## Data shape
+- `plants[]`: id, name, short, latin, section (fruit, flowers, palms, foliage, succulents, herbs), art (drawing key), tint, deep, spot, sun, water, feed, care, season, seasonText, months (0 = Jan), about, watch, next, pets {cat, dog, bird: safe | care | toxic}, petNote, addedAt.
+- `week`: id, weekOf, generatedAt, weather, headline, alerts [{id, level: critical | issue | risk, plantId, art, title, text, action}], tasks [{id, plantId, section, tag, text}], nextTitle, next [].
 
-- `plants/<id>`: name, short, latin, section (fruit, flowers, palms, foliage, succulents, herbs), art (drawing key), tint, deep, spot, sun, water, feed, care, season, seasonText, months (0 = Jan), about, watch, next, addedAt.
-- `weeks/<YYYY-MM-DD>`: weekOf, generatedAt, weather, headline, tasks [{id, plantId, section, tag, text}], nextTitle, next [].
-- `ticks/<week id>`: done {taskId: true}.
+Ticks and "Sorted" are saved on each phone (browser storage), not in the repo.
 
 All plant drawings are original inline SVGs drawn for this site.

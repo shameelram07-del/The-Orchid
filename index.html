@@ -203,7 +203,6 @@ dialog[open]{animation:sheet .45s cubic-bezier(.2,.8,.2,1)}
 @keyframes shine{0%,100%{opacity:.35}50%{opacity:.95}}
 .nudge{animation:nudge 2s ease-in-out infinite}
 @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
-body.ro [data-add],body.ro [data-remove]{display:none!important}
 .view{animation:fade .4s ease both}
 @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rail{scroll-behavior:auto}}
@@ -273,6 +272,9 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 const ML = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'];
 const SEASON = m => [11, 0, 1].includes(m) ? 'Summer' : [2, 3, 4].includes(m) ? 'Autumn' : [5, 6, 7].includes(m) ? 'Winter' : 'Spring';
 const HEX = /^#[0-9a-fA-F]{6}$/;
+const REPO = 'https://github.com/shameelram07-del/The-Orchid';
+const FORM_CAT = { fruit: 'Fruit', flowers: 'Flowers', palms: 'Palms', foliage: 'Foliage', succulents: 'Succulents', herbs: 'Herbs & veg' };
+const formUrl = (tpl, params) => `${REPO}/issues/new?template=${tpl}&` + Object.entries(params).map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join('&');
 
 /* ---------- State ---------- */
 const S = { view: 'week', idx: {}, db: null, ro: false, ready: false, plants: [], week: null, ticks: {}, unTicks: null };
@@ -475,11 +477,12 @@ function openAdd(k0) {
 /* ---------- Events ---------- */
 document.addEventListener('click', async e => {
   const v = e.target.closest('[data-view]'); if (v) { go(v.dataset.view); return; }
-  const a = e.target.closest('[data-add]'); if (a) { openAdd(a.dataset.add); return; }
+  const a = e.target.closest('[data-add]'); if (a) { if (S.ro) { const k = a.dataset.add || (S.view !== 'week' ? S.view : 'fruit'); window.open(formUrl('add-plant.yml', { title: 'Add plant', category: FORM_CAT[k] || 'Fruit' }), '_blank', 'noopener'); } else openAdd(a.dataset.add); return; }
   const o = e.target.closest('[data-open]'); if (o) { const p = S.plants.find(x => x.id === o.dataset.open); if (p) go(catOf(p), plantsIn(catOf(p)).indexOf(p)); return; }
   const g = e.target.closest('[data-go]'); if (g) { const rail = document.getElementById('rail'); if (rail) rail.scrollTo({ left: Number(g.dataset.go) * rail.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); return; }
   if (e.target === sheet || e.target.closest('[data-close]')) { sheet.close(); return; }
   const r = e.target.closest('[data-remove]');
+  if (r && S.ro) { const pl = S.plants.find(x => x.id === r.dataset.remove); window.open(formUrl('remove-plant.yml', { title: 'Remove plant', plant: pl ? pl.name : '' }), '_blank', 'noopener'); return; }
   if (r && S.db) {
     if (r.dataset.confirm !== '1') { r.dataset.confirm = '1'; r.textContent = 'Tap again to remove'; return; }
     try { await S.db.doc('plants/' + r.dataset.remove).delete(); S.idx[S.view] = Math.max(0, (S.idx[S.view] || 0) - 1); } catch (err) { r.textContent = 'Could not remove'; }

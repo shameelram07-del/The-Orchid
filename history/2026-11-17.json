@@ -1,0 +1,296 @@
+{
+ "generatedAt": "2026-11-17T21:00:00Z",
+ "headline": "Two pet-safety fixes first, then tackle black spot and sun scorch.",
+ "next": [
+  "Peach: bird netting up before the fruit colours.",
+  "Citrus: summer feed coming early December.",
+  "Strawberries: peak picking begins."
+ ],
+ "nextTitle": "Late November",
+ "tasks": [
+  {
+   "id": "w1",
+   "plantId": "peach",
+   "section": "fruit",
+   "tag": "Thin",
+   "text": "Finish thinning: leave one fruit every 15 cm so the rest size up."
+  },
+  {
+   "id": "w2",
+   "plantId": "peach",
+   "section": "fruit",
+   "tag": "Mulch",
+   "text": "After Wednesday's rain, top up mulch to 5–8 cm while the planter is moist. Keep it off the trunk."
+  },
+  {
+   "id": "w3",
+   "plantId": "apple",
+   "section": "fruit",
+   "tag": "Thin",
+   "text": "Thin to one apple per cluster; keep the biggest, best-shaped one."
+  },
+  {
+   "id": "w4",
+   "plantId": "apple",
+   "section": "fruit",
+   "tag": "Pests",
+   "text": "Check the codling moth trap. Note how many moths are in it."
+  },
+  {
+   "id": "w5",
+   "plantId": "orange",
+   "section": "fruit",
+   "tag": "Water",
+   "text": "Skip watering mid-week if Wednesday brings the forecast rain. Finger-test again on the weekend."
+  },
+  {
+   "id": "w6",
+   "plantId": "orange",
+   "section": "fruit",
+   "tag": "Pests",
+   "text": "Look under new leaves for aphids. Hose them off."
+  },
+  {
+   "id": "w7",
+   "plantId": "mandarin",
+   "section": "fruit",
+   "tag": "Mulch",
+   "text": "Top up mulch after the rain, clear of the trunk."
+  },
+  {
+   "id": "w8",
+   "plantId": "mandarin",
+   "section": "fruit",
+   "tag": "Wind",
+   "text": "Windy mid-week: check stakes and ties after Wednesday."
+  },
+  {
+   "id": "w9",
+   "plantId": "strawberry",
+   "section": "fruit",
+   "tag": "Harvest",
+   "text": "Pick fruit as soon as it's fully red, every 2 days."
+  },
+  {
+   "id": "w10",
+   "plantId": "strawberry",
+   "section": "fruit",
+   "tag": "Pests",
+   "text": "Wet weather brings slugs. Check at night or set beer traps."
+  },
+  {
+   "id": "w11",
+   "plantId": "strawberry",
+   "section": "fruit",
+   "tag": "Net",
+   "text": "Get netting over the plants before the weekend."
+  },
+  {
+   "id": "w12",
+   "plantId": null,
+   "section": "fruit",
+   "tag": "Check",
+   "text": "Raised planters dry fast once the sun returns: finger-test 5 cm deep on Saturday."
+  },
+  {
+   "id": "w13",
+   "plantId": "feijoa",
+   "section": "fruit",
+   "tag": "Flowers",
+   "text": "In flower now. Let the rain do the watering; water deeply if it turns dry."
+  },
+  {
+   "id": "w14",
+   "plantId": "coral-rose",
+   "section": "roses",
+   "tag": "Disease",
+   "text": "Pick off the spotted, yellow leaves and bin them (not compost). Clear fallen ones too."
+  },
+  {
+   "id": "w15",
+   "plantId": "coral-rose",
+   "section": "roses",
+   "tag": "Weed",
+   "text": "Pull the clover out of the planter so air can move around the base."
+  },
+  {
+   "id": "w16",
+   "plantId": "hydrangea",
+   "section": "flowers",
+   "tag": "Water",
+   "text": "Pots dry quickly once it warms up: water every 2–3 days after the rain clears."
+  },
+  {
+   "id": "w17",
+   "plantId": "lavender",
+   "section": "flowers",
+   "tag": "Trim",
+   "text": "Snip off spent flower heads to keep new ones coming."
+  },
+  {
+   "id": "w18",
+   "plantId": "ice-plant",
+   "section": "flowers",
+   "tag": "Water",
+   "text": "No water needed this week; the rain is plenty."
+  },
+  {
+   "id": "w19",
+   "plantId": "peace-lily",
+   "section": "flowers",
+   "tag": "Water",
+   "text": "Water when the leaves start to droop; wipe the dust off the leaves."
+  },
+  {
+   "id": "w20",
+   "plantId": "parlour-palm",
+   "section": "palms",
+   "tag": "Light",
+   "text": "Keep it in bright light but out of direct sun; wipe dusty fronds."
+  },
+  {
+   "id": "w21",
+   "plantId": "sago-palm",
+   "section": "palms",
+   "tag": "Weed",
+   "text": "Pull the dandelions and grass out of the pink pot (wear gloves)."
+  },
+  {
+   "id": "w22",
+   "plantId": "monstera",
+   "section": "foliage",
+   "tag": "Feed",
+   "text": "Give a liquid feed now it's growing again."
+  },
+  {
+   "id": "w23",
+   "plantId": "umbrella-tree",
+   "section": "foliage",
+   "tag": "Turn",
+   "text": "Turn the basket a quarter so it grows evenly."
+  },
+  {
+   "id": "w24",
+   "plantId": "dracaena",
+   "section": "foliage",
+   "tag": "Shade",
+   "text": "Move it out of hot sun and trim off the yellow, scorched leaves."
+  },
+  {
+   "id": "w25",
+   "plantId": "jade-plant",
+   "section": "succulents",
+   "tag": "Weed",
+   "text": "Pull the grass out of the pot."
+  },
+  {
+   "id": "w26",
+   "plantId": "cuttings",
+   "section": "succulents",
+   "tag": "Shelter",
+   "text": "Keep the cuttings out of heavy rain on Wednesday; light mist only after."
+  }
+ ],
+ "weather": "Mild, 17–23°C · wet, windy Wednesday",
+ "weekOf": "2026-11-17",
+ "id": "2026-11-17",
+ "alerts": [
+  {
+   "id": "a1",
+   "level": "critical",
+   "plantId": "sago-palm",
+   "title": "Sago palm within reach of pets",
+   "text": "It's the most dangerous plant in the garden: even a small chew can cause liver failure in cats, dogs and birds.",
+   "action": "Move the pink pot where the cats, dog and cockatiels can't reach it. Wear gloves when you weed it."
+  },
+  {
+   "id": "a2",
+   "level": "critical",
+   "plantId": null,
+   "art": "strawberry",
+   "title": "Slug bait: pet-safe only",
+   "text": "Wet weather brings slugs, but blue (metaldehyde) pellets can kill cats and dogs.",
+   "action": "Use only iron-phosphate pellets or beer traps. If there are blue pellets in the shed, bin them."
+  },
+  {
+   "id": "a3",
+   "level": "issue",
+   "plantId": "coral-rose",
+   "title": "Black spot on the coral rose",
+   "text": "Dark spots and yellowing leaves are showing, and rain spreads the spores.",
+   "action": "Pick off spotted leaves and clear fallen ones. Bin them, don't compost them."
+  },
+  {
+   "id": "a4",
+   "level": "issue",
+   "plantId": "dracaena",
+   "title": "Dracaena scorching in the sun",
+   "text": "The striped leaves have yellow, bleached patches from hot sun on the patio.",
+   "action": "Move the pot into shade, such as the shade house, and trim off the worst leaves."
+  },
+  {
+   "id": "a5",
+   "level": "issue",
+   "plantId": "front-bed-succulents",
+   "title": "A front-bed succulent is shrivelling",
+   "text": "One near the front edge has gone yellow and dry.",
+   "action": "Check it isn't sitting wet under the bark. If it's mushy, pull it and plant a fresh cutting."
+  },
+  {
+   "id": "a6",
+   "level": "issue",
+   "plantId": "jade-plant",
+   "title": "Weeds taking over the patio pots",
+   "text": "Grass and dandelions are growing in the jade and sago pots, competing for water.",
+   "action": "Pull them out this week (gloves on for the sago)."
+  },
+  {
+   "id": "a7",
+   "level": "risk",
+   "plantId": "cuttings",
+   "title": "Showery, windy spells this week",
+   "text": "Heavy showers can rot young cuttings, and gusts can rock young trees.",
+   "action": "Move the cuttings table under cover, and check ties on the citrus and pomegranate."
+  },
+  {
+   "id": "a8",
+   "level": "risk",
+   "plantId": "peach",
+   "title": "Birds will find the peaches",
+   "text": "As the fruit starts colouring in December, birds move in fast.",
+   "action": "Have bird netting ready to go on by early December."
+  },
+  {
+   "id": "a9",
+   "level": "risk",
+   "plantId": "strawberry",
+   "title": "Grey mould and slugs on berries",
+   "text": "Damp weather plus ripe fruit is when mould and slugs strike.",
+   "action": "Pick every 2 days, remove any mouldy fruit, and use pet-safe slug control."
+  },
+  {
+   "id": "a10",
+   "level": "risk",
+   "plantId": "peace-lily",
+   "title": "Indoor plants near the cockatiels",
+   "text": "Peace lilies and the umbrella tree irritate the mouth if the birds nibble them.",
+   "action": "Keep them away from where the cockatiels perch or play out of the cage."
+  },
+  {
+   "id": "a11",
+   "level": "risk",
+   "plantId": "hydrangea",
+   "title": "Pots drying out as summer arrives",
+   "text": "Hydrangeas, palms in crates and planters dry fast on the first hot days.",
+   "action": "Water deeply in the morning and check pots every 2–3 days."
+  },
+  {
+   "id": "a12",
+   "level": "risk",
+   "plantId": "feijoa",
+   "title": "Guava moth season ahead",
+   "text": "Guava moth grubs can ruin feijoas from the inside.",
+   "action": "Hang a guava moth trap in the tree in December."
+  }
+ ]
+}
