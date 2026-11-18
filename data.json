@@ -927,9 +927,9 @@
   },
   {
    "id": "chillies",
-   "name": "Chillies",
-   "short": "chillies",
-   "latin": "Capsicum annuum",
+   "name": "Bird's eye chillies",
+   "short": "bird's eye chillies",
+   "latin": "Capsicum frutescens",
    "section": "herbs",
    "sub": "chillies",
    "art": "chilli",
@@ -948,15 +948,15 @@
     2,
     3
    ],
-   "about": "A bushy chilli already flowering. More sun and warmth means hotter chillies.",
-   "watch": "A few yellow leaves: feed it, and check for aphids.",
+   "about": "Small, very hot chillies that point upwards on a bushy plant. One plant gives hundreds of chillies over summer.",
+   "watch": "A few yellow leaves: feed it, and check under leaves for aphids.",
    "next": "Feed fortnightly now that it is flowering.",
    "pets": {
     "cat": "care",
     "dog": "care",
     "bird": "care"
    },
-   "petNote": "Hot chillies burn mouths and eyes; leaves can upset tummies.",
+   "petNote": "Very hot: burns mouths and eyes. Keep the pets and birds away from the fruit.",
    "addedAt": "2026-11-18T10:03:00Z"
   },
   {
