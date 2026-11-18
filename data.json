@@ -938,40 +938,6 @@
    "addedAt": "2026-11-18T10:01:00Z"
   },
   {
-   "id": "lilly-pilly",
-   "name": "Lilly pilly",
-   "short": "lilly pilly",
-   "latin": "Syzygium (to confirm)",
-   "section": "fruit",
-   "sub": "subtropical",
-   "art": "lillypilly",
-   "tint": "#FBE4E0",
-   "deep": "#9E2230",
-   "spot": "Back fence by the shade house",
-   "sun": "Sun or part shade",
-   "water": "Weekly in dry spells",
-   "feed": "General fertiliser in spring",
-   "care": "Easy",
-   "season": "Berries",
-   "seasonText": "January to April",
-   "months": [
-    0,
-    1,
-    2,
-    3
-   ],
-   "about": "Glossy leaves with coppery-red new growth and fluffy white flowers, followed by edible pink berries.",
-   "watch": "Psyllids: pimply, distorted new leaves.",
-   "next": "Enjoy the flowers; berries follow in summer.",
-   "pets": {
-    "cat": "safe",
-    "dog": "safe",
-    "bird": "safe"
-   },
-   "petNote": "Safe; the berries are edible.",
-   "addedAt": "2026-11-18T10:02:00Z"
-  },
-  {
    "id": "chillies",
    "name": "Chillies",
    "short": "chillies",
@@ -2393,6 +2359,74 @@
    },
    "petNote": "Causes vomiting and diarrhoea in cats and the dog.",
    "addedAt": "2026-11-18T10:42:00Z"
+  },
+  {
+   "section": "fruit",
+   "sub": "subtropical",
+   "sun": "Full sun to part shade",
+   "water": "Deep weekly while fruiting",
+   "feed": "General fertiliser in spring",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "February to May",
+   "months": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe; the fruit is a good cockatiel treat in small amounts.",
+   "id": "cherry-guava-yellow",
+   "name": "Yellow cherry guava",
+   "short": "yellow cherry guava",
+   "latin": "Psidium cattleianum (yellow form)",
+   "art": "cherryguavayellow",
+   "tint": "#FBF3CF",
+   "deep": "#7A5A0C",
+   "spot": "Back garden, by the fence",
+   "about": "A glossy-leaved small tree with coppery new growth and fluffy white flowers, now in bud. The yellow fruit is sweeter and milder than the red.",
+   "watch": "Guava moth grubs in the fruit, and birds once it ripens. Pull up any seedlings, as it self-seeds easily.",
+   "next": "Flowering now; fruit sets over summer.",
+   "addedAt": "2026-11-18T10:02:00Z"
+  },
+  {
+   "section": "fruit",
+   "sub": "subtropical",
+   "sun": "Full sun to part shade",
+   "water": "Deep weekly while fruiting",
+   "feed": "General fertiliser in spring",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "February to May",
+   "months": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe; the fruit is a good cockatiel treat in small amounts.",
+   "id": "cherry-guava-red",
+   "name": "Red cherry guava",
+   "short": "red cherry guava",
+   "latin": "Psidium cattleianum",
+   "art": "cherryguavared",
+   "tint": "#FADADD",
+   "deep": "#9E2230",
+   "spot": "Front waterfall, between the lime and feijoa",
+   "about": "The classic red cherry guava: glossy leaves, smooth peeling bark and tangy-sweet red fruit, lovely fresh or in jam.",
+   "watch": "Guava moth grubs in the fruit, and birds once it ripens. Pull up any seedlings, as it self-seeds easily.",
+   "next": "Flowering soon; fruit sets over summer.",
+   "addedAt": "2026-11-18T10:02:30Z"
   }
  ],
  "week": {
