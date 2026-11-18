@@ -881,7 +881,7 @@
  ],
  "week": {
   "generatedAt": "2026-11-17T21:00:00Z",
-  "headline": "Let Wednesday's rain do the watering, then thin, mulch and net.",
+  "headline": "Two pet-safety fixes first, then tackle black spot and sun scorch.",
   "next": [
    "Peach: bird netting up before the fruit colours.",
    "Citrus: summer feed coming early December.",
@@ -1074,6 +1074,105 @@
   ],
   "weather": "Mild, 17–23°C · wet, windy Wednesday",
   "weekOf": "2026-11-17",
-  "id": "2026-11-17"
+  "id": "2026-11-17",
+  "alerts": [
+   {
+    "id": "a1",
+    "level": "critical",
+    "plantId": "sago-palm",
+    "title": "Sago palm within reach of pets",
+    "text": "It's the most dangerous plant in the garden: even a small chew can cause liver failure in cats, dogs and birds.",
+    "action": "Move the pink pot where the cats, dog and cockatiels can't reach it. Wear gloves when you weed it."
+   },
+   {
+    "id": "a2",
+    "level": "critical",
+    "plantId": null,
+    "art": "strawberry",
+    "title": "Slug bait: pet-safe only",
+    "text": "Wet weather brings slugs, but blue (metaldehyde) pellets can kill cats and dogs.",
+    "action": "Use only iron-phosphate pellets or beer traps. If there are blue pellets in the shed, bin them."
+   },
+   {
+    "id": "a3",
+    "level": "issue",
+    "plantId": "coral-rose",
+    "title": "Black spot on the coral rose",
+    "text": "Dark spots and yellowing leaves are showing, and rain spreads the spores.",
+    "action": "Pick off spotted leaves and clear fallen ones. Bin them, don't compost them."
+   },
+   {
+    "id": "a4",
+    "level": "issue",
+    "plantId": "dracaena",
+    "title": "Dracaena scorching in the sun",
+    "text": "The striped leaves have yellow, bleached patches from hot sun on the patio.",
+    "action": "Move the pot into shade, such as the shade house, and trim off the worst leaves."
+   },
+   {
+    "id": "a5",
+    "level": "issue",
+    "plantId": "front-bed-succulents",
+    "title": "A front-bed succulent is shrivelling",
+    "text": "One near the front edge has gone yellow and dry.",
+    "action": "Check it isn't sitting wet under the bark. If it's mushy, pull it and plant a fresh cutting."
+   },
+   {
+    "id": "a6",
+    "level": "issue",
+    "plantId": "jade-plant",
+    "title": "Weeds taking over the patio pots",
+    "text": "Grass and dandelions are growing in the jade and sago pots, competing for water.",
+    "action": "Pull them out this week (gloves on for the sago)."
+   },
+   {
+    "id": "a7",
+    "level": "risk",
+    "plantId": "cuttings",
+    "title": "Showery, windy spells this week",
+    "text": "Heavy showers can rot young cuttings, and gusts can rock young trees.",
+    "action": "Move the cuttings table under cover, and check ties on the citrus and pomegranate."
+   },
+   {
+    "id": "a8",
+    "level": "risk",
+    "plantId": "peach",
+    "title": "Birds will find the peaches",
+    "text": "As the fruit starts colouring in December, birds move in fast.",
+    "action": "Have bird netting ready to go on by early December."
+   },
+   {
+    "id": "a9",
+    "level": "risk",
+    "plantId": "strawberry",
+    "title": "Grey mould and slugs on berries",
+    "text": "Damp weather plus ripe fruit is when mould and slugs strike.",
+    "action": "Pick every 2 days, remove any mouldy fruit, and use pet-safe slug control."
+   },
+   {
+    "id": "a10",
+    "level": "risk",
+    "plantId": "peace-lily",
+    "title": "Indoor plants near the cockatiels",
+    "text": "Peace lilies and the umbrella tree irritate the mouth if the birds nibble them.",
+    "action": "Keep them away from where the cockatiels perch or play out of the cage."
+   },
+   {
+    "id": "a11",
+    "level": "risk",
+    "plantId": "hydrangea",
+    "title": "Pots drying out as summer arrives",
+    "text": "Hydrangeas, palms in crates and planters dry fast on the first hot days.",
+    "action": "Water deeply in the morning and check pots every 2–3 days."
+   },
+   {
+    "id": "a12",
+    "level": "risk",
+    "plantId": "feijoa",
+    "title": "Guava moth season ahead",
+    "text": "Guava moth grubs can ruin feijoas from the inside.",
+    "action": "Hang a guava moth trap in the tree in December."
+   }
+  ]
  }
 }

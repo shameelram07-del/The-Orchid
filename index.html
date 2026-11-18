@@ -101,6 +101,22 @@ h1 em{font-style:italic;color:var(--accent)}
 .petchip svg{flex:none}
 .pk{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;opacity:.85}
 .petnote{margin:0;font-size:15px;color:var(--body)}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.tile{display:flex;flex-direction:column;gap:2px;padding:12px;border-radius:20px;text-decoration:none;min-height:64px}
+.tile b{font-family:var(--serif);font-weight:600;font-size:28px;line-height:1}
+.tile span{font-size:13px;font-weight:700}
+.alert{border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:8px;transition:opacity .3s}
+.alert.done{opacity:.55}
+.alert.done h3{text-decoration:line-through}
+.alert p{margin:0}
+.ahead{display:flex;align-items:center;gap:12px}
+.alert .badge{width:48px;height:48px}.alert .badge svg{width:38px;height:38px}
+.lvl{display:inline-block;color:#FFFFFF;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:2px 9px;margin-bottom:4px}
+.alert h3{margin:0;font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.15}
+.todo{font-size:16px}
+.arow{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.sorted{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-weight:700;cursor:pointer}
+.sorted input{width:24px;height:24px;margin:0;accent-color:currentColor}
 .remove{align-self:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:14px;cursor:pointer;margin-bottom:6px}
 .dots{display:flex;justify-content:center;gap:2px;padding:12px 0 2px}
 .dots button{width:28px;height:28px;border:0;background:transparent;padding:0;display:grid;place-items:center;cursor:pointer}
@@ -133,10 +149,10 @@ h1 em{font-style:italic;color:var(--accent)}
 
 /* Bottom bar */
 .tabs{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));width:min(492px,calc(100% - 24px));border-radius:999px;background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 12px 30px -10px var(--shadow);padding:6px;z-index:10}
-.tabs .bar{display:flex;gap:4px;overflow-x:auto;align-items:center;scrollbar-width:none}
+.tabs .bar{display:flex;gap:2px;overflow-x:auto;align-items:center;scrollbar-width:none}
 .tabs .bar::-webkit-scrollbar{display:none}
-.tab{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:52px;min-width:52px;padding:0;border:0;border-radius:999px;background:transparent;color:var(--ink);font-weight:700;font-size:15px;cursor:pointer;transition:background .3s,color .3s,padding .3s}
-.tab svg{width:32px;height:32px;overflow:visible}
+.tab{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;min-width:46px;padding:0;border:0;border-radius:999px;background:transparent;color:var(--ink);font-weight:700;font-size:15px;cursor:pointer;transition:background .3s,color .3s,padding .3s}
+.tab svg{width:30px;height:30px;overflow:visible}
 .tab .nm{display:none}
 .tab[aria-current="page"]{background:var(--accent);color:var(--accent-ink)}
 .tabs .bar{justify-content:space-between}
@@ -339,43 +355,56 @@ function catView(k) {
     <div class="dots" id="dots">${ps.map((p, j) => `<button type="button" data-go="${j}" aria-label="Go to ${esc(p.name)}" aria-current="${j === i}"><i></i></button>`).join('')}</div>`;
 }
 
+const LV = {
+  critical: { name: 'Critical', sub: 'Act now', bg: '#FCE1E5', ink: '#5E1226', chip: '#B3203C' },
+  issue: { name: 'Issues', sub: 'Happening now', bg: '#FCEBD0', ink: '#5A3608', chip: '#8F5208' },
+  risk: { name: 'Could happen', sub: 'Get ahead of it', bg: '#ECE4F6', ink: '#3A2A58', chip: '#6B4E9A' }
+};
+function alertCard(al, byId) {
+  const L = LV[al.level] || LV.risk, p = byId[al.plantId], on = !!S.ticks[al.id];
+  const art = p ? p.art : (al.art || 'flower');
+  return `<section class="alert${on ? ' done' : ''}" style="background:${L.bg};color:${L.ink}">
+    <div class="ahead"><span class="badge" style="background:rgba(255,255,255,.7)">${svgArt(art, '')}</span>
+      <div><span class="lvl" style="background:${L.chip}">${L.name}${p ? ' · ' + esc(p.name) : ''}</span><h3>${esc(al.title)}</h3></div></div>
+    ${al.text ? `<p>${esc(al.text)}</p>` : ''}
+    ${al.action ? `<p class="todo"><b>What to do:</b> ${esc(al.action)}</p>` : ''}
+    <div class="arow"><label class="sorted"><input type="checkbox" data-task="${esc(al.id)}" ${on ? 'checked' : ''}>Sorted</label>${p ? `<button type="button" class="open" data-open="${esc(p.id)}" style="color:${L.ink};border-color:rgba(0,0,0,.18)">Open plant</button>` : ''}</div>
+  </section>`;
+}
+
 function weekView() {
   const kicker = `${SEASON(NOW)} · Auckland`;
-  const head = (t, extra) => topBar(`<h1>This <em>week</em></h1>`, `<span class="sub">${esc(t)}</span>`) + `<div class="wk">${extra}</div>`;
-  if (!S.ready) return head(kicker, '<p class="lede">Gathering this week’s jobs…</p>');
+  const head = (t, extra) => topBar(`<h1>Garden <em>watch</em></h1>`, `<span class="sub">${esc(t)}</span>`) + `<div class="wk">${extra}</div>`;
+  if (!S.ready) return head(kicker, '<p class="lede">Checking the garden…</p>');
   if (!S.db && !S.ro) return head(kicker, '<div class="card empty"><p class="serif" style="font-size:22px">Open The Orchid in the Claude app to see your garden.</p></div>');
   const w = S.week;
-  if (!w) return head(kicker, '<div class="card empty"><p class="serif" style="font-size:22px">Your first weekly list arrives on Saturday morning.</p></div>');
+  if (!w) return head(kicker, '<div class="card empty"><p class="serif" style="font-size:22px">Your first garden check arrives on Saturday morning.</p></div>');
   const byId = Object.fromEntries(S.plants.map(p => [p.id, p]));
+  const alerts = (Array.isArray(w.alerts) ? w.alerts : []).filter(a => a && a.id && a.title);
   const tasks = (w.tasks || []).filter(t => t && t.text);
   const done = tasks.filter(t => S.ticks[t.id]).length, pct = tasks.length ? done / tasks.length : 0;
-  const mood = !tasks.length ? 'A quiet week' : pct === 0 ? 'Fresh start' : pct < .5 ? 'Coming along nicely' : pct < 1 ? 'In full bloom' : 'All done. Go and smell the roses';
   const d = new Date((w.weekOf || w.id) + 'T12:00:00');
   const wk = isNaN(d) ? kicker : `Week of ${d.toLocaleDateString('en-NZ', { day: 'numeric', month: 'short' })}`;
-  const secOf = t => byId[t.plantId] ? catOf(byId[t.plantId]) : (LEGACY[t.section] || t.section);
-  const groups = CATS.map(c => {
-    const ts = tasks.filter(t => secOf(t) === c.k); if (!ts.length) return '';
-    const ids = [...new Set(ts.filter(t => byId[t.plantId]).map(t => t.plantId))];
-    const general = ts.filter(t => !byId[t.plantId]);
-    const card = (p, list, link) => `<section class="card pcard"><div class="head"><span class="badge" style="background:${HEX.test(p.tint || '') ? p.tint : c.tint}">${svgArt(p.art, '')}</span><h3>${esc(p.name)}</h3>${link ? `<button type="button" class="open" data-open="${esc(p.id)}">Open</button>` : ''}</div>
-      <ul class="jobs">${list.map(t => { const on = !!S.ticks[t.id]; return `<li><label class="job${on ? ' done' : ''}"><input type="checkbox" data-task="${esc(t.id)}" ${on ? 'checked' : ''}><span><span class="k">${esc(t.tag || 'Job')}</span><span class="t">${esc(t.text)}</span></span></label></li>`; }).join('')}</ul></section>`;
-    const resting = plantsIn(c.k).filter(p => !ids.includes(p.id)).map(p => esc(p.name));
-    return `<div class="sechead"><h2>${esc(c.name)}</h2><span>${ts.filter(t => S.ticks[t.id]).length}/${ts.length}</span></div>
-      ${ids.map(id => card(byId[id], ts.filter(t => t.plantId === id), true)).join('')}
-      ${general.length ? card({ name: `All ${c.name.toLowerCase()}`, art: c.art, tint: c.tint }, general, false) : ''}
-      ${resting.length ? `<p class="resting">Resting this week: ${resting.join(', ')}</p>` : ''}`;
+  const open = lv => alerts.filter(a => (a.level || 'risk') === lv && !S.ticks[a.id]).length;
+  const tiles = ['critical', 'issue', 'risk'].map(lv => `<a class="tile" href="#lv-${lv}" style="background:${LV[lv].bg};color:${LV[lv].ink}"><b>${open(lv)}</b><span>${LV[lv].name}</span></a>`).join('');
+  const sections = ['critical', 'issue', 'risk'].map(lv => {
+    const list = alerts.filter(a => (a.level || 'risk') === lv).sort((x, y) => (!!S.ticks[x.id]) - (!!S.ticks[y.id]));
+    if (!list.length) return '';
+    return `<div class="sechead" id="lv-${lv}"><h2>${LV[lv].name}</h2><span>${LV[lv].sub}</span></div>${list.map(a => alertCard(a, byId)).join('')}`;
   }).join('');
   const next = Array.isArray(w.next) && w.next.length ? `<section class="next" style="flex-direction:column;align-items:flex-start"><span class="label">Coming up${w.nextTitle ? ' · ' + esc(w.nextTitle) : ''}</span><ul style="margin:0;padding-left:18px;color:var(--deep-muted)">${w.next.map(x => `<li>${esc(x)}</li>`).join('')}</ul></section>` : '';
   return head(wk, `${w.headline ? `<p class="lede">${esc(w.headline)}</p>` : ''}
     ${w.weather ? `<p class="weather">${esc(w.weather)}</p>` : ''}
+    ${alerts.length ? `<div class="tiles">${tiles}</div>` : ''}
+    ${sections || '<div class="card empty"><p class="serif" style="font-size:22px">All clear. Nothing urgent this week.</p></div>'}
     <div class="card ringcard"><div class="ring"><svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.5" fill="none" stroke="var(--band)" stroke-width="3.5"/><circle class="arc" cx="18" cy="18" r="15.5" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="${(pct * 100).toFixed(1)} 100"/></svg><b><span>${done}<small>/${tasks.length}</small></span></b></div>
-      <div><p class="mood">${mood}</p><p class="sub">jobs done this week</p></div></div>
-    ${groups}${next}`);
+      <div><p class="mood">Weekly jobs</p><p class="sub">Each plant's jobs are on its own page. Tap a category below.</p></div></div>
+    ${next}`);
 }
 
 function renderBar() {
   const shown = CATS.filter(c => plantsIn(c.k).length);
-  const items = [{ k: 'week', name: 'This week', icon: ICON.orchid.replace('width="26" height="26"', 'width="30" height="30"').replace('var(--accent)', 'currentColor') }, ...shown.map(c => ({ k: c.k, name: c.name, icon: svgArt(c.art, '') }))];
+  const items = [{ k: 'week', name: 'Garden watch', icon: ICON.orchid.replace('width="26" height="26"', 'width="30" height="30"').replace('var(--accent)', 'currentColor') }, ...shown.map(c => ({ k: c.k, name: c.name, icon: svgArt(c.art, '') }))];
   if (!items.some(x => x.k === S.view)) items.push({ k: S.view, name: cat(S.view).name, icon: svgArt(cat(S.view).art, '') });
   bar.innerHTML = items.map(x => `<button type="button" class="tab" data-view="${x.k}" aria-label="${esc(x.name)}" ${x.k === S.view ? 'aria-current="page"' : ''}>${x.icon}<span class="nm">${esc(x.name)}</span></button>`).join('')
     ;
@@ -448,7 +477,7 @@ document.addEventListener('click', async e => {
 app.addEventListener('change', async e => {
   const cb = e.target.closest('input[data-task]'); if (!cb || (!S.db && !S.ro) || !S.week) return;
   const ticks = { ...S.ticks }; if (cb.checked) ticks[cb.dataset.task] = true; else delete ticks[cb.dataset.task];
-  S.ticks = ticks; cb.closest('.job').classList.toggle('done', cb.checked);
+  S.ticks = ticks; const row = cb.closest('.job, .alert'); if (row) row.classList.toggle('done', cb.checked);
   if (S.view === 'week') render();
   if (S.ro) { try { localStorage.setItem('orchid-ticks:' + S.week.id, JSON.stringify(ticks)); } catch (err) {} return; }
   try { await S.db.doc('ticks/' + S.week.id).set({ done: ticks, at: new Date().toISOString() }); } catch (err) { /* the snapshot restores saved state */ }
