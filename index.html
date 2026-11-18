@@ -55,6 +55,8 @@ button,input{font:inherit;color:inherit}
 .titlerow{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;padding-top:6px}
 h1{margin:0;font-family:var(--serif);font-variation-settings:"SOFT" 100;font-weight:400;font-size:clamp(40px,13vw,52px);line-height:.92;letter-spacing:-.03em}
 h1 em{font-style:italic;color:var(--accent)}
+h1.long{font-size:clamp(32px,10vw,42px)}
+@media (max-width:360px){.petrow .petchip{flex-direction:column;align-items:flex-start;gap:3px;padding:8px}.tabs .bar .tab{flex:1 1 0;min-width:38px}.tabs .bar .tab svg{width:26px;height:26px}.tiles .tile span{font-size:12px}}
 .pos{margin:0 0 4px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 
 /* Rail + plant page */
@@ -64,7 +66,7 @@ h1 em{font-style:italic;color:var(--accent)}
 .meta{margin:0 4px;display:flex;justify-content:space-between;font-family:var(--grot);font-weight:800;font-size:14px;letter-spacing:.06em}
 .plate{position:relative;border-radius:190px 190px 32px 32px;padding:26px 18px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden}
 .plate .art{width:220px;height:220px;position:relative;z-index:0;overflow:visible;filter:drop-shadow(0 16px 14px rgba(47,74,58,.18))}
-.giant{margin:-58px 0 0;position:relative;z-index:1;font-family:var(--grot);font-weight:800;line-height:.84;letter-spacing:-.05em;text-transform:uppercase;overflow-wrap:anywhere}
+.giant{margin:-50px 0 0;position:relative;z-index:1;font-family:var(--grot);font-weight:800;line-height:.84;letter-spacing:-.05em;text-transform:uppercase;overflow-wrap:anywhere}
 .latin{margin:12px 0 0;font-family:var(--serif);font-style:italic;font-size:18px}
 .spot{margin:8px 0 0;display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#4E3B45;background:rgba(255,255,255,.72);border-radius:999px;padding:4px 12px}
 .card{background:var(--surface);border-radius:24px;box-shadow:0 8px 22px -16px var(--shadow)}
@@ -297,7 +299,13 @@ const ICON = {
 };
 
 /* ---------- Views ---------- */
-const giantSize = name => { const w = Math.max(3, ...String(name).split(/\s+/).map(s => s.length)); const px = Math.min(100, Math.floor(330 / (0.64 * w))); return `min(${px}px, ${(px / 3.93).toFixed(1)}vw)`; };
+const giantSize = name => {
+  const words = String(name).toUpperCase().split(/\s+/).filter(Boolean), W = 322;
+  const fits = (px, maxLines) => { const cw = 0.64 * px, sp = 0.28 * px; let lines = 1, cur = 0; for (const w of words) { const ww = w.length * cw; if (ww > W) return false; if (!cur) cur = ww; else if (cur + sp + ww <= W) cur += sp + ww; else { lines++; cur = ww; } } return lines <= maxLines; };
+  let px = 0; for (let t = 100; t >= 30; t -= 2) if (fits(t, 1)) { px = t; break; }
+  if (px < 60) { const cap = 80; px = 30; for (let t = cap; t >= 30; t -= 2) if (fits(t, 2)) { px = t; break; } }
+  return `min(${px}px, ${(px / 3.93).toFixed(1)}vw)`;
+};
 const pad2 = n => String(n).padStart(2, '0');
 
 function topBar(title, right) {
@@ -348,7 +356,7 @@ function plantPage(p, i, n, c) {
 function catView(k) {
   const c = cat(k), ps = plantsIn(k), n = ps.length;
   const i = Math.min(S.idx[k] || 0, Math.max(0, n - 1));
-  const head = topBar(`<h1>My <em>${esc(c.name)}</em></h1><p class="pos" id="pos">${n ? `${i + 1} of ${n}` : ''}</p>`,
+  const head = topBar(`<h1${c.name.length > 8 ? ' class="long"' : ''}>My <em>${esc(c.name)}</em></h1><p class="pos" id="pos">${n ? `${i + 1} of ${n}` : ''}</p>`,
     `<button type="button" class="pillbtn" data-add="${k}">${ICON.plus}Add</button>`);
   if (!n) return head + `<div class="wk"><div class="card empty">${svgArt(c.art, 'art')}<p class="serif" style="font-size:22px">No ${esc(c.name.toLowerCase())} yet</p><button type="button" class="bigbtn" data-add="${k}">Add one</button></div></div>`;
   return head + `<div class="rail" id="rail" aria-label="${esc(c.name)}: swipe sideways for the next plant">${ps.map((p, j) => plantPage(p, j, n, c)).join('')}</div>
@@ -412,17 +420,20 @@ function renderBar() {
 }
 
 function render() {
-  app.innerHTML = `<div class="view">${S.view === 'week' ? weekView() : catView(S.view)}</div>`;
+  const fresh = S.lastView !== S.view; S.lastView = S.view;
+  app.innerHTML = `<div class="${fresh ? 'view' : ''}">${S.view === 'week' ? weekView() : catView(S.view)}</div>`;
   renderBar();
+  clearTimeout(S.syncT);
   const rail = document.getElementById('rail');
   if (rail) {
     const i = S.idx[S.view] || 0;
     rail.scrollLeft = i * rail.clientWidth;
-    let t; rail.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(() => syncIdx(rail), 60); }, { passive: true });
+    rail.addEventListener('scroll', () => { clearTimeout(S.syncT); S.syncT = setTimeout(() => syncIdx(rail), 60); }, { passive: true });
   }
 }
 function syncIdx(rail) {
-  const i = Math.round(rail.scrollLeft / rail.clientWidth), n = rail.children.length;
+  if (!rail.isConnected || rail !== document.getElementById('rail') || !rail.clientWidth) return;
+  const i = Math.min(Math.round(rail.scrollLeft / rail.clientWidth), rail.children.length - 1), n = rail.children.length;
   S.idx[S.view] = i;
   const pos = document.getElementById('pos'); if (pos) pos.textContent = `${i + 1} of ${n}`;
   document.querySelectorAll('#dots button').forEach((b, j) => b.setAttribute('aria-current', String(j === i)));
@@ -451,8 +462,8 @@ function openAdd(k0) {
     const k2 = sheetBody.querySelector('input[name=cat]:checked').value, c = cat(k2);
     const btn = e.submitter; if (btn) btn.disabled = true;
     try {
-      await S.db.collection('plants').add({ name, section: k2, art: sheetBody.querySelector('input[name=art]:checked').value, tint: c.tint, deep: c.deep, spot: sheetBody.querySelector('#pSpot').value.trim(), addedAt: new Date().toISOString() });
-      sheet.close(); S.idx[k2] = plantsIn(k2).length; go(k2);
+      const ref = await S.db.collection('plants').add({ name, section: k2, art: sheetBody.querySelector('input[name=art]:checked').value, tint: c.tint, deep: c.deep, spot: sheetBody.querySelector('#pSpot').value.trim(), addedAt: new Date().toISOString() });
+      sheet.close(); S.focus = ref && ref.id; S.idx[k2] = plantsIn(k2).length; go(k2);
     } catch (err) {
       sheetBody.querySelector('#addErr').textContent = err && err.code === 'quota_exceeded' ? 'The garden is full. Remove a plant first.' : 'Could not save. Check your connection and try again.';
       if (btn) btn.disabled = false;
@@ -502,6 +513,7 @@ render();
   S.ready = true;
   db.collection('plants').onSnapshot(snap => {
     S.plants = snap.docs.map(d => ({ id: d.id, ...d.data() })).sort((a, b) => String(a.addedAt || '').localeCompare(String(b.addedAt || '')));
+    if (S.focus) { const fp = S.plants.find(x => x.id === S.focus); if (fp) { S.idx[catOf(fp)] = plantsIn(catOf(fp)).indexOf(fp); S.focus = null; } }
     softRender();
   }, () => {});
   db.collection('weeks').orderBy('weekOf', 'desc').limit(1).onSnapshot(snap => {
