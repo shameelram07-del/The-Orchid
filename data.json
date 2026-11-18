@@ -935,7 +935,7 @@
    "art": "chilli",
    "tint": "#FCDDDA",
    "deep": "#B51E1E",
-   "spot": "Side veggie bed by the house",
+   "spot": "Side veggie bed by the house (bushy one plus young plants)",
    "sun": "Full sun",
    "water": "Every 2–3 days at the base",
    "feed": "Tomato food every 2 weeks",
@@ -958,39 +958,6 @@
    },
    "petNote": "Very hot: burns mouths and eyes. Keep the pets and birds away from the fruit.",
    "addedAt": "2026-11-18T10:03:00Z"
-  },
-  {
-   "id": "capsicum",
-   "name": "Capsicum",
-   "short": "capsicum",
-   "latin": "Capsicum annuum",
-   "section": "herbs",
-   "sub": "chillies",
-   "art": "capsicum",
-   "tint": "#FDE2D6",
-   "deep": "#B53A1E",
-   "spot": "Side veggie bed by the house",
-   "sun": "Full sun",
-   "water": "Every 2–3 days at the base",
-   "feed": "Tomato food every 2 weeks",
-   "care": "Medium",
-   "season": "Harvest",
-   "seasonText": "February to April",
-   "months": [
-    1,
-    2,
-    3
-   ],
-   "about": "Sweet peppers start green and ripen to red, yellow or orange. Patience gives sweeter fruit.",
-   "watch": "Aphids under the leaves; flower drop in cold nights.",
-   "next": "Stake it once fruit forms.",
-   "pets": {
-    "cat": "care",
-    "dog": "care",
-    "bird": "care"
-   },
-   "petNote": "Leaves and stems can upset tummies; ripe fruit is fine.",
-   "addedAt": "2026-11-18T10:04:00Z"
   },
   {
    "id": "tomatoes",
