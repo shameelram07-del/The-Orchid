@@ -15,6 +15,12 @@
    ],
    "name": "Apple",
    "next": "Summer prune of long upright shoots in February.",
+   "petNote": "Fruit is fine, but seeds, leaves and stems are toxic. No apple seeds for the cockatiels.",
+   "pets": {
+    "bird": "care",
+    "cat": "care",
+    "dog": "care"
+   },
    "season": "Harvest",
    "seasonText": "February to April",
    "section": "fruit",
@@ -25,6 +31,40 @@
    "watch": "Codling moth (holes with brown frass) and black spot on the leaves.",
    "water": "Deep soak weekly",
    "id": "apple"
+  },
+  {
+   "about": "Rosettes of strappy, lime-green leaves, freshly planted in bark mulch. Each rosette flowers once, then makes pups around its base.",
+   "addedAt": "2026-11-18T09:00:21Z",
+   "art": "bromeliad",
+   "care": "Easy",
+   "deep": "#5E6B1A",
+   "feed": "Weak liquid feed monthly in summer",
+   "latin": "Bromeliaceae (to confirm)",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1
+   ],
+   "name": "Bromeliads",
+   "next": "Send close-up photos to confirm the type.",
+   "petNote": "Safe for all your pets.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
+   "season": "Flowers",
+   "seasonText": "Spring to summer",
+   "section": "foliage",
+   "short": "bromeliads",
+   "spot": "New front bed by the fence (about 8)",
+   "sun": "Bright light; some sun",
+   "tint": "#EEF3D2",
+   "watch": "Bleached, yellow leaves from too much afternoon sun.",
+   "water": "Keep the centre cup topped up",
+   "id": "bromeliads"
   },
   {
    "about": "A hybrid tea: one big, ruffled bloom per stem. It repeat-flowers all summer if you keep cutting off the spent flowers.",
@@ -44,9 +84,15 @@
    ],
    "name": "Coral rose",
    "next": "Deadhead after each flush of blooms.",
+   "petNote": "Safe, apart from the thorns. Keep pets inside while any spray dries.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
    "season": "Flowers",
    "seasonText": "November to April",
-   "section": "roses",
+   "section": "flowers",
    "short": "rose",
    "spot": "Red planter by the fence",
    "sun": "6+ hours of sun",
@@ -54,6 +100,41 @@
    "watch": "Black spot: dark spots and yellow leaves, already showing in your photo. Also aphids on buds.",
    "water": "Deep, at the base only",
    "id": "coral-rose"
+  },
+  {
+   "about": "Aromatic leaflets for curries, best picked fresh. It dislikes cold, so Auckland's sheltered spots suit it.",
+   "addedAt": "2026-11-18T09:00:25Z",
+   "art": "curryleaf",
+   "care": "Medium",
+   "deep": "#3E6A24",
+   "feed": "Liquid feed monthly in summer",
+   "latin": "Murraya koenigii (to confirm)",
+   "months": [
+    10,
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "name": "Curry leaf tree",
+   "next": "Pinch tips to keep it bushy and leafy.",
+   "petNote": "Safe; the leaves are edible.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
+   "season": "Picking",
+   "seasonText": "November to April",
+   "section": "herbs",
+   "short": "curry leaf",
+   "spot": "Back corner, by the fence",
+   "sun": "Full sun, sheltered",
+   "tint": "#E8F1DA",
+   "watch": "Scale and citrus psyllids on new growth; leaf drop in cold snaps.",
+   "water": "Weekly; don't let it dry out",
+   "id": "curry-leaf"
   },
   {
    "about": "Your nursery: jelly beans, echeveria, blue chalk sticks and more, all rooting in bark mix. Most root within 3–6 weeks.",
@@ -74,6 +155,12 @@
    ],
    "name": "Cuttings",
    "next": "Pot up once a gentle tug meets resistance.",
+   "petNote": "A mixed bag: some succulents (jade, kalanchoe types) upset pets. Keep the table out of reach.",
+   "pets": {
+    "bird": "care",
+    "cat": "care",
+    "dog": "care"
+   },
    "season": "Rooting",
    "seasonText": "September to March",
    "section": "succulents",
@@ -103,6 +190,12 @@
    ],
    "name": "Dracaena",
    "next": "Find it a shadier home before summer.",
+   "petNote": "Can cause vomiting, especially in cats.",
+   "pets": {
+    "bird": "care",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
    "season": "Growing",
    "seasonText": "October to March",
    "section": "foliage",
@@ -129,6 +222,12 @@
    ],
    "name": "Feijoa",
    "next": "Hang a guava moth trap in December.",
+   "petNote": "Believed safe for all your pets.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
    "season": "Harvest",
    "seasonText": "March to May",
    "section": "fruit",
@@ -139,6 +238,73 @@
    "watch": "Guava moth grubs inside the fruit.",
    "water": "Deep weekly while fruiting",
    "id": "feijoa"
+  },
+  {
+   "about": "Small succulents tucked between the bromeliads: blue chalk sticks, echeveria rosettes and a grey kalanchoe type. They'll spread to fill the gaps.",
+   "addedAt": "2026-11-18T09:00:24Z",
+   "art": "chalksticks",
+   "care": "Easy",
+   "deep": "#3E6A7A",
+   "feed": "None needed",
+   "latin": "Echeveria, Senecio and others",
+   "months": [
+    10,
+    11,
+    0
+   ],
+   "name": "Front-bed succulents",
+   "next": "Fill gaps with more cuttings as they root.",
+   "petNote": "Mixed: blue chalk sticks and kalanchoe types can upset pets if chewed.",
+   "pets": {
+    "bird": "care",
+    "cat": "care",
+    "dog": "care"
+   },
+   "season": "Settling in",
+   "seasonText": "November to January",
+   "section": "succulents",
+   "short": "succulents",
+   "spot": "New front bed by the fence",
+   "sun": "Full sun",
+   "tint": "#E4EEF1",
+   "watch": "One near the front is yellow and shrivelled: check it isn't sitting wet or scorched.",
+   "water": "Only when the bark is dry underneath",
+   "id": "front-bed-succulents"
+  },
+  {
+   "about": "Clumping palms with golden-yellow stems and arching fronds. They grow happily in pots under shade cloth, sending up new canes from the base.",
+   "addedAt": "2026-11-18T09:00:20Z",
+   "art": "goldencane",
+   "care": "Easy",
+   "deep": "#5E6B1A",
+   "feed": "Palm food spring and summer",
+   "latin": "Dypsis lutescens",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "name": "Golden cane palms",
+   "next": "Pot up into bigger containers in spring.",
+   "petNote": "Safe for all your pets.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
+   "season": "Growing",
+   "seasonText": "October to March",
+   "section": "palms",
+   "short": "cane palms",
+   "spot": "Shade-house corner, pots and crates",
+   "sun": "Bright shade (the cloth is perfect)",
+   "tint": "#EFF3D6",
+   "watch": "Yellow fronds (hungry or too dry) and mealybugs at the base of the stems.",
+   "water": "Keep moist; pots dry fast",
+   "id": "golden-cane-palms"
   },
   {
    "about": "Big mophead blooms in pink, red and white. Flower colour follows the soil: alkaline keeps pinks pink, acid turns them blue.",
@@ -157,6 +323,12 @@
    ],
    "name": "Hydrangea",
    "next": "Cut off faded blooms in late summer.",
+   "petNote": "Can cause vomiting and an upset stomach if chewed.",
+   "pets": {
+    "bird": "toxic",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
    "season": "Flowers",
    "seasonText": "November to March",
    "section": "flowers",
@@ -184,6 +356,12 @@
    ],
    "name": "Ice plant",
    "next": "Trim back after flowering to keep it compact.",
+   "petNote": "Generally safe.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
    "season": "Flowers",
    "seasonText": "September to December",
    "section": "flowers",
@@ -210,6 +388,12 @@
    ],
    "name": "Jade plant",
    "next": "Top the pot with grit once the weeds are out.",
+   "petNote": "Can cause vomiting and tiredness in cats and the dog.",
+   "pets": {
+    "bird": "care",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
    "season": "Flowers",
    "seasonText": "June to August",
    "section": "succulents",
@@ -238,6 +422,12 @@
    ],
    "name": "Lavender",
    "next": "Light all-over trim once flowering finishes.",
+   "petNote": "Mild. Only a problem if a cat chews a lot of it.",
+   "pets": {
+    "bird": "safe",
+    "cat": "care",
+    "dog": "care"
+   },
    "season": "Flowers",
    "seasonText": "September to January",
    "section": "flowers",
@@ -266,6 +456,12 @@
    ],
    "name": "Mandarin",
    "next": "Summer feed of citrus food in December.",
+   "petNote": "Leaves and peel can upset cats and the dog. A little fruit flesh is fine for the birds.",
+   "pets": {
+    "bird": "safe",
+    "cat": "care",
+    "dog": "care"
+   },
    "season": "Harvest",
    "seasonText": "April to August",
    "section": "fruit",
@@ -295,6 +491,12 @@
    ],
    "name": "Monstera",
    "next": "Give it a post or tree to climb.",
+   "petNote": "Irritates the mouth and throat if chewed.",
+   "pets": {
+    "bird": "toxic",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
    "season": "Growing",
    "seasonText": "October to March",
    "section": "foliage",
@@ -321,6 +523,12 @@
    ],
    "name": "Orange",
    "next": "Summer feed of citrus food in December.",
+   "petNote": "Leaves and peel can upset cats and the dog. A little fruit flesh is fine for the birds.",
+   "pets": {
+    "bird": "safe",
+    "cat": "care",
+    "dog": "care"
+   },
    "season": "Harvest",
    "seasonText": "June to August",
    "section": "fruit",
@@ -350,6 +558,12 @@
    ],
    "name": "Parlour palm",
    "next": "Repot in spring if roots circle the pot.",
+   "petNote": "Safe for all your pets.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
    "season": "Growing",
    "seasonText": "October to March",
    "section": "palms",
@@ -378,6 +592,12 @@
    ],
    "name": "Peace lily",
    "next": "Wipe the leaves clean once a month.",
+   "petNote": "Irritates the mouth and throat. Painful but rarely serious. Keep it away from the birds' perch.",
+   "pets": {
+    "bird": "toxic",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
    "season": "Flowers",
    "seasonText": "October to February",
    "section": "flowers",
@@ -404,6 +624,12 @@
    ],
    "name": "Peach",
    "next": "Bird netting goes on in December.",
+   "petNote": "Fruit is fine, but leaves, stones and seeds are toxic. Clear up fallen fruit.",
+   "pets": {
+    "bird": "care",
+    "cat": "care",
+    "dog": "care"
+   },
    "season": "Harvest",
    "seasonText": "December to February",
    "section": "fruit",
@@ -414,6 +640,107 @@
    "watch": "Leaf curl (red, puckered leaves) in spring, and birds as soon as the fruit colours.",
    "water": "Deep soak weekly; twice in heat",
    "id": "peach"
+  },
+  {
+   "about": "A tough, bushy small tree with glossy leaves and bright orange-red flowers in summer. Fruit is ready when the skin turns deep red and sounds hollow when tapped.",
+   "addedAt": "2026-11-18T09:00:19Z",
+   "art": "pomegranate",
+   "care": "Easy",
+   "deep": "#9E2230",
+   "feed": "General fertiliser in spring",
+   "latin": "Punica granatum",
+   "months": [
+    2,
+    3,
+    4
+   ],
+   "name": "Pomegranate",
+   "next": "Watch for the first orange-red flowers.",
+   "petNote": "The seeds are a good cockatiel treat in small amounts. Peel and bark can upset cats and the dog.",
+   "pets": {
+    "bird": "safe",
+    "cat": "care",
+    "dog": "care"
+   },
+   "season": "Harvest",
+   "seasonText": "March to May",
+   "section": "fruit",
+   "short": "pomegranate",
+   "spot": "Back corner bed",
+   "sun": "Full sun",
+   "tint": "#FADADD",
+   "watch": "Fruit splitting after heavy rain following a dry spell; keep watering even.",
+   "water": "Deep weekly; less once fruit sets",
+   "id": "pomegranate"
+  },
+  {
+   "about": "Its centre blushes red when it's about to flower. After flowering it slowly fades and makes pups you can pot up.",
+   "addedAt": "2026-11-18T09:00:22Z",
+   "art": "bromeliadred",
+   "care": "Easy",
+   "deep": "#3F6B4C",
+   "feed": "Weak liquid feed monthly in summer",
+   "latin": "Neoregelia (to confirm)",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1
+   ],
+   "name": "Red bromeliad",
+   "next": "Look for pups at the base after flowering.",
+   "petNote": "Safe for all your pets.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
+   "season": "Colour",
+   "seasonText": "Spring to summer",
+   "section": "foliage",
+   "short": "red bromeliad",
+   "spot": "Shade-house corner",
+   "sun": "Bright shade",
+   "tint": "#E6EFE2",
+   "watch": "Stagnant water in the cup; flush it out every couple of weeks.",
+   "water": "Keep the centre cup topped up",
+   "id": "red-bromeliad"
+  },
+  {
+   "about": "Grown for its glossy burgundy leaves. Brighter light gives deeper colour, but harsh sun scorches it.",
+   "addedAt": "2026-11-18T09:00:23Z",
+   "art": "cordyline",
+   "care": "Easy",
+   "deep": "#8E2A4A",
+   "feed": "Monthly in summer",
+   "latin": "Cordyline fruticosa",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "name": "Red cordyline",
+   "next": "Trim off old lower leaves to show the stem.",
+   "petNote": "Can cause vomiting, especially in cats.",
+   "pets": {
+    "bird": "care",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
+   "season": "Growing",
+   "seasonText": "October to March",
+   "section": "foliage",
+   "short": "cordyline",
+   "spot": "Shade-house corner",
+   "sun": "Bright shade, some morning sun",
+   "tint": "#F6DDE4",
+   "watch": "Brown leaf tips and mealybugs.",
+   "water": "When top 3 cm is dry",
+   "id": "red-cordyline"
   },
   {
    "about": "Not a true palm but an ancient cycad. It pushes out one flush of stiff, glossy fronds a year, so be patient.",
@@ -430,6 +757,12 @@
    ],
    "name": "Sago palm",
    "next": "Leave new soft fronds alone until they harden.",
+   "petNote": "Very toxic: even a small chew can cause liver failure. Keep it out of reach, and call your vet straight away if it's chewed.",
+   "pets": {
+    "bird": "toxic",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
    "season": "New fronds",
    "seasonText": "November to January",
    "section": "palms",
@@ -457,6 +790,12 @@
    ],
    "name": "Strawberries",
    "next": "Peak picking, then pot up the best runners.",
+   "petNote": "Safe. Berries make a nice treat for the cockatiels. Use pet-safe slug control only.",
+   "pets": {
+    "bird": "safe",
+    "cat": "safe",
+    "dog": "safe"
+   },
    "season": "Harvest",
    "seasonText": "November to February",
    "section": "fruit",
@@ -486,6 +825,12 @@
    ],
    "name": "Umbrella tree",
    "next": "Pinch the tips to keep it bushy.",
+   "petNote": "Irritates the mouth and throat if chewed. Keep it away from the birds.",
+   "pets": {
+    "bird": "toxic",
+    "cat": "toxic",
+    "dog": "toxic"
+   },
    "season": "Growing",
    "seasonText": "October to March",
    "section": "foliage",
@@ -496,6 +841,42 @@
    "watch": "Sudden leaf drop (draughts or overwatering) and scale.",
    "water": "When top 3 cm is dry",
    "id": "umbrella-tree"
+  },
+  {
+   "about": "Young plants under netting, keeping birds and pets off. Send a close-up and I'll add each crop.",
+   "addedAt": "2026-11-18T09:00:26Z",
+   "art": "veggie",
+   "care": "Medium",
+   "deep": "#6B4A2C",
+   "feed": "Liquid feed every 2 weeks",
+   "latin": "Netted bed (crops to confirm)",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "name": "Veggie bed",
+   "next": "Tell me what's growing so I can add it.",
+   "petNote": "Depends on the crop: onion, garlic and chives are toxic to cats and the dog.",
+   "pets": {
+    "bird": "care",
+    "cat": "care",
+    "dog": "care"
+   },
+   "season": "Growing",
+   "seasonText": "October to April",
+   "section": "herbs",
+   "short": "veggie bed",
+   "spot": "Netted bed by the shade house",
+   "sun": "Full sun",
+   "tint": "#EDE6D8",
+   "watch": "Slugs and snails on seedlings; use pet-safe control only.",
+   "water": "Every 1–2 days in summer",
+   "id": "veggie-bed"
   }
  ],
  "week": {

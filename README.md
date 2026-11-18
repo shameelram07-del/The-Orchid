@@ -20,7 +20,7 @@ Replace `data.json` with a fresh export of the `plants` collection and the lates
 
 ## Data shape
 
-- `plants/<id>`: name, short, latin, section (fruit, roses, flowers, palms, foliage, succulents, bushes), art (drawing key), tint, deep, spot, sun, water, feed, care, season, seasonText, months (0 = Jan), about, watch, next, addedAt.
+- `plants/<id>`: name, short, latin, section (fruit, flowers, palms, foliage, succulents, herbs), art (drawing key), tint, deep, spot, sun, water, feed, care, season, seasonText, months (0 = Jan), about, watch, next, addedAt.
 - `weeks/<YYYY-MM-DD>`: weekOf, generatedAt, weather, headline, tasks [{id, plantId, section, tag, text}], nextTitle, next [].
 - `ticks/<week id>`: done {taskId: true}.
 
