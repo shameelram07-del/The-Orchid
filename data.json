@@ -31,7 +31,12 @@
    "tint": "#F8DCDA",
    "watch": "Codling moth (holes with brown frass) and black spot on the leaves.",
    "water": "Deep soak weekly",
-   "sub": "stone"
+   "sub": "stone",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Curled, browned tips: aphids or leaf roller."
+   }
   },
   {
    "id": "bromeliads",
@@ -102,7 +107,12 @@
    "tint": "#FCDDDA",
    "watch": "Black spot: dark spots and yellow leaves, already showing in your photo. Also aphids on buds.",
    "water": "Deep, at the base only",
-   "sub": "roses"
+   "sub": "roses",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Black spot on lower leaves."
+   }
   },
   {
    "id": "curry-leaf",
@@ -138,7 +148,12 @@
    "tint": "#E8F1DA",
    "watch": "Scale and citrus psyllids on new growth; leaf drop in cold snaps.",
    "water": "Weekly; don't let it dry out",
-   "sub": "herbs"
+   "sub": "herbs",
+   "health": {
+    "status": "good",
+    "date": "2026-11-18",
+    "note": "Healthy."
+   }
   },
   {
    "id": "cuttings",
@@ -211,7 +226,12 @@
    "tint": "#EEF1E2",
    "watch": "Brown, crispy leaves from the heat pump blast and hot sun.",
    "water": "When top 3 cm is dry",
-   "sub": "strappy"
+   "sub": "strappy",
+   "health": {
+    "status": "help",
+    "date": "2026-11-18",
+    "note": "Brown, crispy leaves from the heat pump blast."
+   }
   },
   {
    "id": "feijoa",
@@ -244,7 +264,12 @@
    "tint": "#E6EFD9",
    "watch": "Guava moth grubs inside the fruit.",
    "water": "Deep weekly while fruiting",
-   "sub": "subtropical"
+   "sub": "subtropical",
+   "health": {
+    "status": "good",
+    "date": "2026-11-18",
+    "note": "Flowering, looking healthy."
+   }
   },
   {
    "id": "front-bed-succulents",
@@ -277,7 +302,12 @@
    "tint": "#E4EEF1",
    "watch": "One near the front is yellow and shrivelled: check it isn't sitting wet or scorched.",
    "water": "Only when the bark is dry underneath",
-   "sub": "rosettes"
+   "sub": "rosettes",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "One near the front shrivelling."
+   }
   },
   {
    "id": "golden-cane-palms",
@@ -313,7 +343,12 @@
    "tint": "#EFF3D6",
    "watch": "One palm is yellowing all over (hungry) and one has dead brown fronds (dry or sun-scorched).",
    "water": "Keep moist; pots dry fast",
-   "sub": "shadehouse"
+   "sub": "shadehouse",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "One palm yellowing, one with dead fronds."
+   }
   },
   {
    "id": "hydrangea",
@@ -485,7 +520,12 @@
    "tint": "#FDEFD2",
    "watch": "Aphids on new growth and leaf miner trails.",
    "water": "Deep, 1–2 times a week",
-   "sub": "citrus"
+   "sub": "citrus",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Yellow blotches between the veins."
+   }
   },
   {
    "id": "monstera",
@@ -658,7 +698,12 @@
    "tint": "#FCE3D9",
    "watch": "Leaf curl (red, puckered leaves) in spring, and birds as soon as the fruit colours.",
    "water": "Deep soak weekly; twice in heat",
-   "sub": "stone"
+   "sub": "stone",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Gummy sap near branch bases; lots of fruit setting."
+   }
   },
   {
    "id": "pomegranate",
@@ -691,7 +736,12 @@
    "tint": "#FADADD",
    "watch": "Fruit splitting after heavy rain following a dry spell; keep watering even.",
    "water": "Deep weekly; less once fruit sets",
-   "sub": "subtropical"
+   "sub": "subtropical",
+   "health": {
+    "status": "good",
+    "date": "2026-11-18",
+    "note": "Flowering well."
+   }
   },
   {
    "id": "red-cordyline",
@@ -794,7 +844,12 @@
    "tint": "#FADCE3",
    "watch": "Slugs at night, birds, and grey mould on fruit in wet weather.",
    "water": "At the base, often",
-   "sub": "berries"
+   "sub": "berries",
+   "health": {
+    "status": "good",
+    "date": "2026-11-18",
+    "note": "Young plants flowering."
+   }
   },
   {
    "id": "umbrella-tree",
@@ -863,7 +918,12 @@
     "bird": "safe"
    },
    "petNote": "Believed safe for all your pets.",
-   "addedAt": "2026-11-18T10:01:00Z"
+   "addedAt": "2026-11-18T10:01:00Z",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Purple older leaves after cold nights; should green up."
+   }
   },
   {
    "id": "chillies",
@@ -964,7 +1024,12 @@
     "bird": "care"
    },
    "petNote": "Leaves, stems and green fruit are toxic; ripe tomatoes are fine.",
-   "addedAt": "2026-11-18T10:05:00Z"
+   "addedAt": "2026-11-18T10:05:00Z",
+   "health": {
+    "status": "good",
+    "date": "2026-11-18",
+    "note": "Growing fast; weeds at the base."
+   }
   },
   {
    "id": "eggplant",
@@ -1489,7 +1554,12 @@
     "bird": "toxic"
    },
    "petNote": "Can upset tummies if chewed.",
-   "addedAt": "2026-11-18T10:20:00Z"
+   "addedAt": "2026-11-18T10:20:00Z",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Yellow leaves with green veins; needs acid food."
+   }
   },
   {
    "id": "hibiscus",
@@ -1708,7 +1778,12 @@
     "bird": "toxic"
    },
    "petNote": "Irritates the mouth and throat if chewed.",
-   "addedAt": "2026-11-18T10:26:00Z"
+   "addedAt": "2026-11-18T10:26:00Z",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Yellow blotchy leaves; sitting on the heat pump."
+   }
   },
   {
    "id": "philodendron",
@@ -1780,7 +1855,12 @@
     "bird": "care"
    },
    "petNote": "The milky sap irritates skin and tummies.",
-   "addedAt": "2026-11-18T10:28:00Z"
+   "addedAt": "2026-11-18T10:28:00Z",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Bronze, yellow leaves after the trim; cold stress."
+   }
   },
   {
    "id": "weeping-figs",
@@ -2390,7 +2470,12 @@
     "bird": "safe"
    },
    "petNote": "Leaves and peel can upset cats and the dog.",
-   "addedAt": "2026-11-18T10:01:30Z"
+   "addedAt": "2026-11-18T10:01:30Z",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-18",
+    "note": "Yellow between the veins: low magnesium."
+   }
   },
   {
    "id": "ponytail-palm",
@@ -2950,6 +3035,33 @@
     "title": "Peach seedling to pot up and sell",
     "text": "The young peach in the fern-corner box will transplant best when leafless.",
     "action": "Plan to dig it up in June–July. For the box, consider a Brazilian cherry or dwarf nectarine; most sweet cherries need colder winters than Auckland."
+   }
+  ],
+  "checkups": [
+   {
+    "plantId": "rubber-plant",
+    "why": "Recovering after its trim.",
+    "shoot": "The newest leaves, plus one cut stem up close."
+   },
+   {
+    "plantId": "coral-rose",
+    "why": "Black spot spreads fast in wet weather.",
+    "shoot": "Lower leaves, top and underside."
+   },
+   {
+    "plantId": "dracaena",
+    "why": "Was crisping on the heat pump.",
+    "shoot": "The whole plant in its new spot, and the worst leaf."
+   },
+   {
+    "plantId": "peach",
+    "why": "Spring is leaf-curl season, and there’s gummy sap.",
+    "shoot": "New leaves at the tips, and where the sap oozes."
+   },
+   {
+    "plantId": "waterfall-lemon",
+    "why": "Yellow leaves: checking if the feed is working.",
+    "shoot": "A few of the yellowest leaves, flat in your hand."
    }
   ]
  }

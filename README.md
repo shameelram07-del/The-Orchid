@@ -20,8 +20,8 @@ A phone-first garden-care site for our Auckland garden: fruit, flowers, palms, f
 
 ### Data shape
 
-- `plants[]`: id, name, short, latin, section (fruit, flowers, palms, foliage, succulents, herbs), art (drawing key), tint, deep, spot, sun, water, feed, care, season, seasonText, months (0 = Jan), about, watch, next, pets {cat, dog, bird: safe | care | toxic}, petNote, addedAt.
-- `week`: id, weekOf, generatedAt, weather, headline, alerts [{id, level: critical | issue | risk, plantId, art, title, text, action}], tasks [{id, plantId, section, tag, text}], nextTitle, next [].
+- `plants[]`: id, name, sub (sub-category), health {status: good | watch | help, date, note}, short, latin, section (fruit, flowers, palms, foliage, succulents, herbs), art (drawing key), tint, deep, spot, sun, water, feed, care, season, seasonText, months (0 = Jan), about, watch, next, pets {cat, dog, bird: safe | care | toxic}, petNote, addedAt.
+- `week`: id, weekOf, generatedAt, weather, headline, alerts [{id, level: critical | issue | risk, plantId, art, title, text, action}], checkups [{plantId, why, shoot}] (photo check-ups: the owner sends photos to Claude, which updates each plant's health), tasks [{id, plantId, section, tag, text}], nextTitle, next [].
 
 Ticks and "Sorted" are saved on each phone (browser storage), not in the repo.
 
