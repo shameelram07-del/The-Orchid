@@ -1,6 +1,7 @@
 {
  "plants": [
   {
+   "id": "apple",
    "about": "Needs some winter chill and a pollination partner nearby. Thinning now gives you fewer but bigger, sweeter apples.",
    "addedAt": "2026-11-17T09:00:02Z",
    "art": "apple",
@@ -30,9 +31,10 @@
    "tint": "#F8DCDA",
    "watch": "Codling moth (holes with brown frass) and black spot on the leaves.",
    "water": "Deep soak weekly",
-   "id": "apple"
+   "sub": "stone"
   },
   {
+   "id": "bromeliads",
    "about": "Rosettes of strappy, lime-green leaves, freshly planted in bark mulch. Each rosette flowers once, then makes pups around its base.",
    "addedAt": "2026-11-17T10:00:21Z",
    "art": "bromeliad",
@@ -64,9 +66,10 @@
    "tint": "#EEF3D2",
    "watch": "Bleached, yellow leaves from too much afternoon sun.",
    "water": "Keep the centre cup topped up",
-   "id": "bromeliads"
+   "sub": "strappy"
   },
   {
+   "id": "coral-rose",
    "about": "A hybrid tea: one big, ruffled bloom per stem. It repeat-flowers all summer if you keep cutting off the spent flowers.",
    "addedAt": "2026-11-17T10:00:07Z",
    "art": "rose",
@@ -99,16 +102,17 @@
    "tint": "#FCDDDA",
    "watch": "Black spot: dark spots and yellow leaves, already showing in your photo. Also aphids on buds.",
    "water": "Deep, at the base only",
-   "id": "coral-rose"
+   "sub": "roses"
   },
   {
+   "id": "curry-leaf",
    "about": "Aromatic leaflets for curries, best picked fresh. It dislikes cold, so Auckland's sheltered spots suit it.",
    "addedAt": "2026-11-17T10:00:25Z",
    "art": "curryleaf",
    "care": "Medium",
    "deep": "#3E6A24",
    "feed": "Liquid feed monthly in summer",
-   "latin": "Murraya koenigii (to confirm)",
+   "latin": "Murraya koenigii",
    "months": [
     10,
     11,
@@ -117,7 +121,7 @@
     2,
     3
    ],
-   "name": "Curry leaf tree",
+   "name": "Curry leaf trees",
    "next": "Pinch tips to keep it bushy and leafy.",
    "petNote": "Safe; the leaves are edible.",
    "pets": {
@@ -128,15 +132,16 @@
    "season": "Picking",
    "seasonText": "November to April",
    "section": "herbs",
-   "short": "curry leaf",
-   "spot": "Back corner, by the fence",
+   "short": "curry leaf trees",
+   "spot": "Back corner by the fence, and end of the side bed (2)",
    "sun": "Full sun, sheltered",
    "tint": "#E8F1DA",
    "watch": "Scale and citrus psyllids on new growth; leaf drop in cold snaps.",
    "water": "Weekly; don't let it dry out",
-   "id": "curry-leaf"
+   "sub": "herbs"
   },
   {
+   "id": "cuttings",
    "about": "Your nursery: jelly beans, echeveria, blue chalk sticks and more, all rooting in bark mix. Most root within 3–6 weeks.",
    "addedAt": "2026-11-17T10:00:18Z",
    "art": "rosette",
@@ -170,9 +175,10 @@
    "tint": "#F1EBDD",
    "watch": "Rot at the base, and sunburn on new leaves.",
    "water": "Light mist until rooted",
-   "id": "cuttings"
+   "sub": "cuttings"
   },
   {
+   "id": "dracaena",
    "about": "Striped, strappy leaves in green and cream. It prefers shade: strong sun scorches and bleaches the stripes.",
    "addedAt": "2026-11-17T10:00:16Z",
    "art": "dracaena",
@@ -188,7 +194,7 @@
     1,
     2
    ],
-   "name": "Dracaena",
+   "name": "Corn plant",
    "next": "Find it a shadier home before summer.",
    "petNote": "Can cause vomiting, especially in cats.",
    "pets": {
@@ -199,15 +205,16 @@
    "season": "Growing",
    "seasonText": "October to March",
    "section": "foliage",
-   "short": "dracaena",
-   "spot": "Black pot on the patio",
+   "short": "corn plant",
+   "spot": "On the heat pump unit (move it)",
    "sun": "Shade or indirect light",
    "tint": "#EEF1E2",
-   "watch": "Yellow, scorched patches like in your photo, and brown tips.",
+   "watch": "Brown, crispy leaves from the heat pump blast and hot sun.",
    "water": "When top 3 cm is dry",
-   "id": "dracaena"
+   "sub": "strappy"
   },
   {
+   "id": "feijoa",
    "about": "A Kiwi favourite with silver-backed leaves. The red-and-white petals are edible, and ripe fruit simply drops to the ground.",
    "addedAt": "2026-11-17T10:00:06Z",
    "art": "feijoa",
@@ -237,9 +244,10 @@
    "tint": "#E6EFD9",
    "watch": "Guava moth grubs inside the fruit.",
    "water": "Deep weekly while fruiting",
-   "id": "feijoa"
+   "sub": "subtropical"
   },
   {
+   "id": "front-bed-succulents",
    "about": "Small succulents tucked between the bromeliads: blue chalk sticks, echeveria rosettes and a grey kalanchoe type. They'll spread to fill the gaps.",
    "addedAt": "2026-11-17T10:00:24Z",
    "art": "chalksticks",
@@ -269,16 +277,17 @@
    "tint": "#E4EEF1",
    "watch": "One near the front is yellow and shrivelled: check it isn't sitting wet or scorched.",
    "water": "Only when the bark is dry underneath",
-   "id": "front-bed-succulents"
+   "sub": "rosettes"
   },
   {
-   "about": "Clumping palms with golden-yellow stems and arching fronds. They grow happily in pots under shade cloth, sending up new canes from the base.",
+   "id": "golden-cane-palms",
+   "about": "About ten palms in pots and crates under the shade cloth: golden cane, kentia and young seedlings. They love the filtered light.",
    "addedAt": "2026-11-17T10:00:20Z",
    "art": "goldencane",
    "care": "Easy",
    "deep": "#5E6B1A",
    "feed": "Palm food spring and summer",
-   "latin": "Dypsis lutescens",
+   "latin": "Dypsis, Howea and others",
    "months": [
     9,
     10,
@@ -287,7 +296,7 @@
     1,
     2
    ],
-   "name": "Golden cane palms",
+   "name": "Shade-house palms",
    "next": "Pot up into bigger containers in spring.",
    "petNote": "Safe for all your pets.",
    "pets": {
@@ -298,15 +307,16 @@
    "season": "Growing",
    "seasonText": "October to March",
    "section": "palms",
-   "short": "cane palms",
+   "short": "shade-house palms",
    "spot": "Shade-house corner, pots and crates",
    "sun": "Bright shade (the cloth is perfect)",
    "tint": "#EFF3D6",
-   "watch": "Yellow fronds (hungry or too dry) and mealybugs at the base of the stems.",
+   "watch": "One palm is yellowing all over (hungry) and one has dead brown fronds (dry or sun-scorched).",
    "water": "Keep moist; pots dry fast",
-   "id": "golden-cane-palms"
+   "sub": "shadehouse"
   },
   {
+   "id": "hydrangea",
    "about": "Big mophead blooms in pink, red and white. Flower colour follows the soil: alkaline keeps pinks pink, acid turns them blue.",
    "addedAt": "2026-11-17T10:00:08Z",
    "art": "hydrangea",
@@ -321,7 +331,7 @@
     1,
     2
    ],
-   "name": "Hydrangea",
+   "name": "Hydrangeas",
    "next": "Cut off faded blooms in late summer.",
    "petNote": "Can cause vomiting and an upset stomach if chewed.",
    "pets": {
@@ -333,14 +343,15 @@
    "seasonText": "November to March",
    "section": "flowers",
    "short": "hydrangeas",
-   "spot": "Pots on the round stand",
+   "spot": "Round stand, back corner and back fence (pink, red, white, green)",
    "sun": "Morning sun, afternoon shade",
    "tint": "#F9DDE8",
    "watch": "Wilting on hot afternoons; move pots into shade.",
    "water": "Every 2–3 days in pots",
-   "id": "hydrangea"
+   "sub": "shrubs"
   },
   {
+   "id": "ice-plant",
    "about": "A succulent with glossy, daisy-like flowers that open in the sun and close at night or on cloudy days.",
    "addedAt": "2026-11-17T10:00:10Z",
    "art": "iceplant",
@@ -371,9 +382,10 @@
    "tint": "#FBDDE6",
    "watch": "Overwatering: soft, mushy stems.",
    "water": "Sparingly",
-   "id": "ice-plant"
+   "sub": "pots"
   },
   {
+   "id": "jade-plant",
    "about": "The “money tree”. It stores water in its fat leaves, and red leaf edges mean it is getting lovely sun.",
    "addedAt": "2026-11-17T10:00:17Z",
    "art": "jade",
@@ -403,9 +415,10 @@
    "tint": "#E9F0DD",
    "watch": "Mealybugs (white fluff) and rot from wet soil.",
    "water": "Only when bone dry",
-   "id": "jade-plant"
+   "sub": "jade"
   },
   {
+   "id": "lavender",
    "about": "French lavender, with little “rabbit ear” tufts on each flower. Loves heat, and hates sitting in wet soil.",
    "addedAt": "2026-11-17T10:00:09Z",
    "art": "lavender",
@@ -437,9 +450,10 @@
    "tint": "#ECE4F6",
    "watch": "Root rot if the pot stays soggy.",
    "water": "Let it dry between drinks",
-   "id": "lavender"
+   "sub": "pots"
   },
   {
+   "id": "mandarin",
    "about": "A smaller, tidier citrus that suits planters. The fruit can colour up before it is sweet, so always taste one first.",
    "addedAt": "2026-11-17T09:00:04Z",
    "art": "mandarin",
@@ -471,9 +485,10 @@
    "tint": "#FDEFD2",
    "watch": "Aphids on new growth and leaf miner trails.",
    "water": "Deep, 1–2 times a week",
-   "id": "mandarin"
+   "sub": "citrus"
   },
   {
+   "id": "monstera",
    "about": "The Swiss cheese plant. Splits and holes appear as leaves mature, and its aerial roots help it climb.",
    "addedAt": "2026-11-17T10:00:14Z",
    "art": "leaf",
@@ -506,9 +521,10 @@
    "tint": "#E1EEE6",
    "watch": "Yellow leaves mean too wet. Protect from frost.",
    "water": "When top 5 cm is dry",
-   "id": "monstera"
+   "sub": "bigleaf"
   },
   {
+   "id": "orange",
    "about": "An evergreen with shallow roots that hate drying out or being dug around. Fruit holds well on the tree, so pick as you need it.",
    "addedAt": "2026-11-17T09:00:03Z",
    "art": "orange",
@@ -538,9 +554,10 @@
    "tint": "#FCE8D0",
    "watch": "Yellowing leaves (hungry), scale, and silver trails from leaf miner.",
    "water": "Deep, 1–2 times a week",
-   "id": "orange"
+   "sub": "citrus"
   },
   {
+   "id": "parlour-palm",
    "about": "A slow, graceful indoor palm that copes with lower light. Each stem only makes a few new fronds a year.",
    "addedAt": "2026-11-17T10:00:12Z",
    "art": "parlour",
@@ -573,9 +590,10 @@
    "tint": "#E3EDE0",
    "watch": "Fine webbing from spider mites, and brown tips.",
    "water": "When top 3 cm is dry",
-   "id": "parlour-palm"
+   "sub": "indoor"
   },
   {
+   "id": "peace-lily",
    "about": "A forgiving indoor plant that tells you when it is thirsty: the leaves flop, then perk up within hours of a drink.",
    "addedAt": "2026-11-17T10:00:11Z",
    "art": "peacelily",
@@ -607,9 +625,10 @@
    "tint": "#E9F0E6",
    "watch": "Brown leaf tips (dry air). Toxic to cats and dogs.",
    "water": "When top 2 cm is dry",
-   "id": "peace-lily"
+   "sub": "indoor"
   },
   {
+   "id": "peach",
    "about": "A deciduous stone fruit. It fruits on last summer’s growth, so a light prune straight after harvest keeps it cropping well next year.",
    "addedAt": "2026-11-17T09:00:01Z",
    "art": "peach",
@@ -639,9 +658,10 @@
    "tint": "#FCE3D9",
    "watch": "Leaf curl (red, puckered leaves) in spring, and birds as soon as the fruit colours.",
    "water": "Deep soak weekly; twice in heat",
-   "id": "peach"
+   "sub": "stone"
   },
   {
+   "id": "pomegranate",
    "about": "A tough, bushy small tree with glossy leaves and bright orange-red flowers in summer. Fruit is ready when the skin turns deep red and sounds hollow when tapped.",
    "addedAt": "2026-11-17T10:00:19Z",
    "art": "pomegranate",
@@ -671,9 +691,10 @@
    "tint": "#FADADD",
    "watch": "Fruit splitting after heavy rain following a dry spell; keep watering even.",
    "water": "Deep weekly; less once fruit sets",
-   "id": "pomegranate"
+   "sub": "subtropical"
   },
   {
+   "id": "red-bromeliad",
    "about": "Its centre blushes red when it's about to flower. After flowering it slowly fades and makes pups you can pot up.",
    "addedAt": "2026-11-17T10:00:22Z",
    "art": "bromeliadred",
@@ -705,9 +726,10 @@
    "tint": "#E6EFE2",
    "watch": "Stagnant water in the cup; flush it out every couple of weeks.",
    "water": "Keep the centre cup topped up",
-   "id": "red-bromeliad"
+   "sub": "strappy"
   },
   {
+   "id": "red-cordyline",
    "about": "Grown for its glossy burgundy leaves. Brighter light gives deeper colour, but harsh sun scorches it.",
    "addedAt": "2026-11-17T10:00:23Z",
    "art": "cordyline",
@@ -740,9 +762,10 @@
    "tint": "#F6DDE4",
    "watch": "Brown leaf tips and mealybugs.",
    "water": "When top 3 cm is dry",
-   "id": "red-cordyline"
+   "sub": "strappy"
   },
   {
+   "id": "sago-palm",
    "about": "Not a true palm but an ancient cycad. It pushes out one flush of stiff, glossy fronds a year, so be patient.",
    "addedAt": "2026-11-17T10:00:13Z",
    "art": "sago",
@@ -755,7 +778,7 @@
     11,
     0
    ],
-   "name": "Sago palm",
+   "name": "Sago palms",
    "next": "Leave new soft fronds alone until they harden.",
    "petNote": "Very toxic: even a small chew can cause liver failure. Keep it out of reach, and call your vet straight away if it's chewed.",
    "pets": {
@@ -766,15 +789,16 @@
    "season": "New fronds",
    "seasonText": "November to January",
    "section": "palms",
-   "short": "sago",
-   "spot": "Pink pot on the patio",
+   "short": "sago palms",
+   "spot": "Pink pot, 2 grey planters at the front, back bed (4)",
    "sun": "Full sun to part shade",
    "tint": "#EEF0D8",
    "watch": "Scale insects. Every part is very toxic to pets.",
    "water": "Let it dry between drinks",
-   "id": "sago-palm"
+   "sub": "cycads"
   },
   {
+   "id": "strawberry",
    "about": "Year-old plants are at their peak. They send out runners in summer that you can pot up for free new plants.",
    "addedAt": "2026-11-17T09:00:05Z",
    "art": "strawberry",
@@ -800,14 +824,15 @@
    "seasonText": "November to February",
    "section": "fruit",
    "short": "strawberries",
-   "spot": "Planter box (moving to a bigger bed)",
+   "spot": "Two black planters by the house",
    "sun": "Full sun",
    "tint": "#FADCE3",
    "watch": "Slugs at night, birds, and grey mould on fruit in wet weather.",
    "water": "At the base, often",
-   "id": "strawberry"
+   "sub": "berries"
   },
   {
+   "id": "umbrella-tree",
    "about": "Glossy leaflets fan out like the spokes of an umbrella. It leans toward the light, so regular turning keeps it straight.",
    "addedAt": "2026-11-17T10:00:15Z",
    "art": "umbrella",
@@ -823,7 +848,7 @@
     1,
     2
    ],
-   "name": "Umbrella tree",
+   "name": "Umbrella trees",
    "next": "Pinch the tips to keep it bushy.",
    "petNote": "Irritates the mouth and throat if chewed. Keep it away from the birds.",
    "pets": {
@@ -834,22 +859,796 @@
    "season": "Growing",
    "seasonText": "October to March",
    "section": "foliage",
-   "short": "umbrella tree",
-   "spot": "Indoors, woven basket",
+   "short": "umbrella trees",
+   "spot": "Indoor basket, patio (leggy variegated dwarf) and front yard",
    "sun": "Bright, indirect light",
    "tint": "#E4EEDC",
    "watch": "Sudden leaf drop (draughts or overwatering) and scale.",
    "water": "When top 3 cm is dry",
-   "id": "umbrella-tree"
+   "sub": "indoor"
   },
   {
-   "about": "Young plants under netting, keeping birds and pets off. Send a close-up and I'll add each crop.",
-   "addedAt": "2026-11-17T10:00:26Z",
-   "art": "veggie",
+   "id": "lemon",
+   "name": "Lemon",
+   "short": "lemon",
+   "latin": "Citrus × limon",
+   "section": "fruit",
+   "sub": "citrus",
+   "art": "lemon",
+   "tint": "#FBF3CF",
+   "deep": "#7A5A0C",
+   "spot": "Back corner bed",
+   "sun": "Full sun",
+   "water": "Deep, 1–2 times a week",
+   "feed": "Citrus food Sep, Dec, Mar",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "Most of the year",
+   "months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "about": "A big, productive lemon, flowering now. Lemons crop on and off all year in Auckland.",
+   "watch": "Yellow, blotchy leaves right now: usually low magnesium.",
+   "next": "Feed now: citrus food plus 1 tbsp Epsom salts in 10 L water.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "safe"
+   },
+   "petNote": "Leaves and peel can upset cats and the dog.",
+   "addedAt": "2026-11-18T10:00:00Z"
+  },
+  {
+   "id": "guava",
+   "name": "Guava",
+   "short": "guava",
+   "latin": "Psidium guajava (to confirm)",
+   "section": "fruit",
+   "sub": "subtropical",
+   "art": "guava",
+   "tint": "#EEF3D6",
+   "deep": "#5E6B1A",
+   "spot": "Back corner by the chain fence",
+   "sun": "Full sun, sheltered",
+   "water": "Deep weekly",
+   "feed": "General fertiliser in spring",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "March to May",
+   "months": [
+    2,
+    3,
+    4
+   ],
+   "about": "A subtropical tree with strongly veined leaves. Purple older leaves in spring usually mean cold nights.",
+   "watch": "Purple-tinged leaves (cold or low phosphorus); guava moth in the fruit.",
+   "next": "Feed lightly as it warms up.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Believed safe for all your pets.",
+   "addedAt": "2026-11-18T10:01:00Z"
+  },
+  {
+   "id": "lilly-pilly",
+   "name": "Lilly pilly",
+   "short": "lilly pilly",
+   "latin": "Syzygium (to confirm)",
+   "section": "fruit",
+   "sub": "subtropical",
+   "art": "lillypilly",
+   "tint": "#FBE4E0",
+   "deep": "#9E2230",
+   "spot": "Back fence by the shade house",
+   "sun": "Sun or part shade",
+   "water": "Weekly in dry spells",
+   "feed": "General fertiliser in spring",
+   "care": "Easy",
+   "season": "Berries",
+   "seasonText": "January to April",
+   "months": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Glossy leaves with coppery-red new growth and fluffy white flowers, followed by edible pink berries.",
+   "watch": "Psyllids: pimply, distorted new leaves.",
+   "next": "Enjoy the flowers; berries follow in summer.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe; the berries are edible.",
+   "addedAt": "2026-11-18T10:02:00Z"
+  },
+  {
+   "id": "chillies",
+   "name": "Chillies",
+   "short": "chillies",
+   "latin": "Capsicum annuum",
+   "section": "herbs",
+   "sub": "chillies",
+   "art": "chilli",
+   "tint": "#FCDDDA",
+   "deep": "#B51E1E",
+   "spot": "Side veggie bed by the house",
+   "sun": "Full sun",
+   "water": "Every 2–3 days at the base",
+   "feed": "Tomato food every 2 weeks",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "January to April",
+   "months": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "A bushy chilli already flowering. More sun and warmth means hotter chillies.",
+   "watch": "A few yellow leaves: feed it, and check for aphids.",
+   "next": "Feed fortnightly now that it is flowering.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Hot chillies burn mouths and eyes; leaves can upset tummies.",
+   "addedAt": "2026-11-18T10:03:00Z"
+  },
+  {
+   "id": "capsicum",
+   "name": "Capsicum",
+   "short": "capsicum",
+   "latin": "Capsicum annuum",
+   "section": "herbs",
+   "sub": "chillies",
+   "art": "capsicum",
+   "tint": "#FDE2D6",
+   "deep": "#B53A1E",
+   "spot": "Side veggie bed by the house",
+   "sun": "Full sun",
+   "water": "Every 2–3 days at the base",
+   "feed": "Tomato food every 2 weeks",
    "care": "Medium",
-   "deep": "#6B4A2C",
+   "season": "Harvest",
+   "seasonText": "February to April",
+   "months": [
+    1,
+    2,
+    3
+   ],
+   "about": "Sweet peppers start green and ripen to red, yellow or orange. Patience gives sweeter fruit.",
+   "watch": "Aphids under the leaves; flower drop in cold nights.",
+   "next": "Stake it once fruit forms.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Leaves and stems can upset tummies; ripe fruit is fine.",
+   "addedAt": "2026-11-18T10:04:00Z"
+  },
+  {
+   "id": "tomatoes",
+   "name": "Tomatoes",
+   "short": "tomatoes",
+   "latin": "Solanum lycopersicum",
+   "section": "herbs",
+   "sub": "tomatoes",
+   "art": "tomato",
+   "tint": "#FBE0DA",
+   "deep": "#B5281E",
+   "spot": "Side veggie bed, 8 plants staked",
+   "sun": "Full sun",
+   "water": "Deep, every 2–3 days at the base",
+   "feed": "Tomato food every 2 weeks once flowering",
+   "care": "Medium",
+   "season": "Harvest",
+   "seasonText": "January to April",
+   "months": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Eight young staked plants growing fast. Tying them in and pinching side shoots keeps them tidy and fruitful.",
+   "watch": "Blight in humid weather, whitefly, and weeds crowding the base.",
+   "next": "Pinch out side shoots and tie to stakes each week.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "Leaves, stems and green fruit are toxic; ripe tomatoes are fine.",
+   "addedAt": "2026-11-18T10:05:00Z"
+  },
+  {
+   "id": "eggplant",
+   "name": "Eggplant",
+   "short": "eggplant",
+   "latin": "Solanum melongena",
+   "section": "herbs",
+   "sub": "tomatoes",
+   "art": "eggplant",
+   "tint": "#EDE2F2",
+   "deep": "#5A2A6E",
+   "spot": "Side veggie bed, by the blue frog",
+   "sun": "Full sun, warm",
+   "water": "Deep, every 2–3 days",
+   "feed": "Tomato food every 2 weeks",
+   "care": "Medium",
+   "season": "Harvest",
+   "seasonText": "February to April",
+   "months": [
+    1,
+    2,
+    3
+   ],
+   "about": "Already flowering with its pretty purple flowers. It loves heat, so a warm summer means a good crop.",
+   "watch": "Holes from slugs and flea beetles in the leaves.",
+   "next": "Feed fortnightly while flowering.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "Leaves and green fruit are toxic to pets.",
+   "addedAt": "2026-11-18T10:06:00Z"
+  },
+  {
+   "id": "silverbeet",
+   "name": "Silverbeet",
+   "short": "silverbeet",
+   "latin": "Beta vulgaris",
+   "section": "herbs",
+   "sub": "greens",
+   "art": "silverbeet",
+   "tint": "#E4EEDC",
+   "deep": "#2F6B3A",
+   "spot": "Side veggie beds",
+   "sun": "Full sun to part shade",
+   "water": "Every 2–3 days",
    "feed": "Liquid feed every 2 weeks",
-   "latin": "Netted bed (crops to confirm)",
+   "care": "Very easy",
+   "season": "Picking",
+   "seasonText": "All year",
+   "months": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "about": "Big, crinkly leaves with white stems. Pick the outer leaves and it keeps producing for months.",
+   "watch": "Slugs, and leaf miner trails in the leaves.",
+   "next": "Keep picking outer leaves every week.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Fine in small amounts; high in oxalates.",
+   "addedAt": "2026-11-18T10:07:00Z"
+  },
+  {
+   "id": "bok-choy",
+   "name": "Bok choy",
+   "short": "bok choy",
+   "latin": "Brassica rapa",
+   "section": "herbs",
+   "sub": "greens",
+   "art": "bokchoy",
+   "tint": "#E8F1DA",
+   "deep": "#4A7A2A",
+   "spot": "Netted bed by the house",
+   "sun": "Full sun to part shade",
+   "water": "Every 1–2 days",
+   "feed": "Liquid feed weekly",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "December to January",
+   "months": [
+    11,
+    0
+   ],
+   "about": "Young seedlings under the netting. Bok choy grows fast and is ready in about 6 weeks.",
+   "watch": "Cabbage white caterpillars, and bolting (going to seed) in hot weather.",
+   "next": "Keep the netting on; water often.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:08:00Z"
+  },
+  {
+   "id": "bele",
+   "name": "Bele",
+   "short": "bele",
+   "latin": "Abelmoschus manihot",
+   "section": "herbs",
+   "sub": "greens",
+   "art": "bele",
+   "tint": "#F6EDCA",
+   "deep": "#7A1F3A",
+   "spot": "Black pot by the window (a cutting)",
+   "sun": "Full sun once rooted",
+   "water": "Keep just moist",
+   "feed": "Liquid feed every 2 weeks once growing",
+   "care": "Easy",
+   "season": "Picking",
+   "seasonText": "December to April",
+   "months": [
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Pacific island cabbage. The young leaves are cooked like spinach. This one is a cutting, still rooting.",
+   "watch": "Snails and slugs love it; it drops leaves below about 10°C.",
+   "next": "Watch for new leaves at the buds in 2–4 weeks.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Leaves are eaten by people; can upset a dog's stomach in quantity.",
+   "addedAt": "2026-11-18T10:09:00Z"
+  },
+  {
+   "id": "beans",
+   "name": "Beans",
+   "short": "beans",
+   "latin": "Phaseolus vulgaris",
+   "section": "herbs",
+   "sub": "climbers",
+   "art": "beans",
+   "tint": "#E4F2D6",
+   "deep": "#3E7A24",
+   "spot": "Side bed along the chain-link fence",
+   "sun": "Full sun",
+   "water": "Deep, twice a week",
+   "feed": "Little needed",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "January to March",
+   "months": [
+    0,
+    1,
+    2
+   ],
+   "about": "A row of young climbing beans that will use the chain-link fence as a trellis. Pick often to keep them coming.",
+   "watch": "Slugs on seedlings; weeds in the row.",
+   "next": "Guide the vines onto the fence as they climb.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "toxic"
+   },
+   "petNote": "Raw beans are toxic to birds; cook them before sharing.",
+   "addedAt": "2026-11-18T10:10:00Z"
+  },
+  {
+   "id": "bitter-melon",
+   "name": "Bitter melon",
+   "short": "bitter melon",
+   "latin": "Momordica charantia",
+   "section": "herbs",
+   "sub": "climbers",
+   "art": "bittermelon",
+   "tint": "#E2F0D2",
+   "deep": "#3E6A1A",
+   "spot": "Black pot on the trellis by the window",
+   "sun": "Full sun, warm",
+   "water": "Keep moist",
+   "feed": "Liquid feed every 2 weeks",
+   "care": "Medium",
+   "season": "Harvest",
+   "seasonText": "February to April",
+   "months": [
+    1,
+    2,
+    3
+   ],
+   "about": "Karela, climbing the window trellis. It loves heat and makes warty fruit that is picked green.",
+   "watch": "Snails in the pot (seen in your photo) and weeds crowding it.",
+   "next": "Weed the pot and tie the vine onto the trellis.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "toxic"
+   },
+   "petNote": "Fruit and seeds are unsafe for birds; can upset cats and the dog.",
+   "addedAt": "2026-11-18T10:11:00Z"
+  },
+  {
+   "id": "taro",
+   "name": "Taro",
+   "short": "taro",
+   "latin": "Colocasia esculenta",
+   "section": "herbs",
+   "sub": "roots",
+   "art": "taro",
+   "tint": "#E2EEE6",
+   "deep": "#3E6A4E",
+   "spot": "Side bed by the chain-link fence (about 15)",
+   "sun": "Part shade",
+   "water": "Keep moist",
+   "feed": "General feed monthly",
+   "care": "Easy",
+   "season": "Harvest",
+   "seasonText": "May to July",
+   "months": [
+    4,
+    5,
+    6
+   ],
+   "about": "Big heart-shaped leaves on purple stems. Both leaves and corms must be cooked well before eating.",
+   "watch": "Old leaves yellowing is normal; snails chew holes in new leaves.",
+   "next": "Remove yellow leaves and keep the bed moist.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "toxic"
+   },
+   "petNote": "Raw leaves and corms burn the mouth and throat of pets.",
+   "addedAt": "2026-11-18T10:12:00Z"
+  },
+  {
+   "id": "basil",
+   "name": "Basil",
+   "short": "basil",
+   "latin": "Ocimum basilicum",
+   "section": "herbs",
+   "sub": "herbs",
+   "art": "basil",
+   "tint": "#E4F4D6",
+   "deep": "#3E7A24",
+   "spot": "Side veggie bed",
+   "sun": "Full sun",
+   "water": "Every 2–3 days",
+   "feed": "Light liquid feed monthly",
+   "care": "Easy",
+   "season": "Picking",
+   "seasonText": "December to April",
+   "months": [
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Sweet basil, growing in the veggie bed. Pinching the tips makes it bushy.",
+   "watch": "Flowers forming: pinch them off to keep leaves coming.",
+   "next": "Pinch the tips to make it bushier.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:13:00Z"
+  },
+  {
+   "id": "mint",
+   "name": "Mint",
+   "short": "mint",
+   "latin": "Mentha",
+   "section": "herbs",
+   "sub": "herbs",
+   "art": "mint",
+   "tint": "#E2F2DC",
+   "deep": "#3E7A3A",
+   "spot": "2 pots by the veggie beds",
+   "sun": "Sun or part shade",
+   "water": "Keep moist",
+   "feed": "Rarely needed",
+   "care": "Very easy",
+   "season": "Picking",
+   "seasonText": "October to May",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "about": "Spreads fast, so it is best kept in pots, as you have it. Cut it back hard to get fresh leaves.",
+   "watch": "Rust (orange spots); cut affected stems right back.",
+   "next": "Cut back by half for fresh growth.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "safe"
+   },
+   "petNote": "Large amounts can upset cats and the dog; fine for the birds.",
+   "addedAt": "2026-11-18T10:14:00Z"
+  },
+  {
+   "id": "rose-white",
+   "name": "White & pink rose",
+   "short": "rose",
+   "latin": "Rosa",
+   "section": "flowers",
+   "sub": "roses",
+   "art": "rosewhite",
+   "tint": "#FBEFF2",
+   "deep": "#B23A7A",
+   "spot": "Back fence bed",
+   "sun": "6+ hours of sun",
+   "water": "Deep, at the base only",
+   "feed": "Rose food monthly Sep–Mar",
+   "care": "Medium",
+   "season": "Flowers",
+   "seasonText": "November to April",
+   "months": [
+    10,
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Creamy white petals edged in pink. It repeat-flowers all summer with deadheading.",
+   "watch": "Black spot and yellow leaves, and weeds in the pot.",
+   "next": "Deadhead after each flush.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe, apart from the thorns.",
+   "addedAt": "2026-11-18T10:15:00Z"
+  },
+  {
+   "id": "rose-pink",
+   "name": "Pink rose",
+   "short": "rose",
+   "latin": "Rosa",
+   "section": "flowers",
+   "sub": "roses",
+   "art": "rosepink",
+   "tint": "#FADCE6",
+   "deep": "#B8306A",
+   "spot": "Back fence bed",
+   "sun": "6+ hours of sun",
+   "water": "Deep, at the base only",
+   "feed": "Rose food monthly Sep–Mar",
+   "care": "Medium",
+   "season": "Flowers",
+   "seasonText": "November to April",
+   "months": [
+    10,
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "A bright pink rose. Good air flow around it is the best defence against black spot.",
+   "watch": "Black spot; aphids on new buds.",
+   "next": "Deadhead after each flush.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe, apart from the thorns.",
+   "addedAt": "2026-11-18T10:16:00Z"
+  },
+  {
+   "id": "rose-orange",
+   "name": "Orange rose",
+   "short": "rose",
+   "latin": "Rosa",
+   "section": "flowers",
+   "sub": "roses",
+   "art": "roseorange",
+   "tint": "#FCE6D2",
+   "deep": "#C9561A",
+   "spot": "Back fence bed",
+   "sun": "6+ hours of sun",
+   "water": "Deep, at the base only",
+   "feed": "Rose food monthly Sep–Mar",
+   "care": "Medium",
+   "season": "Flowers",
+   "seasonText": "November to April",
+   "months": [
+    10,
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "A warm orange rose that glows in evening light.",
+   "watch": "Black spot on lower leaves.",
+   "next": "Deadhead after each flush.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe, apart from the thorns.",
+   "addedAt": "2026-11-18T10:17:00Z"
+  },
+  {
+   "id": "rose-peach",
+   "name": "Peach rose",
+   "short": "rose",
+   "latin": "Rosa",
+   "section": "flowers",
+   "sub": "roses",
+   "art": "rosepeach",
+   "tint": "#FDEBDD",
+   "deep": "#C97A52",
+   "spot": "Back fence bed",
+   "sun": "6+ hours of sun",
+   "water": "Deep, at the base only",
+   "feed": "Rose food monthly Sep–Mar",
+   "care": "Medium",
+   "season": "Flowers",
+   "seasonText": "November to April",
+   "months": [
+    10,
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Soft peach blooms that fade paler as they open.",
+   "watch": "Black spot and yellowing leaves.",
+   "next": "Deadhead after each flush.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe, apart from the thorns.",
+   "addedAt": "2026-11-18T10:18:00Z"
+  },
+  {
+   "id": "stargazer-lilies",
+   "name": "Stargazer lilies",
+   "short": "lilies",
+   "latin": "Lilium ‘Stargazer’",
+   "section": "flowers",
+   "sub": "lilies",
+   "art": "lily",
+   "tint": "#FADCE6",
+   "deep": "#B8306A",
+   "spot": "Back corner, by the feijoa",
+   "sun": "Morning sun, cool roots",
+   "water": "Keep moist",
+   "feed": "Bulb food after flowering",
+   "care": "Easy",
+   "season": "Flowers",
+   "seasonText": "December to February",
+   "months": [
+    11,
+    0,
+    1
+   ],
+   "about": "Big, scented pink flowers with dark speckles. They come back from the bulb every summer.",
+   "watch": "Botrytis (brown spots) in wet weather.",
+   "next": "Move them out of the cats’ reach, or remove them.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Deadly to cats: even pollen or vase water can cause kidney failure. Vet straight away.",
+   "addedAt": "2026-11-18T10:19:00Z"
+  },
+  {
+   "id": "gardenias",
+   "name": "Gardenias",
+   "short": "gardenias",
+   "latin": "Gardenia jasminoides",
+   "section": "flowers",
+   "sub": "shrubs",
+   "art": "gardenia",
+   "tint": "#F4F2E2",
+   "deep": "#5A6A3A",
+   "spot": "Back corner",
+   "sun": "Morning sun",
+   "water": "Keep moist",
+   "feed": "Acid (azalea) food monthly",
+   "care": "Fussy",
+   "season": "Flowers",
+   "seasonText": "December to March",
+   "months": [
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Creamy, heavily scented flowers. Gardenias need acid soil to keep their leaves green.",
+   "watch": "Yellow leaves with green veins right now: needs acid food and iron.",
+   "next": "Feed with azalea or gardenia food.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "toxic"
+   },
+   "petNote": "Can upset tummies if chewed.",
+   "addedAt": "2026-11-18T10:20:00Z"
+  },
+  {
+   "id": "hibiscus",
+   "name": "Hibiscus",
+   "short": "hibiscus",
+   "latin": "Hibiscus rosa-sinensis",
+   "section": "flowers",
+   "sub": "shrubs",
+   "art": "hibiscus",
+   "tint": "#FCDDDE",
+   "deep": "#9E1530",
+   "spot": "By the chain fence",
+   "sun": "Full sun, sheltered",
+   "water": "Deep weekly",
+   "feed": "Flower food monthly in summer",
+   "care": "Easy",
+   "season": "Flowers",
+   "seasonText": "December to April",
+   "months": [
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Cut right back over winter. It should reshoot strongly as the weather warms.",
+   "watch": "Mostly yellow leaves now; aphids and mealybugs on new shoots.",
+   "next": "Feed once new shoots appear.",
+   "pets": {
+    "cat": "safe",
+    "dog": "care",
+    "bird": "safe"
+   },
+   "petNote": "Generally safe; can upset a dog's stomach.",
+   "addedAt": "2026-11-18T10:21:00Z"
+  },
+  {
+   "id": "mexican-heather",
+   "name": "Mexican heather",
+   "short": "Mexican heather",
+   "latin": "Cuphea hyssopifolia",
+   "section": "flowers",
+   "sub": "shrubs",
+   "art": "mexicanheather",
+   "tint": "#F2E4F6",
+   "deep": "#7A3A9A",
+   "spot": "Back fence bed",
+   "sun": "Full sun",
+   "water": "Moderate",
+   "feed": "Light feed in spring",
+   "care": "Easy",
+   "season": "Flowers",
+   "seasonText": "October to April",
    "months": [
     9,
     10,
@@ -859,29 +1658,746 @@
     2,
     3
    ],
-   "name": "Veggie bed",
-   "next": "Tell me what's growing so I can add it.",
-   "petNote": "Depends on the crop: onion, garlic and chives are toxic to cats and the dog.",
+   "about": "A neat little shrub covered in tiny pink-purple flowers for months.",
+   "watch": "Very little; trim if it gets leggy.",
+   "next": "Light trim after the first flush.",
    "pets": {
-    "bird": "care",
-    "cat": "care",
-    "dog": "care"
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
    },
-   "season": "Growing",
-   "seasonText": "October to April",
-   "section": "herbs",
-   "short": "veggie bed",
-   "spot": "Netted bed by the shade house",
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:22:00Z"
+  },
+  {
+   "id": "periwinkle",
+   "name": "Periwinkle",
+   "short": "periwinkle",
+   "latin": "Catharanthus roseus",
+   "section": "flowers",
+   "sub": "pots",
+   "art": "periwinkle",
+   "tint": "#FCE0EC",
+   "deep": "#C2185B",
+   "spot": "Deck and shade-house pots",
    "sun": "Full sun",
-   "tint": "#EDE6D8",
-   "watch": "Slugs and snails on seedlings; use pet-safe control only.",
-   "water": "Every 1–2 days in summer",
-   "id": "veggie-bed"
+   "water": "Let it dry slightly",
+   "feed": "Light feed monthly",
+   "care": "Easy",
+   "season": "Flowers",
+   "seasonText": "October to May",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "about": "Cheerful pink flowers all summer, and very tough in heat.",
+   "watch": "Root rot if pots stay soggy.",
+   "next": "Move the pots up out of pets’ reach.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "toxic"
+   },
+   "petNote": "Very toxic: vomiting, low blood pressure, even seizures.",
+   "addedAt": "2026-11-18T10:23:00Z"
+  },
+  {
+   "id": "chrysanthemum",
+   "name": "Chrysanthemum",
+   "short": "chrysanthemum",
+   "latin": "Chrysanthemum morifolium",
+   "section": "flowers",
+   "sub": "pots",
+   "art": "chrysanthemum",
+   "tint": "#FCEBCC",
+   "deep": "#B5701A",
+   "spot": "Patio pot",
+   "sun": "Full sun",
+   "water": "Keep moist",
+   "feed": "Liquid feed fortnightly",
+   "care": "Easy",
+   "season": "Flowers",
+   "seasonText": "March to May",
+   "months": [
+    2,
+    3,
+    4
+   ],
+   "about": "Flowers in autumn as days shorten. Pinch the tips until January for a bushier plant.",
+   "watch": "Aphids and leaf spot.",
+   "next": "Pinch tips until January.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "Can cause vomiting and drooling in cats and the dog.",
+   "addedAt": "2026-11-18T10:24:00Z"
+  },
+  {
+   "id": "moss-rose",
+   "name": "Moss rose",
+   "short": "moss rose",
+   "latin": "Portulaca grandiflora",
+   "section": "flowers",
+   "sub": "pots",
+   "art": "mossrose",
+   "tint": "#FBDDDE",
+   "deep": "#B0283A",
+   "spot": "Back fence bed",
+   "sun": "Full sun",
+   "water": "Very little",
+   "feed": "None needed",
+   "care": "Very easy",
+   "season": "Flowers",
+   "seasonText": "December to March",
+   "months": [
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Bright red flowers on fleshy, needle-like leaves. The flowers open in full sun.",
+   "watch": "Overwatering.",
+   "next": "Let it dry out between drinks.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "Can upset cats and the dog if chewed.",
+   "addedAt": "2026-11-18T10:25:00Z"
+  },
+  {
+   "id": "anthuriums",
+   "name": "Anthuriums",
+   "short": "anthuriums",
+   "latin": "Anthurium andraeanum",
+   "section": "flowers",
+   "sub": "indoor",
+   "art": "anthurium",
+   "tint": "#FCDCDC",
+   "deep": "#B51E1E",
+   "spot": "On the heat pump unit (2): move them",
+   "sun": "Bright, indirect light",
+   "water": "When top 2 cm is dry",
+   "feed": "Half-strength monthly",
+   "care": "Medium",
+   "season": "Flowers",
+   "seasonText": "All year",
+   "months": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "about": "Glossy red heart-shaped flowers that last for weeks.",
+   "watch": "Yellow, blotchy leaves: likely harsh sun, overwatering or the heat pump blast.",
+   "next": "Move off the heat pump into bright shade.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "toxic"
+   },
+   "petNote": "Irritates the mouth and throat if chewed.",
+   "addedAt": "2026-11-18T10:26:00Z"
+  },
+  {
+   "id": "philodendron",
+   "name": "Split-leaf philodendron",
+   "short": "philodendron",
+   "latin": "Thaumatophyllum bipinnatifidum",
+   "section": "foliage",
+   "sub": "bigleaf",
+   "art": "philodendron",
+   "tint": "#E0EEE2",
+   "deep": "#2F6B44",
+   "spot": "Back corner",
+   "sun": "Bright shade",
+   "water": "When top 3 cm is dry",
+   "feed": "Monthly in summer",
+   "care": "Easy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Big, deeply cut leaves that make a tropical statement.",
+   "watch": "Yellow lower leaves (normal ageing or too wet).",
+   "next": "Remove yellow lower leaves.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "toxic"
+   },
+   "petNote": "Irritates the mouth and throat if chewed.",
+   "addedAt": "2026-11-18T10:27:00Z"
+  },
+  {
+   "id": "rubber-plant",
+   "name": "Rubber plant",
+   "short": "rubber plant",
+   "latin": "Ficus elastica ‘Burgundy’",
+   "section": "foliage",
+   "sub": "bigleaf",
+   "art": "rubberplant",
+   "tint": "#EEDDE4",
+   "deep": "#5A1E36",
+   "spot": "Shade house",
+   "sun": "Bright, indirect light",
+   "water": "When top 3 cm is dry",
+   "feed": "Monthly in summer",
+   "care": "Easy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Glossy burgundy leaves with a red sheath on each new leaf.",
+   "watch": "Dusty leaves (wipe them) and leaf drop when moved.",
+   "next": "Wipe the leaves clean.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "The milky sap irritates skin and tummies.",
+   "addedAt": "2026-11-18T10:28:00Z"
+  },
+  {
+   "id": "weeping-figs",
+   "name": "Weeping figs",
+   "short": "weeping figs",
+   "latin": "Ficus benjamina",
+   "section": "foliage",
+   "sub": "shrubs",
+   "art": "weepingfig",
+   "tint": "#E4EEDC",
+   "deep": "#3E6E2A",
+   "spot": "Deck and back fence bed",
+   "sun": "Bright light",
+   "water": "When top 3 cm is dry",
+   "feed": "Monthly in summer",
+   "care": "Medium",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Green and variegated figs with small, glossy leaves. They sulk and drop leaves when moved.",
+   "watch": "Leaf drop after a move or a draught.",
+   "next": "Leave them in one spot.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "The milky sap irritates skin and tummies.",
+   "addedAt": "2026-11-18T10:29:00Z"
+  },
+  {
+   "id": "dragon-trees",
+   "name": "Dragon trees",
+   "short": "dragon trees",
+   "latin": "Dracaena marginata & reflexa",
+   "section": "foliage",
+   "sub": "strappy",
+   "art": "dragontree",
+   "tint": "#E6F0E0",
+   "deep": "#5E2A2A",
+   "spot": "Deck (yellow-striped), patio red pot & urn (red-edged), shade house",
+   "sun": "Bright light",
+   "water": "When dry",
+   "feed": "Monthly in summer",
+   "care": "Easy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Spiky tufts of strappy leaves on slim canes. The red-edged ones colour best in bright light.",
+   "watch": "Brown tips from dry air or fluoride; lower leaves dropping is normal.",
+   "next": "Trim brown tips with clean scissors.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "Can cause vomiting, especially in cats.",
+   "addedAt": "2026-11-18T10:30:00Z"
+  },
+  {
+   "id": "flax",
+   "name": "Variegated flax",
+   "short": "flax",
+   "latin": "Phormium",
+   "section": "foliage",
+   "sub": "strappy",
+   "art": "flax",
+   "tint": "#EFF0D8",
+   "deep": "#5E6B1A",
+   "spot": "Fern corner by the pond",
+   "sun": "Sun or part shade",
+   "water": "Little once settled",
+   "feed": "None needed",
+   "care": "Very easy",
+   "season": "Flowers",
+   "seasonText": "November to January",
+   "months": [
+    10,
+    11,
+    0
+   ],
+   "about": "A New Zealand native with cream-striped sword leaves. Tui love the flowers.",
+   "watch": "Mealybugs deep in the leaf bases.",
+   "next": "Pull out dead leaves from the base.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:31:00Z"
+  },
+  {
+   "id": "cabbage-trees",
+   "name": "Cabbage trees",
+   "short": "cabbage trees",
+   "latin": "Cordyline australis (variegated)",
+   "section": "foliage",
+   "sub": "strappy",
+   "art": "cabbagetree",
+   "tint": "#EFF0D8",
+   "deep": "#5E6B1A",
+   "spot": "Front yard (2)",
+   "sun": "Full sun",
+   "water": "Little once settled",
+   "feed": "None needed",
+   "care": "Very easy",
+   "season": "Flowers",
+   "seasonText": "October to December",
+   "months": [
+    9,
+    10,
+    11
+   ],
+   "about": "Tī kōuka, a New Zealand icon. Scented cream flowers in late spring.",
+   "watch": "Dead leaves hanging under the head; pull them off.",
+   "next": "Tidy away the dead leaves.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Can upset tummies if chewed.",
+   "addedAt": "2026-11-18T10:32:00Z"
+  },
+  {
+   "id": "ferns",
+   "name": "Ferns",
+   "short": "ferns",
+   "latin": "Lace fern, Boston fern",
+   "section": "foliage",
+   "sub": "ferns",
+   "art": "ferns",
+   "tint": "#E2F0DC",
+   "deep": "#3E7A24",
+   "spot": "Fern corner by the pond",
+   "sun": "Shade",
+   "water": "Keep moist",
+   "feed": "Light liquid feed monthly",
+   "care": "Easy",
+   "season": "Growing",
+   "seasonText": "September to April",
+   "months": [
+    8,
+    9,
+    10,
+    11,
+    0,
+    1,
+    2,
+    3
+   ],
+   "about": "Lacy fronds around the pond, unrolling from fiddleheads in spring.",
+   "watch": "Drying out in hot spells.",
+   "next": "Water in dry weather.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:33:00Z"
+  },
+  {
+   "id": "pittosporum",
+   "name": "Variegated pittosporum",
+   "short": "pittosporum",
+   "latin": "Pittosporum (variegated)",
+   "section": "foliage",
+   "sub": "shrubs",
+   "art": "pittosporum",
+   "tint": "#EEF2DC",
+   "deep": "#4F6B2A",
+   "spot": "Fern corner by the pond",
+   "sun": "Sun or part shade",
+   "water": "Little once settled",
+   "feed": "None needed",
+   "care": "Very easy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "A neat native shrub with cream-edged leaves. Trims well into a ball.",
+   "watch": "Scale insects on the stems.",
+   "next": "Light trim to keep it rounded.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:34:00Z"
+  },
+  {
+   "id": "breath-of-heaven",
+   "name": "Golden breath of heaven",
+   "short": "breath of heaven",
+   "latin": "Coleonema pulchellum ‘Sunset Gold’",
+   "section": "foliage",
+   "sub": "shrubs",
+   "art": "breathofheaven",
+   "tint": "#FBF3CF",
+   "deep": "#8A6A0C",
+   "spot": "Front yard by the gate",
+   "sun": "Full sun",
+   "water": "Little once settled",
+   "feed": "Light feed in spring",
+   "care": "Easy",
+   "season": "Flowers",
+   "seasonText": "August to October",
+   "months": [
+    7,
+    8,
+    9
+   ],
+   "about": "Soft, golden, fragrant foliage with tiny pink flowers in spring.",
+   "watch": "Root rot in soggy soil.",
+   "next": "Trim lightly after flowering.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Not known to be toxic, but best not chewed.",
+   "addedAt": "2026-11-18T10:35:00Z"
+  },
+  {
+   "id": "bloodleaf",
+   "name": "Bloodleaf",
+   "short": "bloodleaf",
+   "latin": "Iresine herbstii",
+   "section": "foliage",
+   "sub": "shrubs",
+   "art": "bloodleaf",
+   "tint": "#F6DDE4",
+   "deep": "#8E1E3A",
+   "spot": "Back fence bed",
+   "sun": "Sun for best colour",
+   "water": "Keep moist",
+   "feed": "Monthly in summer",
+   "care": "Easy",
+   "season": "Colour",
+   "seasonText": "All year",
+   "months": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "about": "Dark red leaves with pink veins. Pinching the tips keeps it bushy.",
+   "watch": "Leggy growth in shade.",
+   "next": "Pinch the tips.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:36:00Z"
+  },
+  {
+   "id": "calathea",
+   "name": "Calathea",
+   "short": "calathea",
+   "latin": "Goeppertia",
+   "section": "foliage",
+   "sub": "indoor",
+   "art": "calathea",
+   "tint": "#E2EEE4",
+   "deep": "#2F6B44",
+   "spot": "On the heat pump unit: move it",
+   "sun": "Shade",
+   "water": "Keep moist",
+   "feed": "Half-strength monthly",
+   "care": "Fussy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Patterned leaves that fold up at night, a “prayer plant”.",
+   "watch": "Crispy edges from the heat pump air and dry air.",
+   "next": "Move off the heat pump into shade.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:37:00Z"
+  },
+  {
+   "id": "stromanthe",
+   "name": "Stromanthe Triostar",
+   "short": "stromanthe",
+   "latin": "Stromanthe sanguinea ‘Triostar’",
+   "section": "foliage",
+   "sub": "indoor",
+   "art": "stromanthe",
+   "tint": "#F6E2E8",
+   "deep": "#8E2A4A",
+   "spot": "On the heat pump unit: move it",
+   "sun": "Bright, indirect light",
+   "water": "Keep moist",
+   "feed": "Half-strength monthly",
+   "care": "Fussy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Leaves striped pink, cream and green, with pink undersides.",
+   "watch": "Crispy edges and faded colour from the heat pump blast.",
+   "next": "Move off the heat pump into bright shade.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:38:00Z"
+  },
+  {
+   "id": "peperomia",
+   "name": "Peperomia",
+   "short": "peperomia",
+   "latin": "Peperomia obtusifolia",
+   "section": "foliage",
+   "sub": "indoor",
+   "art": "peperomia",
+   "tint": "#E2EEDC",
+   "deep": "#2F6B2E",
+   "spot": "Shelf by the back door",
+   "sun": "Bright, indirect light",
+   "water": "When dry",
+   "feed": "Light feed in summer",
+   "care": "Easy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "The baby rubber plant: thick, glossy, round leaves.",
+   "watch": "Yellow blotchy leaves: usually too much water.",
+   "next": "Let it dry out before watering.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:39:00Z"
+  },
+  {
+   "id": "tradescantia",
+   "name": "Tradescantia",
+   "short": "tradescantia",
+   "latin": "Tradescantia (trailing)",
+   "section": "foliage",
+   "sub": "indoor",
+   "art": "tradescantia",
+   "tint": "#E8EEE8",
+   "deep": "#5A3A5A",
+   "spot": "Deck pot",
+   "sun": "Bright light",
+   "water": "When top 2 cm is dry",
+   "feed": "Light feed in summer",
+   "care": "Very easy",
+   "season": "Growing",
+   "seasonText": "All year",
+   "months": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "about": "Trailing stems of striped leaves. Snip pieces off and they root in water.",
+   "watch": "Leggy stems; pinch them back.",
+   "next": "Pinch back leggy stems.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Sap can irritate skin and mouths.",
+   "addedAt": "2026-11-18T10:40:00Z"
+  },
+  {
+   "id": "elephant-bush",
+   "name": "Elephant bush",
+   "short": "elephant bush",
+   "latin": "Portulacaria afra",
+   "section": "succulents",
+   "sub": "jade",
+   "art": "elephantbush",
+   "tint": "#E9F0DD",
+   "deep": "#4F7A36",
+   "spot": "Back fence bed",
+   "sun": "Full sun",
+   "water": "When bone dry",
+   "feed": "None needed",
+   "care": "Very easy",
+   "season": "Growing",
+   "seasonText": "October to March",
+   "months": [
+    9,
+    10,
+    11,
+    0,
+    1,
+    2
+   ],
+   "about": "Like a mini jade with red stems and tiny round leaves. Edible, and very forgiving.",
+   "watch": "Rot if the soil stays wet.",
+   "next": "Leave it be.",
+   "pets": {
+    "cat": "safe",
+    "dog": "safe",
+    "bird": "safe"
+   },
+   "petNote": "Safe for all your pets.",
+   "addedAt": "2026-11-18T10:41:00Z"
+  },
+  {
+   "id": "aloe",
+   "name": "Aloe",
+   "short": "aloe",
+   "latin": "Aloe (to confirm)",
+   "section": "succulents",
+   "sub": "rosettes",
+   "art": "aloe",
+   "tint": "#E2EEE6",
+   "deep": "#3E6A4E",
+   "spot": "Shade-house shelf",
+   "sun": "Full sun",
+   "water": "When bone dry",
+   "feed": "None needed",
+   "care": "Very easy",
+   "season": "Flowers",
+   "seasonText": "June to August",
+   "months": [
+    5,
+    6,
+    7
+   ],
+   "about": "Spiky, spotted rosettes. Many aloes flower in winter, which tui love.",
+   "watch": "Rot from wet soil; scale on the leaves.",
+   "next": "Move into more sun to stay compact.",
+   "pets": {
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "care"
+   },
+   "petNote": "Causes vomiting and diarrhoea in cats and the dog.",
+   "addedAt": "2026-11-18T10:42:00Z"
   }
  ],
  "week": {
   "generatedAt": "2026-11-17T21:00:00Z",
-  "headline": "Two pet-safety fixes first, then tackle black spot and sun scorch.",
+  "headline": "Lilies and slug pellets first: the cats come before anything else.",
   "next": [
    "Peach: bird netting up before the fruit colours.",
    "Citrus: summer feed coming early December.",
@@ -1077,21 +2593,29 @@
   "id": "2026-11-17",
   "alerts": [
    {
-    "id": "a1",
+    "id": "a13",
     "level": "critical",
-    "plantId": "sago-palm",
-    "title": "Sago palm within reach of pets",
-    "text": "It's the most dangerous plant in the garden: even a small chew can cause liver failure in cats, dogs and birds.",
-    "action": "Move the pink pot where the cats, dog and cockatiels can't reach it. Wear gloves when you weed it."
+    "plantId": "stargazer-lilies",
+    "title": "Stargazer lilies near the cats",
+    "text": "Lilies are deadly to cats: a little pollen licked off fur or a sip of vase water can cause kidney failure.",
+    "action": "Move them where the cats can’t go, or remove them. Vet straight away if a cat has pollen on it."
    },
    {
     "id": "a2",
     "level": "critical",
     "plantId": null,
     "art": "strawberry",
-    "title": "Slug bait: pet-safe only",
-    "text": "Wet weather brings slugs, but blue (metaldehyde) pellets can kill cats and dogs.",
-    "action": "Use only iron-phosphate pellets or beer traps. If there are blue pellets in the shed, bin them."
+    "title": "Check the slug pellets in every bed",
+    "text": "Pellets are scattered through the veggie beds, pots and pomegranate bed, next to a pet water bowl.",
+    "action": "Check the box: iron phosphate (e.g. Quash) is fine; metaldehyde (e.g. Blitzem) must be cleared up and binned."
+   },
+   {
+    "id": "a1",
+    "level": "critical",
+    "plantId": "sago-palm",
+    "title": "Sago palm within reach of pets",
+    "text": "It's the most dangerous plant in the garden: even a small chew can cause liver failure in cats, dogs and birds.",
+    "action": "Move the pink pot where the cats, dog and cockatiels can't reach it. Wear gloves when you weed it."
    },
    {
     "id": "a3",
@@ -1172,6 +2696,54 @@
     "title": "Guava moth season ahead",
     "text": "Guava moth grubs can ruin feijoas from the inside.",
     "action": "Hang a guava moth trap in the tree in December."
+   },
+   {
+    "id": "a14",
+    "level": "issue",
+    "plantId": "anthuriums",
+    "title": "Plants sitting on the heat pump",
+    "text": "The anthuriums, calathea, stromanthe and corn plant are crisping in its hot and cold blasts.",
+    "action": "Move them off the unit into bright shade nearby."
+   },
+   {
+    "id": "a15",
+    "level": "issue",
+    "plantId": "lemon",
+    "title": "Yellow blotchy citrus leaves",
+    "text": "The lemon and mandarin show yellow between the veins: low magnesium.",
+    "action": "Feed with citrus food plus 1 tbsp Epsom salts in 10 L water."
+   },
+   {
+    "id": "a16",
+    "level": "issue",
+    "plantId": "apple",
+    "title": "Curled, browned apple tips",
+    "text": "Twisted leaves at the tips usually mean aphids or leaf roller caterpillars.",
+    "action": "Uncurl a few leaves; squash or hose off what you find."
+   },
+   {
+    "id": "a17",
+    "level": "issue",
+    "plantId": "gardenias",
+    "title": "Gardenias yellowing",
+    "text": "Yellow leaves with green veins mean they need more acid.",
+    "action": "Feed with azalea or gardenia food."
+   },
+   {
+    "id": "a18",
+    "level": "risk",
+    "plantId": "periwinkle",
+    "title": "Periwinkle at pet height",
+    "text": "Several pots on the deck and in the shade house are very toxic to pets.",
+    "action": "Lift them onto shelves or move them where the pets don’t go."
+   },
+   {
+    "id": "a19",
+    "level": "risk",
+    "plantId": "tomatoes",
+    "title": "Weeds racing the veggies",
+    "text": "Lots of weed seedlings are coming up between the tomatoes, peppers and around the pomegranate.",
+    "action": "A quick hoe while they’re tiny saves a lot of work later."
    }
   ]
  }
