@@ -906,9 +906,9 @@
   },
   {
    "id": "guava",
-   "name": "Guava",
-   "short": "guava",
-   "latin": "Psidium guajava (to confirm)",
+   "name": "Fijian guava",
+   "short": "Fijian guava",
+   "latin": "Psidium guajava (white-fleshed)",
    "section": "fruit",
    "sub": "subtropical",
    "art": "guava",
@@ -926,9 +926,9 @@
     3,
     4
    ],
-   "about": "A subtropical tree with strongly veined leaves. Purple older leaves in spring usually mean cold nights.",
-   "watch": "Purple-tinged leaves (cold or low phosphorus); guava moth in the fruit.",
-   "next": "Feed lightly as it warms up.",
+   "about": "Grown from seed brought back from Fiji: a big-fruited, white-fleshed guava. It loves warmth, so a sheltered, sunny spot suits it in Auckland.",
+   "watch": "Purple-tinged older leaves after cold nights (it should green up as it warms); guava moth in the fruit.",
+   "next": "Feed with general fertiliser now it is warming up.",
    "pets": {
     "cat": "safe",
     "dog": "safe",
