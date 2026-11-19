@@ -137,7 +137,7 @@
     3
    ],
    "name": "Curry leaf trees",
-   "next": "Pinch tips to keep it bushy and leafy.",
+   "next": "Prune each tall stem back by a third and feed now.",
    "petNote": "Safe; the leaves are edible.",
    "pets": {
     "bird": "safe",
@@ -151,13 +151,13 @@
    "spot": "Back corner by the fence, and end of the side bed (2)",
    "sun": "Full sun, sheltered",
    "tint": "#E8F1DA",
-   "watch": "Scale and citrus psyllids on new growth; leaf drop in cold snaps.",
+   "watch": "Leggy, dull growth after cold nights; scale under the leaves; pale new leaves mean it needs iron.",
    "water": "Weekly; don't let it dry out",
    "sub": "herbs",
    "health": {
-    "status": "good",
-    "date": "2026-11-18",
-    "note": "Healthy."
+    "status": "watch",
+    "date": "2026-11-19",
+    "note": "Leggy and sparse after winter; new pink tips coming."
    },
    "pick": "Snip whole leaf sprigs from the tips; fresh is best."
   },
@@ -3085,6 +3085,14 @@
     "title": "Weeds taking over the front bed",
     "text": "Sow thistle and dandelions are coming through the bark around the yucca and clivias.",
     "action": "Pull them while small, roots and all; top up the bark where it’s thin."
+   },
+   {
+    "id": "a25",
+    "level": "issue",
+    "plantId": "curry-leaf",
+    "title": "Curry leaf leggy and sparse",
+    "text": "Tall, bare stems and dull leaves after winter, but new pink tips show it’s waking up.",
+    "action": "Cut each tall stem back by a third above a leaf, feed with citrus food, then liquid feed every 2–3 weeks. Water deeply weekly."
    }
   ],
   "checkups": [
@@ -3112,6 +3120,11 @@
     "plantId": "waterfall-lemon",
     "why": "Yellow leaves: checking if the feed is working.",
     "shoot": "A few of the yellowest leaves, flat in your hand."
+   },
+   {
+    "plantId": "curry-leaf",
+    "why": "Checking it bushes out after pruning and feeding.",
+    "shoot": "The new growth at the cut tips, in about 4 weeks."
    }
   ]
  }
