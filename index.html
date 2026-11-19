@@ -97,6 +97,15 @@ h1.long{font-size:clamp(32px,10vw,42px)}
 .next{background:var(--deep);color:var(--deep-ink);border-radius:24px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
 .next .label{color:var(--deep-muted)}
 .pending{color:var(--muted);font-style:italic}
+.picks{padding:16px;display:flex;flex-direction:column;gap:8px}
+.pkl{margin:6px 0 0;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pickrow{display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:2px 16px 4px;scrollbar-width:none}
+.pickrow::-webkit-scrollbar{display:none}
+.pick{flex:none;width:96px;border:0;border-radius:18px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;color:#2F4A3A;text-align:center;line-height:1.15}
+.pick svg{width:46px;height:46px;overflow:visible}
+.pick b{font-size:13px}
+.pick span{font-size:12px;color:#4E3B45}
+.ripe{padding:14px 16px;font-size:15px}
 .health{padding:14px 16px;display:flex;gap:12px;align-items:flex-start;font-size:15px}
 .hdot{width:14px;height:14px;border-radius:50%;flex:none;margin-top:4px}
 .checkups{padding:16px;display:flex;flex-direction:column;gap:12px}
@@ -385,6 +394,7 @@ const ICON = {
   care: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B23A7A" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg>',
   pin: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>',
   lens: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-strong)" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex:none;margin-top:1px"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>',
+  basket: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18l-2 10H5z"/><path d="M8 10l4-6 4 6"/><path d="M9 14v3M12 14v3M15 14v3"/></svg>',
   camera: '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>',
   arrow: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
   plus: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
@@ -419,6 +429,22 @@ function healthStrip(p) {
   if (!h) return `<section class="card health"><span class="hdot" style="background:#E8E2DC"></span><span><span class="label" style="color:var(--muted)">Health</span>Not checked yet${due ? ' · <b>photo check-up due this week</b>' : ''}</span></section>`;
   return `<section class="card health" style="background:${h[1]};color:${h[2]}"><span class="hdot" style="background:${h[2]}"></span><span><span class="label">Health · checked ${esc(fmtDay(p.health.date))}</span><b>${h[0]}</b>${p.health.note ? ` · ${esc(p.health.note)}` : ''}${due ? '<br><b>Photo check-up due this week</b>' : ''}</span></section>`;
 }
+const PICKABLE = p => (p.section === 'fruit' || p.section === 'herbs') && /harvest|picking/i.test(p.season || '') && Array.isArray(p.months) && p.months.length;
+const MSHORT = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function pickCard() {
+  const now = [], soon = [];
+  S.plants.filter(PICKABLE).forEach(p => {
+    if (p.months.includes(NOW)) now.push(p);
+    else for (let k = 1; k <= 2; k++) if (p.months.includes((NOW + k) % 12)) { soon.push([p, k]); break; }
+  });
+  if (!now.length && !soon.length) return '';
+  soon.sort((a, b) => a[1] - b[1]);
+  const chip = (p, sub) => `<button type="button" class="pick" data-open="${esc(p.id)}" style="background:${HEX.test(p.tint || '') ? p.tint : cat(catOf(p)).tint}">${svgArt(p.art, '')}<b>${esc(p.name)}</b><span>${sub}</span></button>`;
+  return `<section class="card picks"><div class="ckhead">${ICON.basket}<div><h2 class="serif">Ready to pick</h2><p class="sub">${esc(MONTHS[NOW])} in your garden. Tap one for how to tell it's ripe.</p></div></div>
+    ${now.length ? `<p class="pkl">Ready now</p><div class="pickrow">${now.map(p => chip(p, 'Now')).join('')}</div>` : ''}
+    ${soon.length ? `<p class="pkl">Coming soon</p><div class="pickrow">${soon.map(([p, k]) => chip(p, 'From ' + MSHORT[(NOW + k) % 12])).join('')}</div>` : ''}</section>`;
+}
+
 function checkupCard(w, byId) {
   const list = (Array.isArray(w.checkups) ? w.checkups : []).filter(c => byId[c.plantId]);
   if (!list.length) return '';
@@ -457,6 +483,7 @@ function plantPage(p, i, n, c) {
       ${p.latin ? `<p class="latin" style="color:${deep}">${esc(p.latin)}</p>` : ''}
       ${p.spot ? `<p class="spot">${ICON.pin}${esc(p.spot)}</p>` : ''}
     </section>
+    ${p.pick && PICKABLE(p) ? `<section class="card ripe"><span class="label" style="color:var(--accent-strong)">${p.months.includes(NOW) ? 'Ready to pick now' : 'How to tell it\u2019s ripe'}</span>${esc(p.pick)}</section>` : ''}
     ${healthStrip(p)}
     ${petStrip(p)}
     <div class="card"><ul class="jobs">${jobs.length ? jobs.map(t => { const on = !!S.ticks[t.id]; return `<li><label class="job${on ? ' done' : ''}"><input type="checkbox" data-task="${esc(t.id)}" ${on ? 'checked' : ''}><span><span class="k">This week · ${esc(t.tag || 'Job')}</span><span class="t">${esc(t.text)}</span></span></label></li>`; }).join('') : '<li><p class="none">Nothing needed this week. Enjoy it.</p></li>'}</ul></div>
@@ -537,6 +564,7 @@ function weekView() {
   return head(wk, `${w.headline ? `<p class="lede">${esc(w.headline)}</p>` : ''}
     ${w.weather ? `<p class="weather">${esc(w.weather)}</p>` : ''}
     ${alerts.length ? `<div class="tiles">${tiles}</div>` : ''}
+    ${pickCard()}
     ${checkupCard(w, byId)}
     ${sections || '<div class="card empty"><p class="serif" style="font-size:22px">All clear. Nothing urgent this week.</p></div>'}
     <div class="card ringcard"><div class="ring"><svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.5" fill="none" stroke="var(--band)" stroke-width="3.5"/><circle class="arc" cx="18" cy="18" r="15.5" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="${(pct * 100).toFixed(1)} 100"/></svg><b><span>${done}<small>/${tasks.length}</small></span></b></div>

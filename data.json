@@ -36,7 +36,8 @@
     "status": "watch",
     "date": "2026-11-18",
     "note": "Curled, browned tips: aphids or leaf roller."
-   }
+   },
+   "pick": "Lift and twist: a ripe apple comes away easily, and the seeds are brown."
   },
   {
    "id": "bromeliads",
@@ -153,7 +154,8 @@
     "status": "good",
     "date": "2026-11-18",
     "note": "Healthy."
-   }
+   },
+   "pick": "Snip whole leaf sprigs from the tips; fresh is best."
   },
   {
    "id": "cuttings",
@@ -269,7 +271,8 @@
     "status": "good",
     "date": "2026-11-18",
     "note": "Flowering, looking healthy."
-   }
+   },
+   "pick": "Ripe feijoas drop on their own. Collect from the ground daily."
   },
   {
    "id": "front-bed-succulents",
@@ -525,7 +528,8 @@
     "status": "watch",
     "date": "2026-11-18",
     "note": "Yellow blotches between the veins."
-   }
+   },
+   "pick": "Taste one first; colour can come before sweetness. Cut, don’t pull."
   },
   {
    "id": "monstera",
@@ -594,7 +598,8 @@
    "tint": "#FCE8D0",
    "watch": "Yellowing leaves (hungry), scale, and silver trails from leaf miner.",
    "water": "Deep, 1–2 times a week",
-   "sub": "citrus"
+   "sub": "citrus",
+   "pick": "Fully coloured and slightly soft. Taste one; they hold well on the tree."
   },
   {
    "id": "parlour-palm",
@@ -703,7 +708,8 @@
     "status": "watch",
     "date": "2026-11-18",
     "note": "Gummy sap near branch bases; lots of fruit setting."
-   }
+   },
+   "pick": "Ripe when the green background turns yellow and it gives slightly near the stem."
   },
   {
    "id": "pomegranate",
@@ -741,7 +747,8 @@
     "status": "good",
     "date": "2026-11-18",
     "note": "Flowering well."
-   }
+   },
+   "pick": "Deep red skin that sounds hollow when tapped. Pick before it splits."
   },
   {
    "id": "red-cordyline",
@@ -849,7 +856,8 @@
     "status": "good",
     "date": "2026-11-18",
     "note": "Young plants flowering."
-   }
+   },
+   "pick": "Fully red right to the tip. Pick every 2 days, with a bit of stalk."
   },
   {
    "id": "umbrella-tree",
@@ -923,7 +931,8 @@
     "status": "watch",
     "date": "2026-11-18",
     "note": "Purple older leaves after cold nights; should green up."
-   }
+   },
+   "pick": "Turns pale yellow-green, smells sweet and gives slightly when squeezed."
   },
   {
    "id": "chillies",
@@ -957,7 +966,8 @@
     "bird": "care"
    },
    "petNote": "Very hot: burns mouths and eyes. Keep the pets and birds away from the fruit.",
-   "addedAt": "2026-11-18T10:03:00Z"
+   "addedAt": "2026-11-18T10:03:00Z",
+   "pick": "Pick green or wait till red for more heat. Snip with scissors; wear gloves."
   },
   {
    "id": "tomatoes",
@@ -996,7 +1006,8 @@
     "status": "good",
     "date": "2026-11-18",
     "note": "Growing fast; weeds at the base."
-   }
+   },
+   "pick": "Evenly coloured and slightly soft. They’ll finish ripening on a sunny sill."
   },
   {
    "id": "eggplant",
@@ -1029,7 +1040,8 @@
     "bird": "care"
    },
    "petNote": "Leaves and green fruit are toxic to pets.",
-   "addedAt": "2026-11-18T10:06:00Z"
+   "addedAt": "2026-11-18T10:06:00Z",
+   "pick": "Glossy skin that springs back when pressed. Dull skin means overripe."
   },
   {
    "id": "silverbeet",
@@ -1071,7 +1083,8 @@
     "bird": "care"
    },
    "petNote": "Fine in small amounts; high in oxalates.",
-   "addedAt": "2026-11-18T10:07:00Z"
+   "addedAt": "2026-11-18T10:07:00Z",
+   "pick": "Twist off the outer leaves at the base; leave the middle to grow."
   },
   {
    "id": "bok-choy",
@@ -1103,7 +1116,8 @@
     "bird": "safe"
    },
    "petNote": "Safe for all your pets.",
-   "addedAt": "2026-11-18T10:08:00Z"
+   "addedAt": "2026-11-18T10:08:00Z",
+   "pick": "Cut the whole head at the base once it’s 20–30 cm tall, before it flowers."
   },
   {
    "id": "bele",
@@ -1138,7 +1152,8 @@
     "bird": "care"
    },
    "petNote": "Leaves are eaten by people; can upset a dog's stomach in quantity.",
-   "addedAt": "2026-11-18T10:09:00Z"
+   "addedAt": "2026-11-18T10:09:00Z",
+   "pick": "Pick young, tender leaves and shoot tips; it gets bushier the more you pick."
   },
   {
    "id": "beans",
@@ -1171,7 +1186,8 @@
     "bird": "toxic"
    },
    "petNote": "Raw beans are toxic to birds; cook them before sharing.",
-   "addedAt": "2026-11-18T10:10:00Z"
+   "addedAt": "2026-11-18T10:10:00Z",
+   "pick": "Pick when pencil-thin and snap cleanly, before the seeds bulge."
   },
   {
    "id": "bitter-melon",
@@ -1204,7 +1220,8 @@
     "bird": "toxic"
    },
    "petNote": "Fruit and seeds are unsafe for birds; can upset cats and the dog.",
-   "addedAt": "2026-11-18T10:11:00Z"
+   "addedAt": "2026-11-18T10:11:00Z",
+   "pick": "Pick green and firm, around 15–20 cm. Yellow means overripe."
   },
   {
    "id": "taro",
@@ -1237,7 +1254,8 @@
     "bird": "toxic"
    },
    "petNote": "Raw leaves and corms burn the mouth and throat of pets.",
-   "addedAt": "2026-11-18T10:12:00Z"
+   "addedAt": "2026-11-18T10:12:00Z",
+   "pick": "Dig the corms once the leaves start yellowing. Always cook well."
   },
   {
    "id": "basil",
@@ -1272,7 +1290,8 @@
     "bird": "safe"
    },
    "petNote": "Safe for all your pets.",
-   "addedAt": "2026-11-18T10:13:00Z"
+   "addedAt": "2026-11-18T10:13:00Z",
+   "pick": "Pinch the top pair of leaves above a joint; never strip a stem bare."
   },
   {
    "id": "mint",
@@ -1310,7 +1329,8 @@
     "bird": "safe"
    },
    "petNote": "Large amounts can upset cats and the dog; fine for the birds.",
-   "addedAt": "2026-11-18T10:14:00Z"
+   "addedAt": "2026-11-18T10:14:00Z",
+   "pick": "Cut stems back by a third; it regrows fast."
   },
   {
    "id": "rose-white",
@@ -2367,7 +2387,8 @@
    "about": "A glossy-leaved small tree with coppery new growth and fluffy white flowers, now in bud. The yellow fruit is sweeter and milder than the red.",
    "watch": "Guava moth grubs in the fruit, and birds once it ripens. Pull up any seedlings, as it self-seeds easily.",
    "next": "Flowering now; fruit sets over summer.",
-   "addedAt": "2026-11-18T10:02:00Z"
+   "addedAt": "2026-11-18T10:02:00Z",
+   "pick": "Fully yellow and soft. Eat fresh or make jam."
   },
   {
    "id": "cherry-guava-red",
@@ -2401,7 +2422,8 @@
    "about": "The classic red cherry guava: glossy leaves, smooth peeling bark and tangy-sweet red fruit, lovely fresh or in jam.",
    "watch": "Guava moth grubs in the fruit, and birds once it ripens. Pull up any seedlings, as it self-seeds easily.",
    "next": "Flowering soon; fruit sets over summer.",
-   "addedAt": "2026-11-18T10:02:30Z"
+   "addedAt": "2026-11-18T10:02:30Z",
+   "pick": "Deep red and soft. Eat fresh or make jam."
   },
   {
    "id": "waterfall-lemon",
@@ -2419,14 +2441,16 @@
    "feed": "Citrus food Sep, Dec and Mar",
    "care": "Easy",
    "season": "Harvest",
-   "seasonText": "May to October",
+   "seasonText": "April to November",
    "months": [
+    3,
     4,
     5,
     6,
     7,
     8,
-    9
+    9,
+    10
    ],
    "about": "A big, established lemon by the waterfall, heavy with fruit. The orange-yellow colour and rounder shape point to a Meyer lemon: sweeter and juicier than most.",
    "watch": "Yellow, blotchy leaves (low magnesium), scale and leaf miner. Heavy crops can snap branches, so prop them if needed.",
@@ -2442,7 +2466,8 @@
     "status": "watch",
     "date": "2026-11-18",
     "note": "Yellow between the veins: low magnesium."
-   }
+   },
+   "pick": "Yellow-orange and gives slightly. Cut with a short stalk; it keeps fruiting."
   },
   {
    "id": "ponytail-palm",
