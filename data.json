@@ -41,38 +41,42 @@
   },
   {
    "id": "bromeliads",
-   "about": "Rosettes of strappy, lime-green leaves, freshly planted in bark mulch. Each rosette flowers once, then makes pups around its base.",
+   "about": "Glossy strap leaves stacked like a fan, with big heads of orange trumpet flowers in spring. Tough plants, but they burn in full sun.",
    "addedAt": "2026-11-17T10:00:21Z",
-   "art": "bromeliad",
+   "art": "clivia",
    "care": "Easy",
-   "deep": "#5E6B1A",
-   "feed": "Weak liquid feed monthly in summer",
-   "latin": "Bromeliaceae (to confirm)",
+   "deep": "#9A4A0C",
+   "feed": "Liquid feed monthly in spring–summer",
+   "latin": "Clivia miniata",
    "months": [
+    7,
+    8,
     9,
-    10,
-    11,
-    0,
-    1
+    10
    ],
-   "name": "Bromeliads",
-   "next": "Send close-up photos to confirm the type.",
-   "petNote": "Safe for all your pets.",
+   "name": "Clivias",
+   "next": "Give them shade: move them to a shady spot in autumn, or shade-cloth them over summer.",
+   "petNote": "Toxic if chewed (especially the roots): vomiting and drooling.",
    "pets": {
-    "bird": "safe",
-    "cat": "safe",
-    "dog": "safe"
+    "cat": "toxic",
+    "dog": "toxic",
+    "bird": "toxic"
    },
    "season": "Flowers",
-   "seasonText": "Spring to summer",
+   "seasonText": "August to November",
    "section": "foliage",
-   "short": "bromeliads",
+   "short": "clivias",
    "spot": "New front bed by the fence (about 8)",
-   "sun": "Bright light; some sun",
-   "tint": "#EEF3D2",
-   "watch": "Bleached, yellow leaves from too much afternoon sun.",
-   "water": "Keep the centre cup topped up",
-   "sub": "strappy"
+   "sun": "Shade or morning sun only",
+   "tint": "#FCE8D2",
+   "watch": "Sunburn: bleached yellow leaves and orange crispy tips from the afternoon sun.",
+   "water": "Moderate; dislikes soggy soil",
+   "sub": "strappy",
+   "health": {
+    "status": "watch",
+    "date": "2026-11-19",
+    "note": "Sunburnt leaves; one starting to flower."
+   }
   },
   {
    "id": "coral-rose",
@@ -276,7 +280,7 @@
   },
   {
    "id": "front-bed-succulents",
-   "about": "Small succulents tucked between the bromeliads: blue chalk sticks, echeveria rosettes and a grey kalanchoe type. They'll spread to fill the gaps.",
+   "about": "Golden stonecrop (sedum) with yellow star flowers, an aeonium clump, blue chalk sticks and echeveria, filling the gaps between the bigger plants.",
    "addedAt": "2026-11-17T10:00:24Z",
    "art": "chalksticks",
    "care": "Easy",
@@ -307,9 +311,9 @@
    "water": "Only when the bark is dry underneath",
    "sub": "rosettes",
    "health": {
-    "status": "watch",
-    "date": "2026-11-18",
-    "note": "One near the front shrivelling."
+    "status": "good",
+    "date": "2026-11-19",
+    "note": "Sedum spreading and flowering."
    }
   },
   {
@@ -2651,6 +2655,44 @@
    },
    "petNote": "Toxic sap: can cause mouth irritation and vomiting in cats and the dog.",
    "addedAt": "2026-11-18T11:04:00Z"
+  },
+  {
+   "id": "yucca",
+   "name": "Variegated yucca",
+   "short": "yucca",
+   "latin": "Yucca gloriosa ‘Variegata’",
+   "section": "foliage",
+   "sub": "strappy",
+   "art": "yucca",
+   "tint": "#F6F2D2",
+   "deep": "#5E6B1A",
+   "spot": "Centre of the front bed",
+   "sun": "Full sun",
+   "water": "Very little once settled",
+   "feed": "None needed",
+   "care": "Very easy",
+   "season": "Flowers",
+   "seasonText": "December to February",
+   "months": [
+    11,
+    0,
+    1
+   ],
+   "about": "A big rosette of cream-edged, sword-shaped leaves, and a showpiece in full sun. Mature plants send up a tall spike of creamy bell flowers in summer.",
+   "watch": "Weeds (sow thistle, dandelion) crowding the base. The leaf tips are sharp, so mind eyes when weeding.",
+   "next": "Weed around the base.",
+   "pets": {
+    "cat": "care",
+    "dog": "care",
+    "bird": "care"
+   },
+   "petNote": "Can cause vomiting if chewed; sharp leaf tips.",
+   "health": {
+    "status": "good",
+    "date": "2026-11-19",
+    "note": "Healthy; weeds around the base."
+   },
+   "addedAt": "2026-11-19T09:00:00Z"
   }
  ],
  "week": {
@@ -3027,6 +3069,22 @@
     "title": "Peach seedling to pot up and sell",
     "text": "The young peach in the fern-corner box will transplant best when leafless.",
     "action": "Plan to dig it up in June–July. For the box, consider a Brazilian cherry or dwarf nectarine; most sweet cherries need colder winters than Auckland."
+   },
+   {
+    "id": "a23",
+    "level": "issue",
+    "plantId": "bromeliads",
+    "title": "Clivias sunburnt in the front bed",
+    "text": "Bleached yellow leaves and crispy orange tips: clivias are shade plants and this bed gets full afternoon sun.",
+    "action": "Shade them over summer (shade cloth or taller plants), or move them somewhere shady in autumn."
+   },
+   {
+    "id": "a24",
+    "level": "issue",
+    "plantId": "yucca",
+    "title": "Weeds taking over the front bed",
+    "text": "Sow thistle and dandelions are coming through the bark around the yucca and clivias.",
+    "action": "Pull them while small, roots and all; top up the bark where it’s thin."
    }
   ],
   "checkups": [
