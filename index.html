@@ -106,6 +106,7 @@ h1.long{font-size:clamp(32px,10vw,42px)}
 .pick b{font-size:13px}
 .pick span{font-size:12px;color:#4E3B45}
 .ripe{padding:14px 16px;font-size:15px}
+.clearedbtn{align-self:center;border:0;background:transparent;color:var(--muted);font-size:14px;text-decoration:underline;min-height:44px;cursor:pointer}
 .health{padding:14px 16px;display:flex;gap:12px;align-items:flex-start;font-size:15px}
 .hdot{width:14px;height:14px;border-radius:50%;flex:none;margin-top:4px}
 .checkups{padding:16px;display:flex;flex-direction:column;gap:12px}
@@ -447,8 +448,12 @@ function pickCard() {
     ${soon.length ? `<p class="pkl">Coming soon</p><div class="pickrow">${soon.map(([p, k]) => chip(p, 'From ' + MSHORT[(NOW + k) % 12])).join('')}</div>` : ''}</section>`;
 }
 
+// Sorted items are cleared every Sunday: anything ticked before the start of the most recent Sunday is hidden.
+const lastSunday = () => { const d = new Date(); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - d.getDay()); return d; };
+const cleared = id => { const t = S.ticks[id]; if (!t) return false; if (t === true) return true; const d = new Date(t); return isNaN(d) || d < lastSunday(); };
+
 function checkupCard(w, byId) {
-  const list = (Array.isArray(w.checkups) ? w.checkups : []).filter(c => byId[c.plantId]);
+  const list = (Array.isArray(w.checkups) ? w.checkups : []).filter(c => byId[c.plantId] && (S.showCleared || !cleared('ck-' + c.plantId)));
   if (!list.length) return '';
   return `<section class="card checkups"><div class="ckhead">${ICON.camera}<div><h2 class="serif">Photo check-ups</h2><p class="sub">Snap these and send them to Claude in your chat. Each plant's health gets updated.</p></div></div>
     ${list.map(c => { const p = byId[c.plantId], on = !!S.ticks['ck-' + p.id]; return `<div class="ck${on ? ' done' : ''}"><span class="badge" style="background:${HEX.test(p.tint || '') ? p.tint : cat(catOf(p)).tint}">${svgArt(p.art, '')}</span>
@@ -550,7 +555,9 @@ function weekView() {
   const w = S.week;
   if (!w) return head(kicker, '<div class="card empty"><p class="serif" style="font-size:22px">Your first garden check arrives on Saturday morning.</p></div>');
   const byId = Object.fromEntries(S.plants.map(p => [p.id, p]));
-  const alerts = (Array.isArray(w.alerts) ? w.alerts : []).filter(a => a && a.id && a.title);
+  const allAlerts = (Array.isArray(w.alerts) ? w.alerts : []).filter(a => a && a.id && a.title);
+  const nCleared = allAlerts.filter(a => cleared(a.id)).length;
+  const alerts = allAlerts.filter(a => S.showCleared || !cleared(a.id));
   const tasks = (w.tasks || []).filter(t => t && t.text);
   const done = tasks.filter(t => S.ticks[t.id]).length, pct = tasks.length ? done / tasks.length : 0;
   const d = new Date((w.weekOf || w.id) + 'T12:00:00');
@@ -571,6 +578,7 @@ function weekView() {
     ${sections || '<div class="card empty"><p class="serif" style="font-size:22px">All clear. Nothing urgent this week.</p></div>'}
     <div class="card ringcard"><div class="ring"><svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.5" fill="none" stroke="var(--band)" stroke-width="3.5"/><circle class="arc" cx="18" cy="18" r="15.5" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="${(pct * 100).toFixed(1)} 100"/></svg><b><span>${done}<small>/${tasks.length}</small></span></b></div>
       <div><p class="mood">Weekly jobs</p><p class="sub">Each plant's jobs are on its own page. Tap a category below.</p></div></div>
+    ${nCleared ? `<button type="button" class="clearedbtn" data-showcleared>${S.showCleared ? 'Hide' : 'Show'} ${nCleared} sorted item${nCleared === 1 ? '' : 's'} cleared on Sunday</button>` : ''}
     ${next}`);
 }
 
@@ -642,6 +650,7 @@ document.addEventListener('click', async e => {
   const a = e.target.closest('[data-add]'); if (a) { if (S.ro) { const k = a.dataset.add || (S.view !== 'week' ? S.view : 'fruit'); window.open(formUrl('add-plant.yml', { title: 'Add plant', category: FORM_CAT[k] || 'Fruit' }), '_blank', 'noopener'); } else openAdd(a.dataset.add); return; }
   const o = e.target.closest('[data-open]'); if (o) { const p = S.plants.find(x => x.id === o.dataset.open); if (p) go(catOf(p), plantsIn(catOf(p)).indexOf(p)); return; }
   const g = e.target.closest('[data-go]'); if (g) { const rail = document.getElementById('rail'); if (rail) rail.scrollTo({ left: Number(g.dataset.go) * rail.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); return; }
+  if (e.target.closest('[data-showcleared]')) { S.showCleared = !S.showCleared; render(); return; }
   const pi = e.target.closest('[data-pick]'); if (pi) { sheet.close(); go(sheet.dataset.pkcat, Number(pi.dataset.pick)); return; }
   const pk = e.target.closest('[data-picker]'); if (pk) { openPicker(pk.dataset.picker); return; }
   if (e.target === sheet || e.target.closest('[data-close]')) { sheet.close(); return; }
@@ -654,7 +663,7 @@ document.addEventListener('click', async e => {
 });
 app.addEventListener('change', async e => {
   const cb = e.target.closest('input[data-task]'); if (!cb || (!S.db && !S.ro) || !S.week) return;
-  const ticks = { ...S.ticks }; if (cb.checked) ticks[cb.dataset.task] = true; else delete ticks[cb.dataset.task];
+  const ticks = { ...S.ticks }; if (cb.checked) ticks[cb.dataset.task] = new Date().toISOString(); else delete ticks[cb.dataset.task];
   S.ticks = ticks; const row = cb.closest('.job, .alert, .ck'); if (row) row.classList.toggle('done', cb.checked);
   if (S.view === 'week') render();
   if (S.ro) { try { localStorage.setItem('orchid-ticks:' + S.week.id, JSON.stringify(ticks)); } catch (err) {} return; }
