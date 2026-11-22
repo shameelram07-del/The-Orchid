@@ -1504,7 +1504,7 @@
    ],
    "about": "Big, scented pink flowers with dark speckles. They come back from the bulb every summer.",
    "watch": "Botrytis (brown spots) in wet weather.",
-   "next": "Move them out of the cats’ reach, or remove them.",
+   "next": "Deadhead spent flowers; let the leaves die back naturally to feed the bulb.",
    "pets": {
     "cat": "toxic",
     "dog": "care",
@@ -1653,7 +1653,7 @@
    ],
    "about": "Cheerful pink flowers all summer, and very tough in heat.",
    "watch": "Root rot if pots stay soggy.",
-   "next": "Move the pots up out of pets’ reach.",
+   "next": "Pinch tips for bushier plants and more flowers.",
    "pets": {
     "cat": "toxic",
     "dog": "toxic",
@@ -2697,7 +2697,7 @@
  ],
  "week": {
   "generatedAt": "2026-11-17T21:00:00Z",
-  "headline": "Lilies and slug pellets first: the cats come before anything else.",
+  "headline": "Water deeply in the warm spell, and tackle black spot and weeds.",
   "next": [
    "Peach: bird netting up before the fruit colours.",
    "Citrus: summer feed coming early December.",
@@ -2894,14 +2894,6 @@
   "id": "2026-11-17",
   "alerts": [
    {
-    "id": "a13",
-    "level": "critical",
-    "plantId": "stargazer-lilies",
-    "title": "Stargazer lilies near the cats",
-    "text": "Lilies are deadly to cats: a little pollen licked off fur or a sip of vase water can cause kidney failure.",
-    "action": "Move them where the cats can’t go, or remove them. Vet straight away if a cat has pollen on it."
-   },
-   {
     "id": "a2",
     "level": "critical",
     "plantId": null,
@@ -2909,14 +2901,6 @@
     "title": "Check the slug pellets in every bed",
     "text": "Pellets are scattered through the veggie beds, pots and pomegranate bed, next to a pet water bowl.",
     "action": "Check the box: iron phosphate (e.g. Quash) is fine; metaldehyde (e.g. Blitzem) must be cleared up and binned."
-   },
-   {
-    "id": "a1",
-    "level": "critical",
-    "plantId": "sago-palm",
-    "title": "Sago palm within reach of pets",
-    "text": "It's the most dangerous plant in the garden: even a small chew can cause liver failure in cats, dogs and birds.",
-    "action": "Move the pink pot where the cats, dog and cockatiels can't reach it. Wear gloves when you weed it."
    },
    {
     "id": "a3",
@@ -2975,14 +2959,6 @@
     "action": "Pick every 2 days, remove any mouldy fruit, and use pet-safe slug control."
    },
    {
-    "id": "a10",
-    "level": "risk",
-    "plantId": "peace-lily",
-    "title": "Indoor plants near the cockatiels",
-    "text": "Peace lilies and the umbrella tree irritate the mouth if the birds nibble them.",
-    "action": "Keep them away from where the cockatiels perch or play out of the cage."
-   },
-   {
     "id": "a11",
     "level": "risk",
     "plantId": "hydrangea",
@@ -3029,14 +3005,6 @@
     "title": "Gardenias yellowing",
     "text": "Yellow leaves with green veins mean they need more acid.",
     "action": "Feed with azalea or gardenia food."
-   },
-   {
-    "id": "a18",
-    "level": "risk",
-    "plantId": "periwinkle",
-    "title": "Periwinkle at pet height",
-    "text": "Several pots on the deck and in the shade house are very toxic to pets.",
-    "action": "Lift them onto shelves or move them where the pets don’t go."
    },
    {
     "id": "a19",
