@@ -691,7 +691,7 @@
     1
    ],
    "name": "Peach",
-   "next": "Bird netting goes on in December.",
+   "next": "Bird netting on by early December.",
    "petNote": "Fruit is fine, but leaves, stones and seeds are toxic. Clear up fallen fruit.",
    "pets": {
     "bird": "care",
@@ -709,9 +709,9 @@
    "water": "Deep soak weekly; twice in heat",
    "sub": "stone",
    "health": {
-    "status": "watch",
-    "date": "2026-11-18",
-    "note": "Gummy sap near branch bases; lots of fruit setting."
+    "status": "good",
+    "date": "2026-11-26",
+    "note": "Lush leaves, no leaf curl; fruit sizing up well."
    },
    "pick": "Ripe when the green background turns yellow and it gives slightly near the stem."
   },
@@ -3078,11 +3078,6 @@
     "plantId": "dracaena",
     "why": "Was crisping on the heat pump.",
     "shoot": "The whole plant in its new spot, and the worst leaf."
-   },
-   {
-    "plantId": "peach",
-    "why": "Spring is leaf-curl season, and there’s gummy sap.",
-    "shoot": "New leaves at the tips, and where the sap oozes."
    },
    {
     "plantId": "waterfall-lemon",
