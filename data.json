@@ -2706,72 +2706,16 @@
   }
  ],
  "week": {
-  "generatedAt": "2026-11-17T21:00:00Z",
-  "headline": "Water deeply in the warm spell, and tackle black spot and weeds.",
+  "generatedAt": "2026-11-26T08:00:00Z",
+  "headline": "Pest week: sort the apple and curry leaf, then feed and net.",
   "next": [
-   "Peach: bird netting up before the fruit colours.",
-   "Citrus: summer feed coming early December.",
+   "Peach: netting on before the fruit colours.",
+   "Citrus: summer feed with citrus food plus Epsom salts.",
    "Strawberries: peak picking begins.",
    "Winter: lift the peach seedling into a big pot to sell."
   ],
-  "nextTitle": "Late November",
+  "nextTitle": "Early December",
   "tasks": [
-   {
-    "id": "w1",
-    "plantId": "peach",
-    "section": "fruit",
-    "tag": "Thin",
-    "text": "Finish thinning: leave one fruit every 15 cm so the rest size up."
-   },
-   {
-    "id": "w2",
-    "plantId": "peach",
-    "section": "fruit",
-    "tag": "Mulch",
-    "text": "After Wednesday's rain, top up mulch to 5–8 cm while the planter is moist. Keep it off the trunk."
-   },
-   {
-    "id": "w3",
-    "plantId": "apple",
-    "section": "fruit",
-    "tag": "Thin",
-    "text": "Thin to one apple per cluster; keep the biggest, best-shaped one."
-   },
-   {
-    "id": "w4",
-    "plantId": "apple",
-    "section": "fruit",
-    "tag": "Pests",
-    "text": "Check the codling moth trap. Note how many moths are in it."
-   },
-   {
-    "id": "w5",
-    "plantId": "orange",
-    "section": "fruit",
-    "tag": "Water",
-    "text": "Skip watering mid-week if Wednesday brings the forecast rain. Finger-test again on the weekend."
-   },
-   {
-    "id": "w6",
-    "plantId": "orange",
-    "section": "fruit",
-    "tag": "Pests",
-    "text": "Look under new leaves for aphids. Hose them off."
-   },
-   {
-    "id": "w7",
-    "plantId": "mandarin",
-    "section": "fruit",
-    "tag": "Mulch",
-    "text": "Top up mulch after the rain, clear of the trunk."
-   },
-   {
-    "id": "w8",
-    "plantId": "mandarin",
-    "section": "fruit",
-    "tag": "Wind",
-    "text": "Windy mid-week: check stakes and ties after Wednesday."
-   },
    {
     "id": "w9",
     "plantId": "strawberry",
@@ -2897,10 +2841,87 @@
     "section": "succulents",
     "tag": "Shelter",
     "text": "Keep the cuttings out of heavy rain on Wednesday; light mist only after."
+   },
+   {
+    "id": "w101",
+    "plantId": "apple",
+    "section": "fruit",
+    "tag": "Pests",
+    "text": "Snip off the rolled, webbed leaf clusters and bin them; hose the shoot tips to knock off aphids."
+   },
+   {
+    "id": "w102",
+    "plantId": "curry-leaf",
+    "section": "herbs",
+    "tag": "Pests",
+    "text": "Check leaf undersides for scale; spray insecticidal soap (pets inside till dry)."
+   },
+   {
+    "id": "w103",
+    "plantId": "curry-leaf",
+    "section": "herbs",
+    "tag": "Prune",
+    "text": "Then cut tall stems back by a third and feed with Thrive pellets."
+   },
+   {
+    "id": "w104",
+    "plantId": "guava",
+    "section": "fruit",
+    "tag": "Feed",
+    "text": "Feed with general fertiliser or Thrive pellets and water in."
+   },
+   {
+    "id": "w105",
+    "plantId": "peach",
+    "section": "fruit",
+    "tag": "Net",
+    "text": "Put bird netting over the tree before the fruit colours."
+   },
+   {
+    "id": "w106",
+    "plantId": "peach",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply once a week as the fruit swells."
+   },
+   {
+    "id": "w107",
+    "plantId": "orange",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply 1–2 times a week so it holds its baby fruit."
+   },
+   {
+    "id": "w108",
+    "plantId": "mandarin",
+    "section": "fruit",
+    "tag": "Harvest",
+    "text": "Pick or clear the last of the old fruit."
+   },
+   {
+    "id": "w109",
+    "plantId": "mandarin",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply while the new fruit sets."
+   },
+   {
+    "id": "w110",
+    "plantId": "cherry-guava-yellow",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply while it flowers and sets fruit."
+   },
+   {
+    "id": "w111",
+    "plantId": "taro",
+    "section": "herbs",
+    "tag": "Weed",
+    "text": "Pull the weed vine off the chain-link fence, roots and all."
    }
   ],
-  "weather": "Mild, 17–23°C · wet, windy Wednesday",
-  "weekOf": "2026-11-17",
+  "weather": "Mostly dry and warm · water pots deeply",
+  "weekOf": "2026-11-26",
   "id": "2026-11-17",
   "alerts": [
    {
@@ -2945,20 +2966,12 @@
     "action": "Pull them out this week (gloves on for the sago)."
    },
    {
-    "id": "a7",
-    "level": "risk",
-    "plantId": "cuttings",
-    "title": "Showery, windy spells this week",
-    "text": "Heavy showers can rot young cuttings, and gusts can rock young trees.",
-    "action": "Move the cuttings table under cover, and check ties on the citrus and pomegranate."
-   },
-   {
     "id": "a8",
-    "level": "risk",
+    "level": "issue",
     "plantId": "peach",
-    "title": "Birds will find the peaches",
-    "text": "As the fruit starts colouring in December, birds move in fast.",
-    "action": "Have bird netting ready to go on by early December."
+    "title": "Net the peaches by early December",
+    "text": "The fruit is sizing up well and will start colouring soon, when birds move in fast.",
+    "action": "Get bird netting over the tree in the next week or two."
    },
    {
     "id": "a9",
@@ -3041,14 +3054,6 @@
     "action": "Scratch-test stems (green underneath means alive), weed the base, water only when dry and feed lightly. No more pruning."
    },
    {
-    "id": "a22",
-    "level": "risk",
-    "plantId": "peach",
-    "title": "Peach seedling to pot up and sell",
-    "text": "The young peach in the fern-corner box will transplant best when leafless.",
-    "action": "Plan to dig it up in June–July. For the box, consider a Brazilian cherry or dwarf nectarine; most sweet cherries need colder winters than Auckland."
-   },
-   {
     "id": "a23",
     "level": "issue",
     "plantId": "bromeliads",
@@ -3071,6 +3076,22 @@
     "title": "Curry leaf: sooty mould and leggy growth",
     "text": "Speckled black mould on some leaves means sap-suckers (likely scale or psyllids), and the stems are still tall and bare.",
     "action": "Remove the worst leaves, spray insecticidal soap under the leaves (pets inside till dry), then prune by a third and feed."
+   },
+   {
+    "id": "a26",
+    "level": "risk",
+    "plantId": "guava",
+    "title": "Feed the Fijian guava",
+    "text": "It’s pushing lots of fresh spring growth and needs fuel for flowers and fruit.",
+    "action": "Scatter general fertiliser or Thrive pellets around the drip line, water in, and mulch."
+   },
+   {
+    "id": "a27",
+    "level": "risk",
+    "plantId": "orange",
+    "title": "Keep citrus watered while fruit sets",
+    "text": "The orange and mandarin are setting baby fruit; dry soil makes them drop it.",
+    "action": "Water deeply once or twice a week in this dry spell; summer citrus feed in early December."
    }
   ],
   "checkups": [
