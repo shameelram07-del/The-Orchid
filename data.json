@@ -15,7 +15,7 @@
     3
    ],
    "name": "Apple",
-   "next": "Summer prune of long upright shoots in February.",
+   "next": "Snip off the rolled, webbed leaves; hose aphids off the tips; check again in a week.",
    "petNote": "Fruit is fine, but seeds, leaves and stems are toxic. No apple seeds for the cockatiels.",
    "pets": {
     "bird": "care",
@@ -34,8 +34,8 @@
    "sub": "stone",
    "health": {
     "status": "watch",
-    "date": "2026-11-18",
-    "note": "Curled, browned tips: aphids or leaf roller."
+    "date": "2026-11-26",
+    "note": "Strong new growth, but leaf roller webbing and aphid-curled leaves in one cluster."
    },
    "pick": "Lift and twist: a ripe apple comes away easily, and the seeds are brown."
   },
@@ -2999,9 +2999,9 @@
     "id": "a16",
     "level": "issue",
     "plantId": "apple",
-    "title": "Curled, browned apple tips",
-    "text": "Twisted leaves at the tips usually mean aphids or leaf roller caterpillars.",
-    "action": "Uncurl a few leaves; squash or hose off what you find."
+    "title": "Leaf roller and aphids on the apple",
+    "text": "Leaves rolled and tied with webbing (leaf roller caterpillars) plus curled, sticky leaves (aphids) on one cluster.",
+    "action": "Snip off the webbed clusters and bin them, squash what you find, and hose the tips. If it returns, use a Bt caterpillar spray, with pets inside until dry."
    },
    {
     "id": "a17",
