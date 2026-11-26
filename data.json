@@ -2390,9 +2390,14 @@
    "spot": "Back garden, by the fence",
    "about": "A glossy-leaved small tree with coppery new growth and fluffy white flowers, now in bud. The yellow fruit is sweeter and milder than the red.",
    "watch": "Guava moth grubs in the fruit, and birds once it ripens. Pull up any seedlings, as it self-seeds easily.",
-   "next": "Flowering now; fruit sets over summer.",
+   "next": "Water deeply while it sets fruit; hang a guava moth trap in December.",
    "addedAt": "2026-11-18T10:02:00Z",
-   "pick": "Fully yellow and soft. Eat fresh or make jam."
+   "pick": "Fully yellow and soft. Eat fresh or make jam.",
+   "health": {
+    "status": "good",
+    "date": "2026-11-26",
+    "note": "Flowering heavily with lots of buds; glossy, full leaves."
+   }
   },
   {
    "id": "cherry-guava-red",
