@@ -2920,7 +2920,7 @@
     "text": "Pull the weed vine off the chain-link fence, roots and all."
    }
   ],
-  "weather": "Mostly dry and warm · water pots deeply",
+  "weather": "Mild, 13–21°C · a few showers",
   "weekOf": "2026-11-26",
   "id": "2026-11-17",
   "alerts": [
@@ -2985,9 +2985,9 @@
     "id": "a11",
     "level": "risk",
     "plantId": "hydrangea",
-    "title": "Pots drying out as summer arrives",
-    "text": "Hydrangeas, palms in crates and planters dry fast on the first hot days.",
-    "action": "Water deeply in the morning and check pots every 2–3 days."
+    "title": "Water by feel, not by the clock",
+    "text": "It’s mild (around 21°C) with some showers, so daily watering is too much for most plants.",
+    "action": "Finger-test 5 cm down; water deeply only when dry. Daily only for seedlings, strawberries and small pots, or when it’s 25°C+."
    },
    {
     "id": "a12",
@@ -3089,9 +3089,9 @@
     "id": "a27",
     "level": "risk",
     "plantId": "orange",
-    "title": "Keep citrus watered while fruit sets",
-    "text": "The orange and mandarin are setting baby fruit; dry soil makes them drop it.",
-    "action": "Water deeply once or twice a week in this dry spell; summer citrus feed in early December."
+    "title": "Water citrus deeply, not daily",
+    "text": "The orange and mandarin are setting baby fruit; they want deep drinks, but constantly wet soil causes root rot.",
+    "action": "Finger-test 5 cm down: water deeply when dry, about 1–2 times a week in this mild weather."
    }
   ],
   "checkups": [
