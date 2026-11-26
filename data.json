@@ -511,7 +511,7 @@
     7
    ],
    "name": "Mandarin",
-   "next": "Summer feed of citrus food in December.",
+   "next": "Pick the last of the old fruit; summer citrus feed in December.",
    "petNote": "Leaves and peel can upset cats and the dog. A little fruit flesh is fine for the birds.",
    "pets": {
     "bird": "safe",
@@ -529,9 +529,9 @@
    "water": "Deep, 1–2 times a week",
    "sub": "citrus",
    "health": {
-    "status": "watch",
-    "date": "2026-11-18",
-    "note": "Yellow blotches between the veins."
+    "status": "good",
+    "date": "2026-11-26",
+    "note": "Flowering again with new fruitlets; corky skin marks are cosmetic."
    },
    "pick": "Taste one first; colour can come before sweetness. Cut, don’t pull."
   },
