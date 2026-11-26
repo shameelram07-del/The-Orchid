@@ -586,7 +586,7 @@
     7
    ],
    "name": "Orange",
-   "next": "Summer feed of citrus food in December.",
+   "next": "Water deeply so it holds its baby fruit; summer citrus feed in December.",
    "petNote": "Leaves and peel can upset cats and the dog. A little fruit flesh is fine for the birds.",
    "pets": {
     "bird": "safe",
@@ -603,7 +603,12 @@
    "watch": "Yellowing leaves (hungry), scale, and silver trails from leaf miner.",
    "water": "Deep, 1–2 times a week",
    "sub": "citrus",
-   "pick": "Fully coloured and slightly soft. Taste one; they hold well on the tree."
+   "pick": "Fully coloured and slightly soft. Taste one; they hold well on the tree.",
+   "health": {
+    "status": "good",
+    "date": "2026-11-26",
+    "note": "Setting new fruitlets; some caterpillar holes and curled tips, minor."
+   }
   },
   {
    "id": "parlour-palm",
