@@ -137,7 +137,7 @@
     3
    ],
    "name": "Curry leaf trees",
-   "next": "Treat the scale/sooty mould, then prune by a third. Already fed 19 Nov: no more feed until mid-February.",
+   "next": "Treat the scale/sooty mould, then prune by a third. Already fed about 12 Nov: no more feed until about mid-February.",
    "petNote": "Safe; the leaves are edible.",
    "pets": {
     "bird": "safe",
@@ -161,7 +161,7 @@
    },
    "pick": "Snip whole leaf sprigs from the tips; fresh is best.",
    "fed": {
-    "date": "2026-11-19",
+    "date": "2026-11-12",
     "what": "Yates Thrive pellets"
    }
   },
@@ -2865,7 +2865,7 @@
     "plantId": "curry-leaf",
     "section": "herbs",
     "tag": "Prune",
-    "text": "Then cut tall stems back by a third. Already fed with Thrive on 19 Nov, so no extra feed needed."
+    "text": "Then cut tall stems back by a third. Already fed with Thrive about 12 Nov, so no extra feed needed."
    },
    {
     "id": "w104",
@@ -3079,7 +3079,7 @@
     "plantId": "curry-leaf",
     "title": "Curry leaf: sooty mould and leggy growth",
     "text": "Speckled black mould on some leaves means sap-suckers (likely scale or psyllids), and the stems are still tall and bare.",
-    "action": "Remove the worst leaves, spray soapy water or insecticidal soap under the leaves (pets inside till dry), then prune by a third. Already fed 19 Nov."
+    "action": "Remove the worst leaves, spray soapy water or insecticidal soap under the leaves (pets inside till dry), then prune by a third. Already fed about 12 Nov."
    },
    {
     "id": "a26",
