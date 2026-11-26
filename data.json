@@ -137,7 +137,7 @@
     3
    ],
    "name": "Curry leaf trees",
-   "next": "Prune each tall stem back by a third and feed now.",
+   "next": "Check leaf undersides for scale, spray insecticidal soap, then prune by a third and feed.",
    "petNote": "Safe; the leaves are edible.",
    "pets": {
     "bird": "safe",
@@ -156,8 +156,8 @@
    "sub": "herbs",
    "health": {
     "status": "watch",
-    "date": "2026-11-19",
-    "note": "Leggy and sparse after winter; new pink tips coming."
+    "date": "2026-11-26",
+    "note": "Flowering with new pink shoots, but sooty mould on some leaves (scale or psyllids)."
    },
    "pick": "Snip whole leaf sprigs from the tips; fresh is best."
   },
@@ -3063,9 +3063,9 @@
     "id": "a25",
     "level": "issue",
     "plantId": "curry-leaf",
-    "title": "Curry leaf leggy and sparse",
-    "text": "Tall, bare stems and dull leaves after winter, but new pink tips show it’s waking up.",
-    "action": "Cut each tall stem back by a third above a leaf, feed with citrus food, then liquid feed every 2–3 weeks. Water deeply weekly."
+    "title": "Curry leaf: sooty mould and leggy growth",
+    "text": "Speckled black mould on some leaves means sap-suckers (likely scale or psyllids), and the stems are still tall and bare.",
+    "action": "Remove the worst leaves, spray insecticidal soap under the leaves (pets inside till dry), then prune by a third and feed."
    }
   ],
   "checkups": [
