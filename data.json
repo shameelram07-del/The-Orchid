@@ -511,7 +511,7 @@
     7
    ],
    "name": "Mandarin",
-   "next": "Pick the last of the old fruit; summer citrus feed in December.",
+   "next": "Leave the fruit to colour fully orange, then taste one before picking.",
    "petNote": "Leaves and peel can upset cats and the dog. A little fruit flesh is fine for the birds.",
    "pets": {
     "bird": "safe",
@@ -531,7 +531,7 @@
    "health": {
     "status": "good",
     "date": "2026-11-26",
-    "note": "Flowering again with new fruitlets; corky skin marks are cosmetic."
+    "note": "Young fruit sizing up and more flowers coming; corky skin marks are cosmetic."
    },
    "pick": "Taste one first; colour can come before sweetness. Cut, don’t pull."
   },
@@ -2895,8 +2895,8 @@
     "id": "w108",
     "plantId": "mandarin",
     "section": "fruit",
-    "tag": "Harvest",
-    "text": "Pick or clear the last of the old fruit."
+    "tag": "Fruit",
+    "text": "Leave the young fruit to ripen; pick only once fully orange and a taste test is sweet."
    },
    {
     "id": "w109",
