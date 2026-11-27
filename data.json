@@ -2710,420 +2710,667 @@
   }
  ],
  "week": {
-  "generatedAt": "2026-11-26T08:00:00Z",
-  "headline": "Pest week: sort the apple and curry leaf, then feed and net.",
-  "next": [
-   "Peach: netting on before the fruit colours.",
-   "Citrus: summer feed with citrus food plus Epsom salts.",
-   "Strawberries: peak picking begins.",
-   "Winter: lift the peach seedling into a big pot to sell."
-  ],
-  "nextTitle": "Early December",
-  "tasks": [
-   {
-    "id": "w9",
-    "plantId": "strawberry",
-    "section": "fruit",
-    "tag": "Harvest",
-    "text": "Pick fruit as soon as it's fully red, every 2 days."
-   },
-   {
-    "id": "w10",
-    "plantId": "strawberry",
-    "section": "fruit",
-    "tag": "Pests",
-    "text": "Wet weather brings slugs. Check at night or set beer traps."
-   },
-   {
-    "id": "w11",
-    "plantId": "strawberry",
-    "section": "fruit",
-    "tag": "Net",
-    "text": "Get netting over the plants before the weekend."
-   },
-   {
-    "id": "w12",
-    "plantId": null,
-    "section": "fruit",
-    "tag": "Check",
-    "text": "Raised planters dry fast once the sun returns: finger-test 5 cm deep on Saturday."
-   },
-   {
-    "id": "w13",
-    "plantId": "feijoa",
-    "section": "fruit",
-    "tag": "Flowers",
-    "text": "In flower now. Let the rain do the watering; water deeply if it turns dry."
-   },
-   {
-    "id": "w14",
-    "plantId": "coral-rose",
-    "section": "roses",
-    "tag": "Disease",
-    "text": "Pick off the spotted, yellow leaves and bin them (not compost). Clear fallen ones too."
-   },
-   {
-    "id": "w15",
-    "plantId": "coral-rose",
-    "section": "roses",
-    "tag": "Weed",
-    "text": "Pull the clover out of the planter so air can move around the base."
-   },
-   {
-    "id": "w16",
-    "plantId": "hydrangea",
-    "section": "flowers",
-    "tag": "Water",
-    "text": "Pots dry quickly once it warms up: water every 2–3 days after the rain clears."
-   },
-   {
-    "id": "w17",
-    "plantId": "lavender",
-    "section": "flowers",
-    "tag": "Trim",
-    "text": "Snip off spent flower heads to keep new ones coming."
-   },
-   {
-    "id": "w18",
-    "plantId": "ice-plant",
-    "section": "flowers",
-    "tag": "Water",
-    "text": "No water needed this week; the rain is plenty."
-   },
-   {
-    "id": "w19",
-    "plantId": "peace-lily",
-    "section": "flowers",
-    "tag": "Water",
-    "text": "Water when the leaves start to droop; wipe the dust off the leaves."
-   },
-   {
-    "id": "w20",
-    "plantId": "parlour-palm",
-    "section": "palms",
-    "tag": "Light",
-    "text": "Keep it in bright light but out of direct sun; wipe dusty fronds."
-   },
-   {
-    "id": "w21",
-    "plantId": "sago-palm",
-    "section": "palms",
-    "tag": "Weed",
-    "text": "Pull the dandelions and grass out of the pink pot (wear gloves)."
-   },
-   {
-    "id": "w22",
-    "plantId": "monstera",
-    "section": "foliage",
-    "tag": "Feed",
-    "text": "Give a liquid feed now it's growing again."
-   },
-   {
-    "id": "w23",
-    "plantId": "umbrella-tree",
-    "section": "foliage",
-    "tag": "Turn",
-    "text": "Turn the basket a quarter so it grows evenly."
-   },
-   {
-    "id": "w24",
-    "plantId": "dracaena",
-    "section": "foliage",
-    "tag": "Shade",
-    "text": "Move it out of hot sun and trim off the yellow, scorched leaves."
-   },
-   {
-    "id": "w25",
-    "plantId": "jade-plant",
-    "section": "succulents",
-    "tag": "Weed",
-    "text": "Pull the grass out of the pot."
-   },
-   {
-    "id": "w26",
-    "plantId": "cuttings",
-    "section": "succulents",
-    "tag": "Shelter",
-    "text": "Keep the cuttings out of heavy rain on Wednesday; light mist only after."
-   },
-   {
-    "id": "w101",
-    "plantId": "apple",
-    "section": "fruit",
-    "tag": "Pests",
-    "text": "Snip off the rolled, webbed leaf clusters and bin them; hose the shoot tips to knock off aphids."
-   },
-   {
-    "id": "w102",
-    "plantId": "curry-leaf",
-    "section": "herbs",
-    "tag": "Pests",
-    "text": "Check leaf undersides for scale; spray insecticidal soap (pets inside till dry)."
-   },
-   {
-    "id": "w103",
-    "plantId": "curry-leaf",
-    "section": "herbs",
-    "tag": "Prune",
-    "text": "Then cut tall stems back by a third. Already fed with Thrive about 12 Nov, so no extra feed needed."
-   },
-   {
-    "id": "w104",
-    "plantId": "guava",
-    "section": "fruit",
-    "tag": "Feed",
-    "text": "Feed with general fertiliser or Thrive pellets and water in."
-   },
-   {
-    "id": "w105",
-    "plantId": "peach",
-    "section": "fruit",
-    "tag": "Net",
-    "text": "Put bird netting over the tree before the fruit colours."
-   },
-   {
-    "id": "w106",
-    "plantId": "peach",
-    "section": "fruit",
-    "tag": "Water",
-    "text": "Water deeply once a week as the fruit swells."
-   },
-   {
-    "id": "w107",
-    "plantId": "orange",
-    "section": "fruit",
-    "tag": "Water",
-    "text": "Water deeply 1–2 times a week so it holds its baby fruit."
-   },
-   {
-    "id": "w108",
-    "plantId": "mandarin",
-    "section": "fruit",
-    "tag": "Fruit",
-    "text": "Leave the young fruit to ripen; pick only once fully orange and a taste test is sweet."
-   },
-   {
-    "id": "w109",
-    "plantId": "mandarin",
-    "section": "fruit",
-    "tag": "Water",
-    "text": "Water deeply while the new fruit sets."
-   },
-   {
-    "id": "w110",
-    "plantId": "cherry-guava-yellow",
-    "section": "fruit",
-    "tag": "Water",
-    "text": "Water deeply while it flowers and sets fruit."
-   },
-   {
-    "id": "w111",
-    "plantId": "taro",
-    "section": "herbs",
-    "tag": "Weed",
-    "text": "Pull the weed vine off the chain-link fence, roots and all."
-   }
-  ],
+  "id": "2026-11-28",
+  "weekOf": "2026-11-28",
+  "generatedAt": "2026-11-27T18:45:00Z",
   "weather": "Mild & mostly dry, 15–23°C",
-  "weekOf": "2026-11-26",
-  "id": "2026-11-17",
+  "headline": "Dry, mild week: net the peaches, beat the bugs, water by feel.",
   "alerts": [
    {
+    "id": "a1",
+    "level": "issue",
+    "plantId": "apple",
+    "title": "Leaf roller and aphids on the apple",
+    "text": "Rolled, webbed leaves and aphid-curled tips were showing on 26 Nov.",
+    "action": "Snip off any webbed clusters and hose the tips; soapy water for aphids if they come back."
+   },
+   {
     "id": "a2",
-    "level": "critical",
-    "plantId": null,
-    "art": "strawberry",
-    "title": "Check the slug pellets in every bed",
-    "text": "Pellets are scattered through the veggie beds, pots and pomegranate bed, next to a pet water bowl.",
-    "action": "Check the box: iron phosphate (e.g. Quash) is fine; metaldehyde (e.g. Blitzem) must be cleared up and binned."
+    "level": "issue",
+    "plantId": "curry-leaf",
+    "title": "Curry leaf: scale and sooty mould",
+    "text": "Speckled black mould on some leaves means sap-suckers are feeding.",
+    "action": "Spray soapy water under the leaves every 4–5 days, then prune by a third. Already fed, so no more feed."
    },
    {
     "id": "a3",
     "level": "issue",
-    "plantId": "coral-rose",
-    "title": "Black spot on the coral rose",
-    "text": "Dark spots and yellowing leaves are showing, and rain spreads the spores.",
-    "action": "Pick off spotted leaves and clear fallen ones. Bin them, don't compost them."
+    "plantId": "dracaena",
+    "title": "Plants still on the heat pump",
+    "text": "The corn plant, anthuriums, calathea and stromanthe crisp in its hot blast.",
+    "action": "Move them off the unit into bright shade nearby."
    },
    {
     "id": "a4",
     "level": "issue",
-    "plantId": "dracaena",
-    "title": "Dracaena scorching in the sun",
-    "text": "The striped leaves have yellow, bleached patches from hot sun on the patio.",
-    "action": "Move the pot into shade, such as the shade house, and trim off the worst leaves."
+    "plantId": "coral-rose",
+    "title": "Black spot on the roses",
+    "text": "Dry weather slows it, but spotted leaves keep spreading spores.",
+    "action": "Pick off spotted leaves, clear fallen ones and water only at the base."
    },
    {
     "id": "a5",
     "level": "issue",
-    "plantId": "front-bed-succulents",
-    "title": "A front-bed succulent is shrivelling",
-    "text": "One near the front edge has gone yellow and dry.",
-    "action": "Check it isn't sitting wet under the bark. If it's mushy, pull it and plant a fresh cutting."
+    "plantId": "yucca",
+    "title": "Weeds in the front bed and taro fence",
+    "text": "Sow thistle, dandelions and the climbing weed vine are getting established.",
+    "action": "Pull them while small, roots and all; top up the bark where it’s thin."
    },
    {
     "id": "a6",
-    "level": "issue",
-    "plantId": "jade-plant",
-    "title": "Weeds taking over the patio pots",
-    "text": "Grass and dandelions are growing in the jade and sago pots, competing for water.",
-    "action": "Pull them out this week (gloves on for the sago)."
-   },
-   {
-    "id": "a8",
-    "level": "issue",
-    "plantId": "peach",
-    "title": "Net the peaches by early December",
-    "text": "The fruit is sizing up well and will start colouring soon, when birds move in fast.",
-    "action": "Get bird netting over the tree in the next week or two."
-   },
-   {
-    "id": "a9",
     "level": "risk",
-    "plantId": "strawberry",
-    "title": "Grey mould and slugs on berries",
-    "text": "Damp weather plus ripe fruit is when mould and slugs strike.",
-    "action": "Pick every 2 days, remove any mouldy fruit, and use pet-safe slug control."
+    "plantId": "peach",
+    "title": "Net the peaches now",
+    "text": "The fruit is sizing up and birds strike as soon as it colours.",
+    "action": "Get bird netting over the tree this week."
    },
    {
     "id": "a11",
     "level": "risk",
     "plantId": "hydrangea",
     "title": "Water by feel, not by the clock",
-    "text": "Mild and mostly dry through Monday (around 22–23°C), with little rain, so pots will dry a bit faster than last week.",
-    "action": "Finger-test 5 cm down and water deeply when dry: every 1–2 days for seedlings, strawberries and small pots; every 2–3 days for other pots and planters; in-ground trees once or twice a week."
+    "text": "Mild and mostly dry (around 22–23°C), so pots dry faster than last week.",
+    "action": "Finger-test 5 cm and water deeply when dry: seedlings, strawberries and small pots every 1–2 days; other pots every 2–3 days; trees once or twice a week."
    },
    {
-    "id": "a12",
+    "id": "a7",
+    "level": "risk",
+    "plantId": "waterfall-lemon",
+    "title": "Summer citrus feed due",
+    "text": "The lemon, orange and mandarin are carrying young fruit and need feeding for summer.",
+    "action": "Early December: citrus food plus 1 tbsp Epsom salts in 10 L water, watered in well."
+   },
+   {
+    "id": "a8",
+    "level": "risk",
+    "plantId": "bromeliads",
+    "title": "Clivias will burn as it warms",
+    "text": "They’re already sun-scorched and the days are getting stronger.",
+    "action": "Shade them over summer with shade cloth, or move potted ones somewhere shady."
+   },
+   {
+    "id": "a9",
     "level": "risk",
     "plantId": "feijoa",
-    "title": "Guava moth season ahead",
-    "text": "Guava moth grubs can ruin feijoas from the inside.",
-    "action": "Hang a guava moth trap in the tree in December."
-   },
-   {
-    "id": "a14",
-    "level": "issue",
-    "plantId": "anthuriums",
-    "title": "Plants sitting on the heat pump",
-    "text": "The anthuriums, calathea, stromanthe and corn plant are crisping in its hot and cold blasts.",
-    "action": "Move them off the unit into bright shade nearby."
-   },
-   {
-    "id": "a15",
-    "level": "issue",
-    "plantId": "waterfall-lemon",
-    "title": "Yellow blotchy citrus leaves",
-    "text": "The waterfall lemon and the mandarin show yellow between the veins: low magnesium.",
-    "action": "Feed with citrus food plus 1 tbsp Epsom salts in 10 L water."
-   },
-   {
-    "id": "a16",
-    "level": "issue",
-    "plantId": "apple",
-    "title": "Leaf roller and aphids on the apple",
-    "text": "Leaves rolled and tied with webbing (leaf roller caterpillars) plus curled, sticky leaves (aphids) on one cluster.",
-    "action": "Snip off the webbed clusters and bin them, squash what you find, and hose the tips. If it returns, use a Bt caterpillar spray, with pets inside until dry."
-   },
-   {
-    "id": "a17",
-    "level": "issue",
-    "plantId": "gardenias",
-    "title": "Gardenias yellowing",
-    "text": "Yellow leaves with green veins mean they need more acid.",
-    "action": "Feed with azalea or gardenia food."
-   },
-   {
-    "id": "a19",
-    "level": "risk",
-    "plantId": "tomatoes",
-    "title": "Weeds racing the veggies",
-    "text": "Lots of weed seedlings are coming up between the tomatoes, peppers and around the pomegranate.",
-    "action": "A quick hoe while they’re tiny saves a lot of work later."
-   },
-   {
-    "id": "a20",
-    "level": "issue",
-    "plantId": "taro",
-    "title": "Weed vine climbing the taro fence",
-    "text": "A twining weed (likely bindweed) is climbing the chain-link above the taro and will smother it if left.",
-    "action": "Pull it out, following the stem down to get the roots. Bin it rather than composting, as bits regrow."
-   },
-   {
-    "id": "a21",
-    "level": "issue",
-    "plantId": "rubber-plant",
-    "title": "Rubber plant stressed after its trim",
-    "text": "The back-fence rubber plant has bronze and yellow leaves from cold stress after being cut back.",
-    "action": "Scratch-test stems (green underneath means alive), weed the base, water only when dry and feed lightly. No more pruning."
-   },
-   {
-    "id": "a23",
-    "level": "issue",
-    "plantId": "bromeliads",
-    "title": "Clivias sunburnt in the front bed",
-    "text": "Bleached yellow leaves and crispy orange tips: clivias are shade plants and this bed gets full afternoon sun.",
-    "action": "Shade them over summer (shade cloth or taller plants), or move them somewhere shady in autumn."
-   },
-   {
-    "id": "a24",
-    "level": "issue",
-    "plantId": "yucca",
-    "title": "Weeds taking over the front bed",
-    "text": "Sow thistle and dandelions are coming through the bark around the yucca and clivias.",
-    "action": "Pull them while small, roots and all; top up the bark where it’s thin."
-   },
-   {
-    "id": "a25",
-    "level": "issue",
-    "plantId": "curry-leaf",
-    "title": "Curry leaf: sooty mould and leggy growth",
-    "text": "Speckled black mould on some leaves means sap-suckers (likely scale or psyllids), and the stems are still tall and bare.",
-    "action": "Remove the worst leaves, spray soapy water or insecticidal soap under the leaves (pets inside till dry), then prune by a third. Already fed about 12 Nov."
-   },
-   {
-    "id": "a26",
-    "level": "risk",
-    "plantId": "guava",
-    "title": "Feed the Fijian guava",
-    "text": "It’s pushing lots of fresh spring growth and needs fuel for flowers and fruit.",
-    "action": "Scatter general fertiliser or Thrive pellets around the drip line, water in, and mulch."
-   },
-   {
-    "id": "a27",
-    "level": "risk",
-    "plantId": "orange",
-    "title": "Water citrus deeply, not daily",
-    "text": "The orange and mandarin are setting baby fruit; they want deep drinks, but constantly wet soil causes root rot.",
-    "action": "Finger-test 5 cm down: water deeply when dry, about 1–2 times a week in this mild weather."
+    "title": "Guava moth season starts",
+    "text": "Feijoa and guavas are flowering; guava moth lays in the young fruit.",
+    "action": "Hang guava moth traps in the feijoa and guavas in early December."
    }
   ],
   "checkups": [
    {
+    "plantId": "dracaena",
+    "why": "It was crisping on the heat pump.",
+    "shoot": "The whole plant in its new spot, plus the worst leaf."
+   },
+   {
     "plantId": "rubber-plant",
-    "why": "Recovering after its trim.",
-    "shoot": "The newest leaves, plus one cut stem up close."
+    "why": "Checking it’s recovering from the trim.",
+    "shoot": "The newest leaves and one cut stem up close."
    },
    {
     "plantId": "coral-rose",
-    "why": "Black spot spreads fast in wet weather.",
+    "why": "Black spot spreads fast if left.",
     "shoot": "Lower leaves, top and underside."
    },
    {
-    "plantId": "dracaena",
-    "why": "Was crisping on the heat pump.",
-    "shoot": "The whole plant in its new spot, and the worst leaf."
-   },
-   {
     "plantId": "waterfall-lemon",
-    "why": "Yellow leaves: checking if the feed is working.",
+    "why": "Seeing if the yellow leaves are improving.",
     "shoot": "A few of the yellowest leaves, flat in your hand."
    },
    {
-    "plantId": "curry-leaf",
-    "why": "Checking it bushes out after pruning and feeding.",
-    "shoot": "The new growth at the cut tips, in about 4 weeks."
+    "plantId": "bromeliads",
+    "why": "Checking the clivias aren’t burning further.",
+    "shoot": "The worst clivia, whole plant."
    }
+  ],
+  "tasks": [
+   {
+    "id": "w1",
+    "plantId": "apple",
+    "section": "fruit",
+    "tag": "Pests",
+    "text": "Check for fresh webbing; snip any rolled clusters and hose aphids off the tips."
+   },
+   {
+    "id": "w2",
+    "plantId": "bromeliads",
+    "section": "foliage",
+    "tag": "Shade",
+    "text": "Rig shade cloth or move pots of clivias out of the hot afternoon sun; snip off scorched leaves."
+   },
+   {
+    "id": "w3",
+    "plantId": "coral-rose",
+    "section": "flowers",
+    "tag": "Disease",
+    "text": "Pick off black-spot leaves and clear fallen ones; water at the base only."
+   },
+   {
+    "id": "w4",
+    "plantId": "coral-rose",
+    "section": "flowers",
+    "tag": "Deadhead",
+    "text": "Cut spent blooms back to the first full leaf."
+   },
+   {
+    "id": "w5",
+    "plantId": "curry-leaf",
+    "section": "herbs",
+    "tag": "Pests",
+    "text": "Spray soapy water under the leaves every 4–5 days (evening, pets inside till dry)."
+   },
+   {
+    "id": "w6",
+    "plantId": "curry-leaf",
+    "section": "herbs",
+    "tag": "Prune",
+    "text": "Once the bugs are under control, cut tall stems back by a third."
+   },
+   {
+    "id": "w7",
+    "plantId": "cuttings",
+    "section": "succulents",
+    "tag": "Water",
+    "text": "Light water when the mix is dry; keep out of hot midday sun."
+   },
+   {
+    "id": "w8",
+    "plantId": "dracaena",
+    "section": "foliage",
+    "tag": "Move",
+    "text": "Move it off the heat pump into bright shade, and trim the scorched leaves."
+   },
+   {
+    "id": "w9",
+    "plantId": "feijoa",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply once a week while it flowers and sets fruit."
+   },
+   {
+    "id": "w10",
+    "plantId": "front-bed-succulents",
+    "section": "succulents",
+    "tag": "Weed",
+    "text": "Pull weeds from between the sedum; no water unless bone dry."
+   },
+   {
+    "id": "w11",
+    "plantId": "golden-cane-palms",
+    "section": "palms",
+    "tag": "Water",
+    "text": "Shade-house pots dry fast: finger-test and water every 2–3 days."
+   },
+   {
+    "id": "w12",
+    "plantId": "hydrangea",
+    "section": "flowers",
+    "tag": "Water",
+    "text": "Pots: water every 1–2 days in dry spells, in the morning."
+   },
+   {
+    "id": "w13",
+    "plantId": "ice-plant",
+    "section": "flowers",
+    "tag": "Water",
+    "text": "Only water if bone dry."
+   },
+   {
+    "id": "w14",
+    "plantId": "jade-plant",
+    "section": "succulents",
+    "tag": "Weed",
+    "text": "Pull any grass that’s regrown in the pot."
+   },
+   {
+    "id": "w15",
+    "plantId": "lavender",
+    "section": "flowers",
+    "tag": "Trim",
+    "text": "Snip off spent flower heads to keep it flowering."
+   },
+   {
+    "id": "w16",
+    "plantId": "mandarin",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply when the top 5 cm is dry so the young fruit holds."
+   },
+   {
+    "id": "w17",
+    "plantId": "monstera",
+    "section": "foliage",
+    "tag": "Feed",
+    "text": "Liquid feed this week; it’s in full growth."
+   },
+   {
+    "id": "w18",
+    "plantId": "orange",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply when the top 5 cm is dry; dry soil makes baby fruit drop."
+   },
+   {
+    "id": "w19",
+    "plantId": "parlour-palm",
+    "section": "palms",
+    "tag": "Water",
+    "text": "Water when the top 3 cm is dry; wipe dust off the fronds."
+   },
+   {
+    "id": "w20",
+    "plantId": "peace-lily",
+    "section": "flowers",
+    "tag": "Water",
+    "text": "Water when the leaves just start to droop."
+   },
+   {
+    "id": "w21",
+    "plantId": "peach",
+    "section": "fruit",
+    "tag": "Net",
+    "text": "Get bird netting on this week, before the fruit colours."
+   },
+   {
+    "id": "w22",
+    "plantId": "pomegranate",
+    "section": "fruit",
+    "tag": "Weed",
+    "text": "Hoe the weed seedlings out of the bed while they’re small."
+   },
+   {
+    "id": "w23",
+    "plantId": "red-cordyline",
+    "section": "foliage",
+    "tag": "Tidy",
+    "text": "Trim off old brown lower leaves."
+   },
+   {
+    "id": "w24",
+    "plantId": "sago-palm",
+    "section": "palms",
+    "tag": "Weed",
+    "text": "Weed the pots (gloves on); leave soft new fronds alone."
+   },
+   {
+    "id": "w25",
+    "plantId": "strawberry",
+    "section": "fruit",
+    "tag": "Harvest",
+    "text": "Pick every 2 days once fully red; remove any mouldy fruit."
+   },
+   {
+    "id": "w26",
+    "plantId": "umbrella-tree",
+    "section": "foliage",
+    "tag": "Turn",
+    "text": "Turn the basket a quarter so it grows evenly."
+   },
+   {
+    "id": "w27",
+    "plantId": "guava",
+    "section": "fruit",
+    "tag": "Feed",
+    "text": "If it hasn’t been fed yet, scatter Thrive or general fertiliser and water in."
+   },
+   {
+    "id": "w28",
+    "plantId": "chillies",
+    "section": "herbs",
+    "tag": "Feed",
+    "text": "Liquid feed now it’s flowering; check under leaves for aphids."
+   },
+   {
+    "id": "w29",
+    "plantId": "tomatoes",
+    "section": "herbs",
+    "tag": "Tie",
+    "text": "Tie new growth to the stakes and pinch out side shoots."
+   },
+   {
+    "id": "w30",
+    "plantId": "tomatoes",
+    "section": "herbs",
+    "tag": "Water",
+    "text": "Deep water at the base every 2–3 days."
+   },
+   {
+    "id": "w31",
+    "plantId": "eggplant",
+    "section": "herbs",
+    "tag": "Feed",
+    "text": "Liquid feed while it flowers."
+   },
+   {
+    "id": "w32",
+    "plantId": "silverbeet",
+    "section": "herbs",
+    "tag": "Harvest",
+    "text": "Pick the outer leaves; leave the middle to keep growing."
+   },
+   {
+    "id": "w33",
+    "plantId": "bok-choy",
+    "section": "herbs",
+    "tag": "Water",
+    "text": "Keep moist under the netting; harvest whole heads at 20–30 cm."
+   },
+   {
+    "id": "w34",
+    "plantId": "bele",
+    "section": "herbs",
+    "tag": "Water",
+    "text": "Keep the cutting just moist; look for new leaves at the buds."
+   },
+   {
+    "id": "w35",
+    "plantId": "beans",
+    "section": "herbs",
+    "tag": "Train",
+    "text": "Guide the vines onto the chain-link fence."
+   },
+   {
+    "id": "w36",
+    "plantId": "bitter-melon",
+    "section": "herbs",
+    "tag": "Train",
+    "text": "Tie the vine onto the trellis and pull the weeds in the pot."
+   },
+   {
+    "id": "w37",
+    "plantId": "taro",
+    "section": "herbs",
+    "tag": "Weed",
+    "text": "Pull the weed vine off the fence above the taro, roots and all."
+   },
+   {
+    "id": "w38",
+    "plantId": "basil",
+    "section": "herbs",
+    "tag": "Pinch",
+    "text": "Pinch out the tips and any flower buds."
+   },
+   {
+    "id": "w39",
+    "plantId": "mint",
+    "section": "herbs",
+    "tag": "Harvest",
+    "text": "Cut back by a third for fresh leaves."
+   },
+   {
+    "id": "w40",
+    "plantId": "rose-white",
+    "section": "flowers",
+    "tag": "Disease",
+    "text": "Pick off any black-spot leaves; deadhead spent blooms."
+   },
+   {
+    "id": "w41",
+    "plantId": "rose-pink",
+    "section": "flowers",
+    "tag": "Disease",
+    "text": "Pick off any black-spot leaves; deadhead spent blooms."
+   },
+   {
+    "id": "w42",
+    "plantId": "rose-orange",
+    "section": "flowers",
+    "tag": "Disease",
+    "text": "Pick off any black-spot leaves; deadhead spent blooms."
+   },
+   {
+    "id": "w43",
+    "plantId": "rose-peach",
+    "section": "flowers",
+    "tag": "Disease",
+    "text": "Pick off any black-spot leaves; deadhead spent blooms."
+   },
+   {
+    "id": "w44",
+    "plantId": "stargazer-lilies",
+    "section": "flowers",
+    "tag": "Water",
+    "text": "Keep the soil moist as the buds develop."
+   },
+   {
+    "id": "w45",
+    "plantId": "gardenias",
+    "section": "flowers",
+    "tag": "Feed",
+    "text": "Feed with azalea or gardenia food to green up the yellow leaves."
+   },
+   {
+    "id": "w46",
+    "plantId": "hibiscus",
+    "section": "flowers",
+    "tag": "Feed",
+    "text": "Feed now the new shoots are coming."
+   },
+   {
+    "id": "w47",
+    "plantId": "mexican-heather",
+    "section": "flowers",
+    "tag": "Water",
+    "text": "Water in dry spells; no other care needed."
+   },
+   {
+    "id": "w48",
+    "plantId": "periwinkle",
+    "section": "flowers",
+    "tag": "Pinch",
+    "text": "Pinch the tips for bushier plants."
+   },
+   {
+    "id": "w49",
+    "plantId": "chrysanthemum",
+    "section": "flowers",
+    "tag": "Pinch",
+    "text": "Pinch the tips to keep it bushy."
+   },
+   {
+    "id": "w50",
+    "plantId": "moss-rose",
+    "section": "flowers",
+    "tag": "Water",
+    "text": "Only water if very dry."
+   },
+   {
+    "id": "w51",
+    "plantId": "anthuriums",
+    "section": "flowers",
+    "tag": "Move",
+    "text": "Move both off the heat pump into bright shade."
+   },
+   {
+    "id": "w52",
+    "plantId": "philodendron",
+    "section": "foliage",
+    "tag": "Tidy",
+    "text": "Remove yellow lower leaves."
+   },
+   {
+    "id": "w53",
+    "plantId": "rubber-plant",
+    "section": "foliage",
+    "tag": "Check",
+    "text": "Scratch-test the trimmed stems; weed around the base; no pruning."
+   },
+   {
+    "id": "w54",
+    "plantId": "weeping-figs",
+    "section": "foliage",
+    "tag": "Water",
+    "text": "Water when the top 3 cm is dry; don’t move them."
+   },
+   {
+    "id": "w55",
+    "plantId": "dragon-trees",
+    "section": "foliage",
+    "tag": "Tidy",
+    "text": "Trim brown leaf tips with clean scissors."
+   },
+   {
+    "id": "w56",
+    "plantId": "flax",
+    "section": "foliage",
+    "tag": "Tidy",
+    "text": "Pull out dead leaves from the base."
+   },
+   {
+    "id": "w57",
+    "plantId": "cabbage-trees",
+    "section": "foliage",
+    "tag": "Tidy",
+    "text": "Pull off the dead hanging leaves."
+   },
+   {
+    "id": "w58",
+    "plantId": "ferns",
+    "section": "foliage",
+    "tag": "Water",
+    "text": "Keep moist in this dry spell."
+   },
+   {
+    "id": "w59",
+    "plantId": "pittosporum",
+    "section": "foliage",
+    "tag": "Trim",
+    "text": "Light trim to keep it rounded."
+   },
+   {
+    "id": "w60",
+    "plantId": "breath-of-heaven",
+    "section": "foliage",
+    "tag": "Trim",
+    "text": "Light trim now flowering has finished."
+   },
+   {
+    "id": "w61",
+    "plantId": "bloodleaf",
+    "section": "foliage",
+    "tag": "Pinch",
+    "text": "Pinch the tips to keep it bushy."
+   },
+   {
+    "id": "w62",
+    "plantId": "calathea",
+    "section": "foliage",
+    "tag": "Move",
+    "text": "Move it off the heat pump into shade; keep moist."
+   },
+   {
+    "id": "w63",
+    "plantId": "stromanthe",
+    "section": "foliage",
+    "tag": "Move",
+    "text": "Move it off the heat pump into bright shade."
+   },
+   {
+    "id": "w64",
+    "plantId": "peperomia",
+    "section": "foliage",
+    "tag": "Water",
+    "text": "Let it dry out before watering."
+   },
+   {
+    "id": "w65",
+    "plantId": "tradescantia",
+    "section": "foliage",
+    "tag": "Pinch",
+    "text": "Pinch back leggy stems."
+   },
+   {
+    "id": "w66",
+    "plantId": "elephant-bush",
+    "section": "succulents",
+    "tag": "Water",
+    "text": "No water needed unless bone dry."
+   },
+   {
+    "id": "w67",
+    "plantId": "aloe",
+    "section": "succulents",
+    "tag": "Light",
+    "text": "Move into more sun to keep it compact; water only when bone dry."
+   },
+   {
+    "id": "w68",
+    "plantId": "cherry-guava-yellow",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply while it flowers and sets fruit."
+   },
+   {
+    "id": "w69",
+    "plantId": "cherry-guava-red",
+    "section": "fruit",
+    "tag": "Water",
+    "text": "Water deeply while it flowers."
+   },
+   {
+    "id": "w70",
+    "plantId": "waterfall-lemon",
+    "section": "fruit",
+    "tag": "Harvest",
+    "text": "Keep picking ripe lemons; prop any heavy branches."
+   },
+   {
+    "id": "w71",
+    "plantId": "waterfall-lemon",
+    "section": "fruit",
+    "tag": "Feed",
+    "text": "Early December: citrus food plus 1 tbsp Epsom salts in 10 L water."
+   },
+   {
+    "id": "w72",
+    "plantId": "ponytail-palm",
+    "section": "succulents",
+    "tag": "Light",
+    "text": "Move it into more sun; water only when bone dry."
+   },
+   {
+    "id": "w73",
+    "plantId": "cymbidium-orchids",
+    "section": "flowers",
+    "tag": "Feed",
+    "text": "Orchid food fortnightly; give more morning sun."
+   },
+   {
+    "id": "w74",
+    "plantId": "ixora",
+    "section": "flowers",
+    "tag": "Feed",
+    "text": "Feed with azalea food as it warms up."
+   },
+   {
+    "id": "w75",
+    "plantId": "cast-iron-plant",
+    "section": "foliage",
+    "tag": "Tidy",
+    "text": "Remove tatty old leaves at the base."
+   },
+   {
+    "id": "w76",
+    "plantId": "croton",
+    "section": "foliage",
+    "tag": "Water",
+    "text": "Keep moist; it likes warmth."
+   },
+   {
+    "id": "w77",
+    "plantId": "yucca",
+    "section": "foliage",
+    "tag": "Weed",
+    "text": "Pull the sow thistle and dandelions around the base (mind the sharp tips)."
+   }
+  ],
+  "nextTitle": "Early December",
+  "next": [
+   "Citrus: summer feed with Epsom salts.",
+   "Guava moth traps in the feijoa and guavas.",
+   "Strawberries and bok choy ready to pick.",
+   "Winter: lift the peach seedling to pot up and sell."
   ]
  }
 }
