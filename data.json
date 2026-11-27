@@ -2924,7 +2924,7 @@
     "text": "Pull the weed vine off the chain-link fence, roots and all."
    }
   ],
-  "weather": "Mild, 13–21°C · a few showers",
+  "weather": "Mild & mostly dry, 15–23°C",
   "weekOf": "2026-11-26",
   "id": "2026-11-17",
   "alerts": [
@@ -2990,8 +2990,8 @@
     "level": "risk",
     "plantId": "hydrangea",
     "title": "Water by feel, not by the clock",
-    "text": "It’s mild (around 21°C) with some showers, so daily watering is too much for most plants.",
-    "action": "Finger-test 5 cm down; water deeply only when dry. Daily only for seedlings, strawberries and small pots, or when it’s 25°C+."
+    "text": "Mild and mostly dry through Monday (around 22–23°C), with little rain, so pots will dry a bit faster than last week.",
+    "action": "Finger-test 5 cm down and water deeply when dry: every 1–2 days for seedlings, strawberries and small pots; every 2–3 days for other pots and planters; in-ground trees once or twice a week."
    },
    {
     "id": "a12",
